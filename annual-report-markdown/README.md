@@ -1,6 +1,6 @@
 # annual-report-markdown —— 年报解析与研究包（workspace 开发副本）
 
-按《年报解析Skill-重新设计方案-2026-09-05.md》实现的 **V0.3-C4.4 可运行版本**。
+按《年报解析Skill-重新设计方案-2026-09-05.md》实现的 **V0.3-C4.6 可运行版本**。
 
 > 本目录是设计副本，供审阅迭代。安装到实际技能目录时整体复制到
 > `.codex/skills/annual-report-markdown/`（name 沿用 `annual-report-markdown`，显示名“年报解析与研究包”）。
@@ -36,7 +36,7 @@ annual-report-v02/
 └── tests/                    # stdlib unittest 冒烟测试
 ```
 
-## 现状（V0.3-C4.4 异常文字层与数值证据恢复）
+## 现状（V0.3-C4.6 有框线主表过切分重建）
 
 - 已建立：入口流程、模块边界、对象模型、JSON Schema、验收基线、骨架 CLI；
   P0 几何实测完成（3 报告）、MinerU pipeline 对照完成、主引擎分工已定（见 `references/engines-probe.md`）。
@@ -59,6 +59,7 @@ annual-report-v02/
 - C4.2 新增：保险科目证据画像、空 `table_body` 续页在严格原生表头门下的四列恢复、相邻重复完整表题续页合并、中期六个月期间与《企业会计准则第32号》编制依据。平安年报/半年报分别产出 502/493 facts；十报告安全门 10/10、10 份均产出 facts，总数 4,073，其他八份逐份无回退。该结果不代表保险行业总体准确率。
 - C4.3 新增：保险跨发行人审计（中国人寿、中国太保、中国人保）、受限年度表题前缀与行标签安全门。13 报告、10 发行人安全门 13/13，总 facts 4,292；中国太保 219 facts，中国人寿和中国人保均保守不放行 facts。详见 `references/v03-c43-insurance-generalization-2026-09-06.md`。
 - C4.4 新增：矢量轮廓数字检测、源页裁图与 OCR 候选隔离；受限日期壳表题；宽 colspan HTML 允许进入严格原生四列重建。中国人保形成六张视觉复核主表候选且 0 facts，中国人寿补齐六主表仍 0 facts，中国太保补齐六主表并增至 328 facts。十三报告安全门 13/13，总 facts 4,401。详见 `references/v03-c44-vector-numeric-evidence-2026-09-06.md`。
+- C4.5 新增：伊利股份（482+33 facts）、长江电力（462）、海螺水泥（166）三个新发行人；修复企业会计准则遵循声明识别（漏“财政部颁布的”→整份 `accounting_basis_evidence_missing`）并扩展记账本位币识别；新增多通道逐格一致性（`pipeline/evidence_chain.py`）与人工签核（`run_signoff.py`）。C4.5 新包安全门 3/3，累计 16 报告/13 发行人。详见 `references/v03-c45-new-issuers-2026-09-06.md`。
 
 ## 设计要点（与方案对应）
 
@@ -76,7 +77,7 @@ python3 scripts/run_parse.py selfcheck                    # 自检：Schema 与�
 python3 scripts/run_parse.py inspect  <report.pdf>        # 来源登记/体检（不接线引擎）
 python3 scripts/run_parse.py scaffold <report.pdf>        # 建立空研究包骨架（版本目录+manifest+入口模板）
 python3 scripts/run_parse.py checkschema <研究包目录>      # 研究包关键产物过 schema（jsonschema）
-python3 scripts/run_parse.py run <report.pdf> [--output DIR] --auto-borderless # V0.3-C4.4 推荐
+python3 scripts/run_parse.py run <report.pdf> [--output DIR] --auto-borderless # V0.3-C4.6 推荐
 python3 scripts/audit_regression_matrix.py <研究包>... --json <矩阵.json> --markdown <矩阵.md>
 python3 scripts/run_parse.py run <report.pdf> [--output DIR] \
   --mineru-content <content_list.json> --mineru-start <0起始页> # B1 手动回放
@@ -90,6 +91,10 @@ python3 scripts/run_refine.py <研究包目录> [指标...]       # B：指标�
 python3 scripts/run_local.py  <研究包目录> --page N | --table <id>  # C：对页/表重跑文字层核对
 python3 scripts/run_signoff.py record <研究包> --object-ref <ref> --decision accepted|rejected|deferred|pending [--eligible]  # 人工签核记录（复核/signoffs.jsonl）
 python3 scripts/run_signoff.py list|summary <研究包>      # 列出/汇总人工签核
+
+> 临时测试产物约定：后续测试跑出来的临时研究包（如真实回归输出）统一放
+> `tests/_research_packages/`（已被 `.gitignore` 排除、移植到 Codex 时不复制）；
+> 该目录只作本机回归暂存，不作为 skill 交付物。
 python3 scripts/batch_pipeline.py --max-pages 1            # 批量（默认 5 份报告的合并资产负债表页）
 python3 scripts/build_progress.py                          # 生成 samples/progress.html 进度总览
 python3 -m unittest discover -s tests                     # 冒烟测试
@@ -113,5 +118,5 @@ P0 探针结论（2026-09-05，茅台样本）：几何证据层可行——坐�
 
 ## 阶段计划
 
-P0/M1/M2 → V0.3-B1 → V0.3-B2 → V0.3-B2.1 → V0.3-C1 → V0.3-C2 → V0.3-C3 → V0.3-C3.1 → V0.3-C3.2 → V0.3-C3.3 → V0.3-C4.1 → V0.3-C4.2 → V0.3-C4.3 → V0.3-C4.4（当前：异常文字层与数值证据恢复）→ 独立 OCR 签核/权益明细 → V1.0。
+P0/M1/M2 → V0.3-B1 → V0.3-B2 → V0.3-B2.1 → V0.3-C1 → V0.3-C2 → V0.3-C3 → V0.3-C3.1 → V0.3-C3.2 → V0.3-C3.3 → V0.3-C4.1 → V0.3-C4.2 → V0.3-C4.3 → V0.3-C4.4 → V0.3-C4.5 → V0.3-C4.6 → V0.3-C4.7（下一轮：美的合并&公司组合口径）→ 权益明细/第二独立识别通道 → V1.0。
 各阶段进入条件见 `SKILL.md` 末尾与 `references/acceptance.md`。

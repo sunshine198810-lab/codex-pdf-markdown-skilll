@@ -33,6 +33,9 @@ cp -R "$SRC/samples" "$DST/"
 # 3) 清理 Python 缓存（避免旧机器路径残留）
 find "$DST" -name '__pycache__' -type d -exec rm -rf {} + 2>/dev/null
 find "$DST" -name '*.pyc' -delete 2>/dev/null
+
+# 4) 移除临时测试研究包（体积大且路径指向本机 PDF，不随 skill 分发）
+rm -rf "$DST/tests/_research_packages"
 ```
 
 > 说明：README.md 是设计副本说明，Codex 侧可不带（SKILL.md 才是入口）；带了也无害。

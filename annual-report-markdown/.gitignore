@@ -1,0 +1,6 @@
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 临时测试研究包（体积大，不入库、不外发）
+tests/_research_packages/

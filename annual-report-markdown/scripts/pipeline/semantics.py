@@ -73,7 +73,9 @@ def is_cas_compliance_statement(text: str) -> bool:
     """识别财务报表遵循企业会计准则的明确声明，不匹配一般准则讨论。"""
     compact = re.sub(r"\s+", "", text or "")
     annual_statement = re.search(
-        r"本(?:公司(?:所)?编制的|合并)?财务报表符合(?:财政部颁布并生效的)?企业会计准则(?:的)?要求",
+        r"本(?:公司|集团)?(?:所)?(?:编制的)?(?:合并)?财务报表符合"
+        r"(?:财政部颁布(?:并生效)?的)?"
+        r"企业会计准则(?:的)?要求",
         compact,
     )
     interim_statement = re.search(

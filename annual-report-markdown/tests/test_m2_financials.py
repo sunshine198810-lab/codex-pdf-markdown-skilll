@@ -147,6 +147,16 @@ class TestM2Financials(unittest.TestCase):
             "本公司编制的财务报表符合企业会计准则的要求"))
         self.assertTrue(semantics.is_cas_compliance_statement(
             "本中期简要财务报表根据中华人民共和国财政部颁布的《企业会计准则第32号——中期财务报告》编制"))
+        self.assertTrue(semantics.is_cas_compliance_statement(
+            "本财务报表符合财政部颁布的企业会计准则的要求，真实、完整地反映了本公司的财务状况"))
+        self.assertTrue(semantics.is_cas_compliance_statement(
+            "本财务报表符合财政部颁布并生效的企业会计准则的要求"))
+        self.assertTrue(semantics.is_cas_compliance_statement(
+            "本集团编制的财务报表符合企业会计准则的要求，真实、完整地反映了本集团于2025年12月31日的财务状况"))
+        self.assertTrue(semantics.is_cas_compliance_statement(
+            "本公司所编制的财务报表符合企业会计准则的要求"))
+        self.assertTrue(semantics.is_cas_compliance_statement(
+            "本合并财务报表符合企业会计准则的要求"))
         self.assertFalse(semantics.is_cas_compliance_statement("公司执行企业会计准则"))
         self.assertFalse(semantics.is_cas_compliance_statement(
             "本期讨论了企业会计准则第32号的影响"))

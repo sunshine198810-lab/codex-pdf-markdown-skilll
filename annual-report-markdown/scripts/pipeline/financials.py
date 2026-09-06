@@ -381,6 +381,123 @@ def _validation(statement: dict, concept_values: dict, concept_presentations: di
     return out
 
 
+_PERIOD_HEADER_WORDS = {
+    "期末余额", "期初余额", "本期金额", "上期金额", "年末余额", "年初余额",
+    "期末", "期初", "本期末", "上期末",
+}
+
+
+def _native_rebuild_oversegmented(doc: dict, page) -> dict | None:
+    """把 pdfplumber 过切分（>4 列）的有框线主表片段按原生词重建为 3 列。
+
+    前提：doc 网格列数 >4 且该页原生词能干净聚出“行标签 + 两个期间值列”。
+    满足时返回替换 cells/column_count/row_count 的 doc 副本（column_count=3），
+    否则返回 None → 调用方保持原 doc，走既有拒绝路径（零回归风险）。
+
+    保守门：无两个值列锚点、两组不够分离、数值列过宽（疑似真多列）、行数过少
+    或结果无数值时一律返回 None，绝不把可疑网格当成 3 列主表。
+    """
+    if not page or int(doc.get("column_count", 0) or 0) <= 4:
+        return None
+    words = page.get("words") or []
+    if len(words) < 10:
+        return None
+    bbox = doc.get("bbox")
+    if not bbox or len(bbox) != 4:
+        return None
+    bx0, by0, bx1, by1 = (float(v) for v in bbox)
+    region = [
+        w for w in words
+        if w.get("text") and bx0 - 3 <= float(w.get("x0", 1e9))
+        and float(w.get("x1", 0)) <= bx1 + 3
+        and by0 - 3 <= float(w.get("top", 1e9)) <= by1 + 3
+    ]
+    if not region:
+        return None
+
+    def _center(w):
+        return (float(w["x0"]) + float(w["x1"])) / 2.0
+
+    # 期间表头锚点（期末余额/期初余额/本期金额/上期金额…）
+    anchors = sorted({
+        _center(w) for w in region
+        if str(w.get("text", "")).replace(" ", "").replace("\u3000", "") in _PERIOD_HEADER_WORDS
+    })
+    numeric = [w for w in region if re.search(r"\d", str(w.get("text", "")))]
+    if len(anchors) >= 2:
+        lo, hi = anchors[0], anchors[-1]
+    else:
+        # 续页常无重复期头：把数值词 x 中心按最大间隔切两组作两个值列
+        centers = sorted(_center(w) for w in numeric)
+        if len(centers) < 6:
+            return None
+        gaps = [(centers[i + 1] - centers[i], i) for i in range(len(centers) - 1)]
+        gap, idx = max(gaps, key=lambda g: g[0])
+        if gap < 60 or idx < 2 or len(centers) - idx - 2 < 2:
+            return None
+        lo = (centers[0] + centers[idx]) / 2
+        hi = (centers[idx + 1] + centers[-1]) / 2
+    if hi - lo < 80:
+        return None
+    # 值列宽度守卫：任一“值列”数值过宽说明可能是真多列，不重建
+    lo_spread = [c for w in numeric if (c := _center(w)) < (lo + hi) / 2]
+    hi_spread = [c for w in numeric if (c := _center(w)) >= (lo + hi) / 2]
+    if lo_spread and (max(lo_spread) - min(lo_spread)) > 130:
+        return None
+    if hi_spread and (max(hi_spread) - min(hi_spread)) > 130:
+        return None
+
+    # y 重叠聚类成视觉行（标签与数值基线可能错位，须按重叠而非 top 取整）
+    visual = []
+    for w in sorted(region, key=lambda w: (float(w["top"]), float(w["x0"]))):
+        placed = False
+        for row in visual:
+            if float(w["top"]) < row["bottom"] - 1 and float(w["bottom"]) > row["top"] + 1:
+                row["words"].append(w)
+                row["top"] = min(row["top"], float(w["top"]))
+                row["bottom"] = max(row["bottom"], float(w["bottom"]))
+                placed = True
+                break
+        if not placed:
+            visual.append({"top": float(w["top"]), "bottom": float(w["bottom"]), "words": [w]})
+    visual.sort(key=lambda r: r["top"])
+    if len(visual) < 3:
+        return None
+
+    mid = (lo + hi) / 2.0
+    label_right = lo - 10.0
+    new_cells = []
+    numeric_cell_count = 0
+    for ri, row in enumerate(visual):
+        groups = {"0": [], "1": [], "2": []}
+        for w in sorted(row["words"], key=lambda w: float(w["x0"])):
+            if not re.search(r"\d", str(w.get("text", ""))) and _center(w) < label_right:
+                groups["0"].append(w)
+            else:
+                groups["1" if _center(w) < mid else "2"].append(w)
+        for ci_key, part in (("0", 0), ("1", 1), ("2", 2)):
+            tokens = groups[ci_key]
+            if not tokens:
+                continue
+            text = " ".join(w["text"] for w in tokens)
+            new_cells.append({
+                "row": ri, "col": part, "text": text, "raw_value": text,
+                "bbox": [min(float(w["x0"]) for w in tokens), min(float(w["top"]) for w in tokens),
+                         max(float(w["x1"]) for w in tokens), max(float(w["bottom"]) for w in tokens)],
+            })
+            if part in (1, 2) and re.search(r"\d", text):
+                numeric_cell_count += 1
+    if numeric_cell_count < 2:
+        return None
+    rebuilt = dict(doc)
+    rebuilt["cells"] = new_cells
+    rebuilt["column_count"] = 3
+    rebuilt["row_count"] = len(visual)
+    rebuilt["reconstruction_method"] = "native_xy_oversegment_v1"
+    rebuilt["structure_source"] = str(doc.get("structure_source", "")) + "+native-rebuild"
+    return rebuilt
+
+
 def build_main_statements(root, pages: list, table_items: list, evidence: list, review: list,
                           identity: dict, engine_version: str) -> dict:
     """生成逻辑主表与观察值；直接写 logical-table JSON/HTML，返回汇总。"""
@@ -432,6 +549,16 @@ def build_main_statements(root, pages: list, table_items: list, evidence: list, 
             import json
             from pathlib import Path
             docs.append(json.loads((Path(root) / item["json"]).read_text(encoding="utf-8")))
+        # C4.6：pdfplumber 有框线表过切分（>4 列）时按原生词重建为 3 列主表片段。
+        # 重建失败返回 None → 保持原 doc（既有拒绝路径），不产生新误判。
+        rebuilt_fragments = []
+        for i, doc in enumerate(docs):
+            rebuilt = _native_rebuild_oversegmented(
+                doc, page_by_number.get(doc.get("physical_page"))
+            )
+            if rebuilt is not None:
+                docs[i] = rebuilt
+                rebuilt_fragments.append(doc.get("table_fragment_id"))
 
         lid = f"logical-table-{len(logical_tables) + 1:04d}"
         title_ev = _add_evidence(evidence, source_kind="text_span", granularity="span",
@@ -677,6 +804,8 @@ def build_main_statements(root, pages: list, table_items: list, evidence: list, 
             "logical_table_id": lid,
             "caption": start["title"],
             "fragments": [d["table_fragment_id"] for d in docs],
+            "native_rebuild_fragments": rebuilt_fragments,
+            "reconstruction_method": "native_xy_oversegment_v1" if rebuilt_fragments else None,
             "join_evidence": join_evidence,
             "subgroups": [{"subgroup_id": f"{lid}-main", "fragment_ids": [d["table_fragment_id"] for d in docs],
                            "period": " | ".join(p["raw_header"] for p in period_columns),

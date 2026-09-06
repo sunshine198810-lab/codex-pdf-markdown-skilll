@@ -1,16 +1,16 @@
 ---
 name: annual-report-markdown
 description: >-
-  将上市公司定期报告 PDF 解析为带物理页证据、逐页 Markdown、章节地图、表格 JSON/HTML、主表事实数据和复核队列的研究包。V0.3-C4.4 支持原生文字简体中文 A 股通用三/四列六类主表、相对期间、显式人民币多尺度、受限权益关键单元格，以及经科目证据判定的银行和保险主表；对矢量轮廓数字生成隔离的源页裁图与 OCR 复核候选，绝不直接写入 facts。十三报告回归安全门 13/13。权益明细、扫描页及未签核 OCR 数值仍不可计算；港股繁体/英文暂缓。不做调研、预测、估值或投资判断。Use when: 解析年报、年报转markdown、生成年报研究包、表格结构化、财务数据提取。
+  将上市公司定期报告 PDF 解析为带物理页证据、逐页 Markdown、章节地图、表格 JSON/HTML、主表事实数据和复核队列的研究包。V0.3-C4.6 支持原生文字简体中文 A 股通用三/四列六类主表、相对期间、显式人民币多尺度、受限权益关键单元格，以及经科目证据判定的银行和保险主表；对有框线过切分主表按原生词重建列，对矢量轮廓数字生成隔离的源页裁图与 OCR 复核候选，绝不直接写入 facts。权益明细、扫描页及未签核 OCR 数值仍不可计算；港股繁体/英文暂缓。不做调研、预测、估值或投资判断。Use when: 解析年报、年报转markdown、生成年报研究包、表格结构化、财务数据提取。
 ---
 
 # 年报解析与研究包（annual-report-markdown）
 
-> 按《年报解析Skill-重新设计方案-2026-09-05》实现。当前版本为 **V0.3-C4.4**：新增矢量轮廓数字复核证据链、日期壳表题与宽 HTML 候选的原生四列重建；不添加公司名称、证券代码或页码特判。
+> 按《年报解析Skill-重新设计方案-2026-09-05》实现。当前版本为 **V0.3-C4.6**：新增有框线主表过切分的原生词 3 列重建（广核 0→116 facts），并含 C4.5 新发行人回归、企业会计准则/记账本位币声明识别扩展、多通道逐格一致性与人工签核机制；不添加公司名称、证券代码或页码特判。
 
 ## ⚠️ 当前实现状态（务必先读）
 
-本 skill 现处于 **V0.3-C4.4**。标准运行建议使用 `--auto-borderless`：先从全书原生几何检查法定主表；稳定三列或四列主表直接进入规则层，只有二列坍缩/无受支持网格时才从当前主表起点扩展到下一主表/权益表/附注边界，合并为最多 32 页的连续 MinerU 切片。调用失败时回退成不可计算候选，不阻塞整份研究包。`--mineru-content` 保留为可复现的手动逃生口，与自动模式互斥。MinerU 的空 HTML、宽 colspan HTML 都只有在 PDF 原生词中重新确认双期间表头并重建严格四列后才接纳。若文字层完全没有数字而页面曲线对象密集，MinerU 网格只进入 `复核/vector-outline-index.*`，所有候选单元格保持不可引用、不可计算。
+本 skill 现处于 **V0.3-C4.6**。标准运行建议使用 `--auto-borderless`：先从全书原生几何检查法定主表；稳定三列或四列主表直接进入规则层，只有二列坍缩/无受支持网格时才从当前主表起点扩展到下一主表/权益表/附注边界，合并为最多 32 页的连续 MinerU 切片。调用失败时回退成不可计算候选，不阻塞整份研究包。`--mineru-content` 保留为可复现的手动逃生口，与自动模式互斥。MinerU 的空 HTML、宽 colspan HTML 都只有在 PDF 原生词中重新确认双期间表头并重建严格四列后才接纳。若文字层完全没有数字而页面曲线对象密集，MinerU 网格只进入 `复核/vector-outline-index.*`，所有候选单元格保持不可引用、不可计算。
 
 B2.1 的质量口径是硬边界：没有图像侧人工基准时，`content_retention` 必须为 `null`，只能另报页面处理率和已检出对象去向率；没有“全部应处理对象”的人工分母时，`review_rate` 必须为 `null`，改报分类复核数量；普通原生正文只能自动授予 readable/traceable，不能批量授予 citable。表格必须分别报告已检出片段、已形成网格、规则验收片段和可计算单元格。
 
@@ -33,6 +33,8 @@ M2 的明确资格边界：
 - C4.3 回归：新增中国人寿、中国太保、中国人保三份独立保险年报。年度/`YYYY年度`表题前缀仅在去除后精确命中法定表题时接受；标点占位符不能作为 facts 行标签。十三报告、十发行人安全门 13/13，总 facts 4,292；中国太保 219 facts，中国人寿结构层 0，中国人保因原生数值词缺失保守拒绝。仍不声明保险行业总体准确率。
 - C4.4 回归：中国人保数字确认为 PDF path/curve 矢量轮廓，形成六张隔离的视觉复核主表候选、0 facts；中国人寿通过受限“年月日”日期壳识别和独立主表切片补齐六类主表，仍为 0 facts；中国太保允许宽 colspan HTML 先进入原生严格四列重建，补齐六类主表，facts 219→328。十三报告安全门 13/13，总 facts 4,401；OCR 数字进入 facts 为 0。
 - 证据链机制（2026-09-06）：新增 `pipeline/evidence_chain.py`——独立识别通道注册、逐格一致性判定（consistent/conflict/single_channel/insufficient）、人工签核记录（`复核/signoffs.jsonl`），并接入矢量复核流程与 `run_signoff.py`。当前仍只有 MinerU 单通道，矢量轮廓数字为 `single_channel`，必须接入第二通道并完成签核后才可引用。另将人民币记账本位币声明识别扩展至更多表述（记账/记帐、为/是、公司/集团）并做文档级回退，以缓解 `currency_not_explicit_cny` 缺口。
+- C4.5 回归：新增伊利股份（482+33 facts）、长江电力（462）、海螺水泥（166）三个新发行人，累计 16 报告 / 13 发行人。修复 `is_cas_compliance_statement` 漏“财政部颁布的”写法（海螺整份 `accounting_basis_evidence_missing`→0 facts，修复后 0→166）。C4.5 新包安全门 3/3，C4.4 十三份冻结包维持 13/13 无回退。详见 `references/v03-c45-new-issuers-2026-09-06.md`。
+- C4.6 新增：有框线主表过切分（>4 列）时按原生词 y 重叠聚类重建为 3 列主表片段（`financials._native_rebuild_oversegmented`，保守门：不干净即返回 None）。中国广核 0→116 facts；无回退抽查茅台 469/伊利 515/北新 590 与基线一致。详见 `references/v03-c46-oversegment-rebuild-2026-09-06.md`。
 
 已完成的 P0 实测（2026-09-05）：几何证据层在 3 份报告（茅台 110 / 移动 214 / 平安 370 页，后两者 A+H）上验证可行——坐标可靠、页眉可按坐标+模板分组分类、“合计”不误删、顺序可重建；**无框线表**（移动 17%、平安 40% 的高数字页）pdfplumber 检不出，已用 **MinerU pipeline 整页对照**验证可恢复为结构表（数字正确、rowspan/colspan 保留，但需清理伪影）。主引擎分工：pdfplumber=几何证据/阅读顺序，MinerU pipeline=无框线表/多级表头结构候选。详见 `references/engines-probe.md` 与 `scripts/p0_probe.py`。这些探针结论是 M1/M2 的工程依据，不等于扩大后的支持矩阵已验收。
 
@@ -124,7 +126,7 @@ python3 <skill目录>/scripts/run_parse.py inspect   <report.pdf>            # �
 python3 <skill目录>/scripts/run_parse.py scaffold  <report.pdf>            # 建立空研究包骨架（可运行）
 python3 <skill目录>/scripts/run_parse.py checkschema <研究包目录>           # 关键产物过 schema（可运行）
 python3 <skill目录>/scripts/run_parse.py selfcheck                        # 自检（可运行）
-python3 <skill目录>/scripts/run_parse.py run <report.pdf> [--output DIR] --auto-borderless # V0.3-C4.4 默认建议
+python3 <skill目录>/scripts/run_parse.py run <report.pdf> [--output DIR] --auto-borderless # V0.3-C4.6 默认建议
 python3 <skill目录>/scripts/audit_regression_matrix.py <研究包>... \
         --json <矩阵.json> --markdown <矩阵.md> # 多报告能力/安全审计
 python3 <skill目录>/scripts/run_parse.py run <report.pdf> [--output DIR] \
@@ -257,6 +259,9 @@ M1 正文按**物理页**保存，`正文/index.md` 是唯一入口；这优先�
 | `references/v03-c43-regression-matrix-2026-09-06.md` | V0.3-C4.3 十三报告能力/安全矩阵 |
 | `references/v03-c44-vector-numeric-evidence-2026-09-06.md` | V0.3-C4.4 矢量轮廓数字证据链与三保险样本回归 |
 | `references/v03-c44-regression-matrix-2026-09-06.md` | V0.3-C4.4 十三报告能力/安全矩阵 |
+| `references/evidence-chain-2026-09-06.md` | V0.3-C4.5 多通道一致性+人工签核机制与币种规则 |
+| `references/v03-c45-new-issuers-2026-09-06.md` | V0.3-C4.5 新发行人回归与会计准则声明识别修复 |
+| `references/v03-c46-oversegment-rebuild-2026-09-06.md` | V0.3-C4.6 有框线主表过切分→原生词 3 列重建 |
 | `references/schemas-guide.md` | 统一对象模型、研究包结构、Schema 清单与使用 |
 | `references/porting.md` | 移植到 `.codex/skills/annual-report-markdown/` 的清单与边界 |
 | `schemas/*.json` | 版本化 JSON Schema（见 schemas-guide） |
@@ -280,8 +285,11 @@ M1 正文按**物理页**保存，`正文/index.md` 是唯一入口；这优先�
 | V0.3-C4.1 | 银行科目证据配置、拆分日期表头与展示符号勾稽 | 已完成；招行六主表 565 facts，10/10 安全门，不声明总体准确率 |
 | V0.3-C4.2 | 保险科目证据配置、重复表题续页、空 HTML 续页原生恢复与中期准则依据 | 已完成；平安 502/493 facts，十报告 10/10 安全门，总数 4,073 |
 | V0.3-C4.3 | 保险跨发行人审计、年度表题变体与行标签事实安全门 | 已完成；13/13 安全门，太保 219 facts；人寿/人保保守拒绝 |
-| V0.3-C4.4 | 矢量轮廓数字隔离复核、日期壳表题、宽 HTML 原生重建 | 当前；13/13 安全门，人保六张视觉候选 0 facts，人寿六主表 0 facts，太保六主表 328 facts |
-| V0.3 后续（暂不做港股繁英） | 权益明细语义、扫描 OCR 证据、扩大行业样本 | 按报表类型/扫描状态冻结测试，覆盖与复核率可量化 |
+| V0.3-C4.4 | 矢量轮廓数字隔离复核、日期壳表题、宽 HTML 原生重建 | 已完成；13/13 安全门，人保六张视觉候选 0 facts，人寿六主表 0 facts，太保六主表 328 facts |
+| V0.3-C4.5 | 新发行人回归、会计准则/记账本位币声明识别扩展、多通道一致性与人工签核机制 | 已完成；C4.5 新包 3/3 安全门，累计 16 报告/13 发行人；海螺经修复 0→166 facts |
+| V0.3-C4.6 | 有框线主表过切分→原生词 3 列重建 | 已完成；广核 0→116 facts，无回退抽查 3/3（茅台/伊利/北新） |
+| V0.3-C4.7（下一轮） | 美的“合并及公司”组合口径主表：组合标题识别→同一批片段生成合并+公司两张逻辑表，4 值列(合并/公司×期末/期初)按三层表头归属 | 待开工；需组合标题识别 + 双口径×2 期列模型 + 无框线原生重建，带完整无回退回归 |
+| V0.3 后续（暂不做港股繁英） | 权益明细语义、扫描 OCR 证据（紫金等）、第二独立识别通道、扩大行业样本 | 按报表类型/扫描状态冻结测试，覆盖与复核率可量化 |
 | V1.0 | 局部恢复、模型升级兼容、人工修订迁移、回归集 | 达到明确支持矩阵，三类质量分别可报告 |
 
 V0.2 允许某些困难表只输出原图与待复核状态，但不能以“暂不支持表格”为由完全缺席该分支。工作量主要在表格、财务上下文、样本标注与回归验证，**不是修改几个正则就能完成的小升级**。

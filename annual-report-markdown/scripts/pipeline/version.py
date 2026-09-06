@@ -6,8 +6,9 @@ DISPLAY_NAME = "年报解析与研究包"
 # Schema 版本：与 schemas/*.json 顶部保持一致
 SCHEMA_VERSION = "2026-09-06.1"
 
-# V0.3-C4.4：矢量轮廓数字复核证据链、日期壳表题与宽 HTML 原生重建
-PIPELINE_VERSION = "0.3.0-c4.4"
+# V0.3-C4.6：有框线主表过切分→原生词 3 列重建（广核 0→116）；含 C4.5 新发行人回归、
+# 声明识别扩展、多通道逐格一致性与人工签核机制
+PIPELINE_VERSION = "0.3.0-c4.6"
 
 # 模块划分（§17）
 MODULES = [
