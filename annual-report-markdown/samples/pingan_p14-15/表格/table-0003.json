@@ -1,0 +1,175 @@
+{
+  "logical_table_id": "table-0003",
+  "physical_page": 14,
+  "caption_candidates": [],
+  "footnote_candidates": [],
+  "grid": {
+    "rows": 2,
+    "cols": 5,
+    "cells": [
+      {
+        "cell_id": "cell_r0_c0",
+        "row": 0,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "(人民币元)",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r0_c1",
+        "row": 0,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2025年 12月31日",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r0_c2",
+        "row": 0,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2024年 12月31日",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r0_c3",
+        "row": 0,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "较年初变动 (%)",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r0_c4",
+        "row": 0,
+        "col": 4,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2023年 12月31日",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r1_c0",
+        "row": 1,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "归属于母公司股东的每股净资产",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r1_c1",
+        "row": 1,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "55.25",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r1_c2",
+        "row": 1,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "50.99",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r1_c3",
+        "row": 1,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "8.4",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r1_c4",
+        "row": 1,
+        "col": 4,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "49.37",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      }
+    ]
+  },
+  "evidence_ref": "ev-table-0003",
+  "candidate_status": "extracted",
+  "overall_eligible_for_calculation": false
+}

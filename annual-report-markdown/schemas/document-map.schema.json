@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://annual-report-kit/schemas/document-map.schema.json",
+  "title": "DocumentMap",
+  "description": "章节地图（§8.1）。书签与目录都是候选，需与正文位置核对；保留原始目录与标准标签两套信息。",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "section_id": { "type": "string" },
+          "original_title": { "type": "string", "description": "原始目录原文照存，如“第三节 管理层讨论与分析”" },
+          "standard_label": {
+            "type": ["string", "null"],
+            "description": "management_discussion/financial_statements/notes/governance 等，用于检索路由；可配置不写死年度"
+          },
+          "start_object_id": { "type": ["string", "null"], "description": "边界保存为起始块与结束块，不用“下节起始页减一”" },
+          "end_object_id": { "type": ["string", "null"] },
+          "physical_page_range": { "type": ["array", "null"], "items": { "type": "integer" }, "description": "由块位置推导" },
+          "confidence": { "type": ["string", "null"] },
+          "candidate_status": {
+            "type": "string",
+            "enum": ["extracted", "needs_review", "accepted_by_rules", "parse_failed", "pending"]
+          }
+        }
+      }
+    },
+    "unresolved_references": {
+      "type": "array",
+      "description": "识别到某附注引用却未找到正文 → 返回“引用未解决”，不能默认为不存在",
+      "items": { "type": "string" }
+    },
+    "notes": { "type": ["string", "null"] }
+  },
+  "required": ["sections"]
+}

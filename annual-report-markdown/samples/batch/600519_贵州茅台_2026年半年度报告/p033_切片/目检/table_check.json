@@ -1,0 +1,17 @@
+{
+  "schema_version": "2026-09-05.1",
+  "tables": {
+    "table-0001": {
+      "verdict": "ok",
+      "rows_ok": 18,
+      "rows_total": 18,
+      "mismatch_labels": []
+    },
+    "table-0002": {
+      "verdict": "ok",
+      "rows_ok": 13,
+      "rows_total": 13,
+      "mismatch_labels": []
+    }
+  }
+}

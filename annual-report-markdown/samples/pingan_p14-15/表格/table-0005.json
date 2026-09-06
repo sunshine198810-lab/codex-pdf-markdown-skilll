@@ -1,0 +1,415 @@
+{
+  "logical_table_id": "table-0005",
+  "physical_page": 14,
+  "caption_candidates": [],
+  "footnote_candidates": [],
+  "grid": {
+    "rows": 5,
+    "cols": 5,
+    "cells": [
+      {
+        "cell_id": "cell_r0_c0",
+        "row": 0,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "(人民币百万元)",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r0_c1",
+        "row": 0,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2025年 第一季度",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r0_c2",
+        "row": 0,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2025年 第二季度",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r0_c3",
+        "row": 0,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2025年 第三季度",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r0_c4",
+        "row": 0,
+        "col": 4,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2025年 第四季度",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r1_c0",
+        "row": 1,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "营业收入",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r1_c1",
+        "row": 1,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "232,801",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r1_c2",
+        "row": 1,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "267,275",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r1_c3",
+        "row": 1,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "332,864",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r1_c4",
+        "row": 1,
+        "col": 4,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "217,566",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r2_c0",
+        "row": 2,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "归属于母公司股东的净利润",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r2_c1",
+        "row": 2,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "27,016",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r2_c2",
+        "row": 2,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "41,031",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r2_c3",
+        "row": 2,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "64,809",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r2_c4",
+        "row": 2,
+        "col": 4,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "1,922",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r3_c0",
+        "row": 3,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "归属于母公司股东的扣除非经常性损益后的净利润",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r3_c1",
+        "row": 3,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "30,259",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r3_c2",
+        "row": 3,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "43,312",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r3_c3",
+        "row": 3,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "68,486",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r3_c4",
+        "row": 3,
+        "col": 4,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "1,716",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r4_c0",
+        "row": 4,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "经营活动产生的现金流量净额",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r4_c1",
+        "row": 4,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "243,221",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r4_c2",
+        "row": 4,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "94,964",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r4_c3",
+        "row": 4,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "1,962",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r4_c4",
+        "row": 4,
+        "col": 4,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "318,485",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      }
+    ]
+  },
+  "evidence_ref": "ev-table-0005",
+  "candidate_status": "extracted",
+  "overall_eligible_for_calculation": false
+}

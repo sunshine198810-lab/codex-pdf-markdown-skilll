@@ -1,0 +1,48 @@
+{
+  "schema_version": "2026-09-05.1",
+  "report_generated_at": "2026-09-05T21:37:49+08:00",
+  "coverage": {
+    "content_retention": {
+      "tables_captured": 7,
+      "note": "仅指定页表格块"
+    },
+    "structure_recovery": {
+      "tables_structured": 7,
+      "note": "结构候选，未人工核对"
+    },
+    "computable": null,
+    "review_rate": {
+      "reviewed": 0,
+      "candidates": 7
+    }
+  },
+  "five_layers": {
+    "run_and_files": {
+      "ok": true
+    },
+    "content_coverage": {
+      "warnings": [
+        "MinerU content_list 表数=7；切片保留=7"
+      ]
+    },
+    "structure": {
+      "candidate_tables": 7,
+      "verified": 0
+    },
+    "text_semantics": null,
+    "financial_consistency": null
+  },
+  "object_status_summary": {
+    "extracted": 7,
+    "accepted_by_rules": 0
+  },
+  "usage_eligibility_summary": {
+    "computable": 0,
+    "citable": 0,
+    "traceable": 7
+  },
+  "validation_results": [],
+  "open_issues_count": 8,
+  "overall_state": "partial",
+  "note": "V0.2 核心切片：仅表格结构候选 + 证据回查；未做人工核对/语义/财务校验"
+}

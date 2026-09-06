@@ -1,0 +1,1887 @@
+{
+  "logical_table_id": "table-0001",
+  "physical_page": 56,
+  "caption_candidates": [],
+  "footnote_candidates": [],
+  "grid": {
+    "rows": 31,
+    "cols": 4,
+    "cells": [
+      {
+        "cell_id": "cell_r0_c0",
+        "row": 0,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "编制单位： 中国铝业股份有限公司",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r0_c1",
+        "row": 0,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 3,
+        "text": "单位：十元币种：人民币",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r1_c0",
+        "row": 1,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "项目",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r1_c1",
+        "row": 1,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "附注",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r1_c2",
+        "row": 1,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2026年6月30日",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r1_c3",
+        "row": 1,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2025年12月31日",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r2_c0",
+        "row": 2,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 4,
+        "text": "流动资产：",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r3_c0",
+        "row": 3,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "货币资金",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r3_c1",
+        "row": 3,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "七、（1)",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r3_c2",
+        "row": 3,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "44, 286, 241",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r3_c3",
+        "row": 3,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "29,238,071",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r4_c0",
+        "row": 4,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "交易性金融资产",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r4_c1",
+        "row": 4,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "七、（2)",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r4_c2",
+        "row": 4,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "6,008,373",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r4_c3",
+        "row": 4,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "4,409,215",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r5_c0",
+        "row": 5,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "衍生金融资产",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r5_c1",
+        "row": 5,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "七、（3)",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r5_c2",
+        "row": 5,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "5,230",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r5_c3",
+        "row": 5,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "1,100",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r6_c0",
+        "row": 6,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "应收账款",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r6_c1",
+        "row": 6,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "七、（4)",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r6_c2",
+        "row": 6,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "7,402,341",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r6_c3",
+        "row": 6,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "5,172,220",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r7_c0",
+        "row": 7,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "应收款项融资",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r7_c1",
+        "row": 7,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "七、(5)",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r7_c2",
+        "row": 7,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "8,698,174",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r7_c3",
+        "row": 7,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "4,560,385",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r8_c0",
+        "row": 8,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "预付款项",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r8_c1",
+        "row": 8,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "七、（6)",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r8_c2",
+        "row": 8,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "675,013",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r8_c3",
+        "row": 8,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "555,190",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r9_c0",
+        "row": 9,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "其他应收款",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r9_c1",
+        "row": 9,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "七、（7)",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r9_c2",
+        "row": 9,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "1,278,511",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r9_c3",
+        "row": 9,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "1,425,054",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r10_c0",
+        "row": 10,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "其中：应收利息",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r10_c1",
+        "row": 10,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "七、（7)",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r10_c2",
+        "row": 10,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "1,978",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r10_c3",
+        "row": 10,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "6,539",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r11_c0",
+        "row": 11,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "应收股利",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r11_c1",
+        "row": 11,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "七、(7)",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r11_c2",
+        "row": 11,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "455,052",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r11_c3",
+        "row": 11,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "388,572",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r12_c0",
+        "row": 12,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "存货",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r12_c1",
+        "row": 12,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "七、（8)",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r12_c2",
+        "row": 12,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "22,939,702",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r12_c3",
+        "row": 12,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "24,021,595",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r13_c0",
+        "row": 13,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "持有待售资产",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r13_c1",
+        "row": 13,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r13_c2",
+        "row": 13,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r13_c3",
+        "row": 13,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "1,166,497",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r14_c0",
+        "row": 14,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "其他流动资产",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r14_c1",
+        "row": 14,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "七、(9)",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r14_c2",
+        "row": 14,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "989,403",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r14_c3",
+        "row": 14,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "1,092,032",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r15_c0",
+        "row": 15,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "流动资产合计",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r15_c1",
+        "row": 15,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r15_c2",
+        "row": 15,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "92,282,988",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r15_c3",
+        "row": 15,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "71,641,359",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r16_c0",
+        "row": 16,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 3,
+        "text": "非流动资产：",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r16_c3",
+        "row": 16,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r17_c0",
+        "row": 17,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "长期应收款",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r17_c1",
+        "row": 17,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r17_c2",
+        "row": 17,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "70,193",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r17_c3",
+        "row": 17,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "70,193",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r18_c0",
+        "row": 18,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "长期股权投资",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r18_c1",
+        "row": 18,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "七、（10）",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r18_c2",
+        "row": 18,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "12,356,547",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r18_c3",
+        "row": 18,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "12,361,072",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r19_c0",
+        "row": 19,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "其他权益工具投资",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r19_c1",
+        "row": 19,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "七、(11)",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r19_c2",
+        "row": 19,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "1,510,704",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r19_c3",
+        "row": 19,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "1,960,294",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r20_c0",
+        "row": 20,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "投资性房地产",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r20_c1",
+        "row": 20,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "七、（12）",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r20_c2",
+        "row": 20,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "1,106,934",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r20_c3",
+        "row": 20,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "1,118,497",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r21_c0",
+        "row": 21,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "固定资产",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r21_c1",
+        "row": 21,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "七、（13）",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r21_c2",
+        "row": 21,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "95,862,116",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r21_c3",
+        "row": 21,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "98,678,173",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r22_c0",
+        "row": 22,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "在建工程",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r22_c1",
+        "row": 22,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "七、（14）",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r22_c2",
+        "row": 22,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "5,985,407",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r22_c3",
+        "row": 22,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "5,258,222",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r23_c0",
+        "row": 23,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "使用权资产",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r23_c1",
+        "row": 23,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "七、（15)",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r23_c2",
+        "row": 23,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "8,566,676",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r23_c3",
+        "row": 23,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "9,000,987",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r24_c0",
+        "row": 24,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "无形资产",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r24_c1",
+        "row": 24,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "七、（16）",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r24_c2",
+        "row": 24,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "17,134,824",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r24_c3",
+        "row": 24,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "17,457,140",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r25_c0",
+        "row": 25,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "商誉",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r25_c1",
+        "row": 25,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "七、（17)",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r25_c2",
+        "row": 25,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "3,494,894",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r25_c3",
+        "row": 25,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "3,494,894",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r26_c0",
+        "row": 26,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "长期待摊费用",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r26_c1",
+        "row": 26,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "七、（18）",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r26_c2",
+        "row": 26,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "1,208,960",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r26_c3",
+        "row": 26,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "1,296,205",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r27_c0",
+        "row": 27,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "递延所得税资产",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r27_c1",
+        "row": 27,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "七、（19）",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r27_c2",
+        "row": 27,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "4,019,572",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r27_c3",
+        "row": 27,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "3,661,290",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r28_c0",
+        "row": 28,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "其他非流动资产",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r28_c1",
+        "row": 28,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "七、（20）",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r28_c2",
+        "row": 28,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "977,476",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r28_c3",
+        "row": 28,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "1,023,407",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r29_c0",
+        "row": 29,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "非流动资产合计",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r29_c1",
+        "row": 29,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r29_c2",
+        "row": 29,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "152,294,303",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r29_c3",
+        "row": 29,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "155,380,374",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r30_c0",
+        "row": 30,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "资产总计",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r30_c1",
+        "row": 30,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r30_c2",
+        "row": 30,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "244,577,291",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r30_c3",
+        "row": 30,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "227,021,733",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      }
+    ]
+  },
+  "evidence_ref": "ev-table-0001",
+  "candidate_status": "extracted",
+  "overall_eligible_for_calculation": false
+}

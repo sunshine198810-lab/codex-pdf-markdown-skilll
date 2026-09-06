@@ -1,0 +1,55 @@
+{
+  "source_pdf": "/Users/eric/Documents/copilot设计skilll/600519_贵州茅台_2026年半年度报告.pdf",
+  "schema_version": "2026-09-05.1",
+  "method": "pdfplumber_text_layer + x_order prefix check (vs display grid)",
+  "tables_total": 1,
+  "tables_ok": 1,
+  "tables": {
+    "table-0001": {
+      "physical_page": 25,
+      "title_item": {
+        "logical_table_id": "table-0001",
+        "physical_page": 25,
+        "rows": 3,
+        "cols": 4,
+        "cells": 12,
+        "json": "表格/table-0001.json",
+        "html": "表格/table-0001.html",
+        "evidence": "ev-table-0001",
+        "candidate_status": "extracted"
+      },
+      "rows_total": 2,
+      "rows_ok": 2,
+      "mismatch_labels": [],
+      "row_results": [
+        {
+          "row": 1,
+          "label": "流动资产：",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 2,
+          "label": "货币资金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "1",
+            "53,518,798,979.08",
+            "51,690,610,946.50"
+          ],
+          "line_numeric_tokens": null
+        }
+      ],
+      "verdict": "ok"
+    }
+  }
+}

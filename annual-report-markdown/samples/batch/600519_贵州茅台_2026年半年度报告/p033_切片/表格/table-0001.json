@@ -1,0 +1,1235 @@
+{
+  "logical_table_id": "table-0001",
+  "physical_page": 33,
+  "caption_candidates": [],
+  "footnote_candidates": [
+    "公司负责人：陈华",
+    "主管会计工作负责人：余思明",
+    "会计机构负责人：蔡聪应"
+  ],
+  "grid": {
+    "rows": 19,
+    "cols": 4,
+    "cells": [
+      {
+        "cell_id": "cell_r0_c0",
+        "row": 0,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "减：所得税费用",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r0_c1",
+        "row": 0,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r0_c2",
+        "row": 0,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "5,868, 229,800.90",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r0_c3",
+        "row": 0,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "6,321,523,953.59",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r1_c0",
+        "row": 1,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "四、净利润（净亏损以“-”号填列）",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r1_c1",
+        "row": 1,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r1_c2",
+        "row": 1,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "17,062,381,326.67",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r1_c3",
+        "row": 1,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "18,679,911,266.59",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r2_c0",
+        "row": 2,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "（一）持续经营净利润（净亏损以“_”号填列)",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r2_c1",
+        "row": 2,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r2_c2",
+        "row": 2,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "17,062,381,326.67",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r2_c3",
+        "row": 2,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "18,679,911,266.59",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r3_c0",
+        "row": 3,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "（二）终止经营净利润（净亏损以“_”号填列）",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r3_c1",
+        "row": 3,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r3_c2",
+        "row": 3,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r3_c3",
+        "row": 3,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r4_c0",
+        "row": 4,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "五、其他综合收益的税后净额",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r4_c1",
+        "row": 4,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r4_c2",
+        "row": 4,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r4_c3",
+        "row": 4,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r5_c0",
+        "row": 5,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "（一）不能重分类进损益的其他综合收益",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r5_c1",
+        "row": 5,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r5_c2",
+        "row": 5,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r5_c3",
+        "row": 5,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r6_c0",
+        "row": 6,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "1. 重新计量设定受益计划变动额",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r6_c1",
+        "row": 6,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r6_c2",
+        "row": 6,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r6_c3",
+        "row": 6,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r7_c0",
+        "row": 7,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2. 权益法下不能转损益的其他综合收益",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r7_c1",
+        "row": 7,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r7_c2",
+        "row": 7,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r7_c3",
+        "row": 7,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r8_c0",
+        "row": 8,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "3. 其他权益工具投资公允价值变动",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r8_c1",
+        "row": 8,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r8_c2",
+        "row": 8,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r8_c3",
+        "row": 8,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r9_c0",
+        "row": 9,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "4. 企业自身信用风险公允价值变动",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r9_c1",
+        "row": 9,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r9_c2",
+        "row": 9,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r9_c3",
+        "row": 9,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r10_c0",
+        "row": 10,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "（二）将重分类进损益的其他综合收益",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r10_c1",
+        "row": 10,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r10_c2",
+        "row": 10,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r10_c3",
+        "row": 10,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r11_c0",
+        "row": 11,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "1. 权益法下可转损益的其他综合收益",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r11_c1",
+        "row": 11,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r11_c2",
+        "row": 11,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r11_c3",
+        "row": 11,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r12_c0",
+        "row": 12,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2.其他债权投资公允价值变动",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r12_c1",
+        "row": 12,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r12_c2",
+        "row": 12,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r12_c3",
+        "row": 12,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r13_c0",
+        "row": 13,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "3. 金融资产重分类计入其他综合收益的金额",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r13_c1",
+        "row": 13,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r13_c2",
+        "row": 13,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r13_c3",
+        "row": 13,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r14_c0",
+        "row": 14,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "4. 其他债权投资信用减值准备",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r14_c1",
+        "row": 14,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r14_c2",
+        "row": 14,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r14_c3",
+        "row": 14,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r15_c0",
+        "row": 15,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "5.现金流量套期储备",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r15_c1",
+        "row": 15,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r15_c2",
+        "row": 15,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r15_c3",
+        "row": 15,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r16_c0",
+        "row": 16,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "6. 外币财务报表折算差额",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r16_c1",
+        "row": 16,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r16_c2",
+        "row": 16,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r16_c3",
+        "row": 16,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r17_c0",
+        "row": 17,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "7. 其他",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r17_c1",
+        "row": 17,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r17_c2",
+        "row": 17,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r17_c3",
+        "row": 17,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r18_c0",
+        "row": 18,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "六、综合收益总额",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r18_c1",
+        "row": 18,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r18_c2",
+        "row": 18,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "17,062,381,326.67",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r18_c3",
+        "row": 18,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "18,679,911,266.59",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      }
+    ]
+  },
+  "evidence_ref": "ev-table-0001",
+  "candidate_status": "extracted",
+  "overall_eligible_for_calculation": false
+}

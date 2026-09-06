@@ -1,0 +1,40 @@
+{
+  "schema_version": "2026-09-05.1",
+  "run_id": "20260905T224921",
+  "mode": "tableslice_v02_core",
+  "source_pdf": {
+    "path": "/Users/eric/Documents/copilot设计skilll/601600_中国铝业_2026年半年度报告.pdf",
+    "sha256_start": "e98b4a10e4a1494198cf2cfb4d8adb1560e3ef311addd47aea7314b7037984c6",
+    "sha256_end": null
+  },
+  "program": {
+    "skill_version": "annual-report-markdown",
+    "pipeline_version": "0.2.0-p0",
+    "command_line": "run_tableslice.py"
+  },
+  "engines": {
+    "renderer": "pdfplumber",
+    "ocr": null,
+    "layout": null,
+    "table": "mineru-pipeline"
+  },
+  "config": {},
+  "timing": {
+    "started_at": "2026-09-05T22:49:21+08:00",
+    "finished_at": "2026-09-05T22:49:21+08:00",
+    "elapsed_seconds": null,
+    "pages_processed": 1,
+    "model_calls": 0
+  },
+  "failures": [
+    "MinerU content_list 表数=1；切片保留=1"
+  ],
+  "page_status": [
+    {
+      "physical_page": 60,
+      "status": "processed"
+    }
+  ],
+  "output_dir": "samples/batch/601600_中国铝业_2026年半年度报告/p060_切片",
+  "overall_state": "partial"
+}

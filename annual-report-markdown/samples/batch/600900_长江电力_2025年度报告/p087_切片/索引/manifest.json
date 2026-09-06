@@ -1,0 +1,42 @@
+{
+  "schema_version": "2026-09-05.1",
+  "package_root": "samples/batch/600900_长江电力_2025年度报告/p087_切片",
+  "source_pdf": {
+    "path": "/Users/eric/Documents/copilot设计skilll/600900_长江电力_2025年度报告.pdf",
+    "sha256": "aa0cdb92e3aad81b1e6454594a64cacbcfeb9013b10dd31f47a93a94e7a70f91"
+  },
+  "identity": {
+    "document_id": "600900_长江电力",
+    "issuer_identity": {
+      "company_name_as_reported": "长江电力",
+      "securities": [
+        {
+          "code": "600900"
+        }
+      ]
+    },
+    "report_identity": {
+      "report_type": "2025年度报告"
+    },
+    "verification": {
+      "resolved_from": "filename"
+    }
+  },
+  "run": {
+    "run_id": "20260905T224839",
+    "pipeline_version": "0.2.0-p0"
+  },
+  "generated_at": "2026-09-05T22:48:39+08:00",
+  "artifacts": {
+    "tables": 2,
+    "structured_tables": 2,
+    "computable_table_cells": 0,
+    "reading_order_pages": 1,
+    "evidence": 2
+  },
+  "overall_state": "partial",
+  "open_issues": [
+    "结构候选未人工核对；语义与财务校验未做（V0.2 后段）"
+  ],
+  "entry_00_readme": "00-阅读入口.md"
+}

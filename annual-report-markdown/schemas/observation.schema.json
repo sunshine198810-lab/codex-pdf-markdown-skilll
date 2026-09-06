@@ -1,0 +1,112 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://annual-report-kit/schemas/observation.schema.json",
+  "title": "Observation",
+  "description": "观察值/事实候选/已接受事实（§11.4）。候选层可保留试算，但结构或语义未通过不得流入正式可计算数据。",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "observation_id": { "type": "string", "description": "如 docA/table004/cell032" },
+    "source_kind": { "type": "string", "enum": ["table_cell", "text_span", "figure_label", "other"] },
+    "original_label": { "type": ["string", "null"], "description": "原始标签原文照存" },
+    "concept_mapping": {
+      "type": "object",
+      "description": "标准概念可未确认，不能强制填满；不把不同口径强行合并",
+      "properties": {
+        "concept": { "type": ["string", "null"] },
+        "status": { "type": "string", "enum": ["needs_review", "accepted", "unmapped"] }
+      }
+    },
+    "raw_value": { "type": ["string", "null"], "description": "原始字串" },
+    "numeric_value": { "type": ["string", "null"], "description": "十进制字符串，避免浮点精度损失" },
+    "currency": { "type": ["string", "null"], "description": "HKD/CNY/USD 等" },
+    "scale": { "type": ["string", "null"], "description": "单位倍率：元/千元/百万元/亿元" },
+    "normalized_value": { "type": ["string", "null"], "description": "单位换算后十进制字符串；单位未知时必须为空，不猜倍率" },
+    "transformation": {
+      "type": "object",
+      "description": "换算倍率、规则版本、输入来源",
+      "properties": {
+        "multiplier": { "type": "string" },
+        "rule_version": { "type": "string" },
+        "input_refs": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "quantity_type": {
+      "type": "string",
+      "description": "金额/百分比/百分点/每股金额/股数/吨数/人数等"
+    },
+    "period": {
+      "type": "object",
+      "properties": {
+        "kind": { "type": "string", "enum": ["instant", "duration"] },
+        "start": { "type": ["string", "null"] },
+        "end": { "type": ["string", "null"] }
+      }
+    },
+    "entity_scope": { "type": ["string", "null"], "description": "consolidated/parent/subsidiary/segment；不由章节距离随意继承" },
+    "accounting_basis": { "type": ["string", "null"], "description": "CAS/HKFRS/IFRS/US GAAP" },
+    "restatement_status": {
+      "type": "string",
+      "description": "as_reported/restated/comparative；不同版本同数字是不同观察值，不覆盖",
+      "enum": ["as_reported", "restated", "comparative_reported", "unknown"]
+    },
+    "comparison_state": { "type": ["string", "null"], "description": "本期/上期/期初/期末/调整前/重述后" },
+    "disclosure_version": {
+      "type": "object",
+      "description": "来自哪份报告、何时披露、是否修订",
+      "properties": {
+        "document_id": { "type": "string" },
+        "disclosed_at": { "type": ["string", "null"] },
+        "is_revision": { "type": "boolean" }
+      }
+    },
+    "scope_conditions": {
+      "type": "object",
+      "description": "持续经营/终止经营/是否含税/是否含特定业务等",
+      "properties": {
+        "continuing": { "type": ["boolean", "null"] },
+        "tax_inclusive": { "type": ["boolean", "null"] },
+        "excludes": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "business_dimensions": {
+      "type": "object",
+      "description": "产品/地区/业务/渠道/分部/合同类别等"
+    },
+    "evidence_refs": {
+      "type": "object",
+      "description": "证据引用（§12）：value/row_label/period/unit_currency/entity_scope/accounting_basis…",
+      "properties": {
+        "value": { "type": "array", "items": { "type": "string" } },
+        "row_label": { "type": "array", "items": { "type": "string" } },
+        "period": { "type": "array", "items": { "type": "string" } },
+        "unit_currency": { "type": "array", "items": { "type": "string" } },
+        "entity_scope": { "type": "array", "items": { "type": "string" } },
+        "accounting_basis": { "type": "array", "items": { "type": "string" } },
+        "footnote": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "quality": {
+      "type": "object",
+      "properties": {
+        "text": { "type": "string", "enum": ["checked", "needs_review", "failed"] },
+        "structure": { "type": "string", "enum": ["checked", "needs_review", "failed"] },
+        "semantics": { "type": "string", "enum": ["checked", "needs_review", "failed"] },
+        "normalization": { "type": "string", "enum": ["computed_from_candidate", "none", "failed"] },
+        "eligible_for_calculation": { "type": "boolean" }
+      }
+    },
+    "usage_eligibility": {
+      "type": "object",
+      "description": "可定位 ≠ 可引用 ≠ 可计算（§13.3）",
+      "properties": {
+        "readable": { "type": "boolean" },
+        "traceable": { "type": "boolean" },
+        "citable": { "type": "boolean" },
+        "computable": { "type": "boolean" }
+      }
+    },
+    "status": { "type": "string", "enum": ["observation", "fact_candidate", "accepted_fact", "rejected"] }
+  },
+  "required": ["observation_id", "source_kind", "status"]
+}

@@ -1,0 +1,1199 @@
+{
+  "logical_table_id": "table-0001",
+  "physical_page": 126,
+  "caption_candidates": [],
+  "footnote_candidates": [],
+  "grid": {
+    "rows": 19,
+    "cols": 4,
+    "cells": [
+      {
+        "cell_id": "cell_r0_c0",
+        "row": 0,
+        "col": 0,
+        "rowspan": 2,
+        "colspan": 1,
+        "text": "公司名称",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r0_c1",
+        "row": 0,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 2,
+        "text": "税率",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r0_c3",
+        "row": 0,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r1_c1",
+        "row": 1,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2025年",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r1_c2",
+        "row": 1,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2024年",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r1_c3",
+        "row": 1,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "起始年度及有效期",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r2_c0",
+        "row": 2,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r2_c1",
+        "row": 2,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r2_c2",
+        "row": 2,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r2_c3",
+        "row": 2,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r3_c0",
+        "row": 3,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "中国移动通信集团西藏有限公司",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r3_c1",
+        "row": 3,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r3_c2",
+        "row": 3,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r3_c3",
+        "row": 3,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2011年至2030 年",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r4_c0",
+        "row": 4,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "中国移动通信集团重庆有限公司",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r4_c1",
+        "row": 4,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r4_c2",
+        "row": 4,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r4_c3",
+        "row": 4,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2012年至2030年",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r5_c0",
+        "row": 5,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "中国移动通信集团青海有限公司",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r5_c1",
+        "row": 5,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r5_c2",
+        "row": 5,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r5_c3",
+        "row": 5,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2012年至2030年",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r6_c0",
+        "row": 6,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "中国移动通信集团宁夏有限公司",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r6_c1",
+        "row": 6,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r6_c2",
+        "row": 6,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r6_c3",
+        "row": 6,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2012年至2030年",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r7_c0",
+        "row": 7,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "中国移动通信集团新疆有限公司",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r7_c1",
+        "row": 7,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r7_c2",
+        "row": 7,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r7_c3",
+        "row": 7,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2013年至2030年",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r8_c0",
+        "row": 8,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "中国移动通信集团贵州有限公司",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r8_c1",
+        "row": 8,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r8_c2",
+        "row": 8,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r8_c3",
+        "row": 8,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2013年至2030年",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r9_c0",
+        "row": 9,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "中国移动通信集团广西有限公司",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r9_c1",
+        "row": 9,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r9_c2",
+        "row": 9,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r9_c3",
+        "row": 9,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2013年至2030年",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r10_c0",
+        "row": 10,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "四川中移通信技术工程有限公司",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r10_c1",
+        "row": 10,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r10_c2",
+        "row": 10,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r10_c3",
+        "row": 10,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2013年至2030年",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r11_c0",
+        "row": 11,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "中国移动通信集团甘肃有限公司",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r11_c1",
+        "row": 11,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r11_c2",
+        "row": 11,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r11_c3",
+        "row": 11,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2014年至2030年",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r12_c0",
+        "row": 12,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "中国移动通信集团陕西有限公司",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r12_c1",
+        "row": 12,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r12_c2",
+        "row": 12,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r12_c3",
+        "row": 12,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2017年至2030年",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r13_c0",
+        "row": 13,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "中国移动通信集团云南有限公司",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r13_c1",
+        "row": 13,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r13_c2",
+        "row": 13,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r13_c3",
+        "row": 13,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2019年至2030年",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r14_c0",
+        "row": 14,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "中国移动通信集团四川有限公司",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r14_c1",
+        "row": 14,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r14_c2",
+        "row": 14,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r14_c3",
+        "row": 14,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2020年至2030年",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r15_c0",
+        "row": 15,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "中国移动通信集团吉林有限公司延边分公司",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r15_c1",
+        "row": 15,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r15_c2",
+        "row": 15,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r15_c3",
+        "row": 15,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2011年至2030年",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r16_c0",
+        "row": 16,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "中国移动通信集团湖南有限公司湘西分公司",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r16_c1",
+        "row": 16,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r16_c2",
+        "row": 16,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r16_c3",
+        "row": 16,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2011年至2030 年",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r17_c0",
+        "row": 17,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "中国移动通信集团湖北有限公司恩施分公司",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r17_c1",
+        "row": 17,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r17_c2",
+        "row": 17,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r17_c3",
+        "row": 17,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2012年至2030年",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r18_c0",
+        "row": 18,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "中国移动通信集团江西有限公司赣州分公司",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r18_c1",
+        "row": 18,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r18_c2",
+        "row": 18,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "15%",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      },
+      {
+        "cell_id": "cell_r18_c3",
+        "row": 18,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2014年至2030年",
+        "kind": "data",
+        "candidate_status": "extracted",
+        "usage": {
+          "readable": false,
+          "traceable": false,
+          "citable": false,
+          "computable": false
+        }
+      }
+    ]
+  },
+  "evidence_ref": "ev-table-0001",
+  "candidate_status": "extracted",
+  "overall_eligible_for_calculation": false
+}

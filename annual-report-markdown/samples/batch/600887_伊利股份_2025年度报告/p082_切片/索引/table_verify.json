@@ -1,0 +1,653 @@
+{
+  "source_pdf": "/Users/eric/Documents/copilot设计skilll/600887_伊利股份_2025年度报告.pdf",
+  "schema_version": "2026-09-05.1",
+  "method": "pdfplumber_text_layer + x_order prefix check (vs display grid)",
+  "tables_total": 1,
+  "tables_ok": 1,
+  "tables": {
+    "table-0001": {
+      "physical_page": 82,
+      "title_item": {
+        "logical_table_id": "table-0001",
+        "physical_page": 82,
+        "rows": 49,
+        "cols": 4,
+        "cells": 196,
+        "json": "表格/table-0001.json",
+        "html": "表格/table-0001.html",
+        "evidence": "ev-table-0001",
+        "candidate_status": "extracted"
+      },
+      "rows_total": 48,
+      "rows_ok": 48,
+      "mismatch_labels": [],
+      "row_results": [
+        {
+          "row": 1,
+          "label": "流动资产：",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 2,
+          "label": "货币资金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（1）",
+            "19,494,920,358.00",
+            "25,404, 255, 558.60"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 3,
+          "label": "结算备付金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 4,
+          "label": "拆出资金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 5,
+          "label": "交易性金融资产",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（2)",
+            "3,300,546.52",
+            "6,121,518.30"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 6,
+          "label": "衍生金融资产",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（3）",
+            "40,816,480.79",
+            "528,685.31"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 7,
+          "label": "应收票据",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（4）",
+            "7,279,782.71",
+            "250,855,040.06"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 8,
+          "label": "应收账款",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（5）",
+            "2,987,426,531.59",
+            "2,878,402,047.44"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 9,
+          "label": "应收款项融资",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（7)",
+            "140,309,963.98",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 10,
+          "label": "预付款项",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（8）",
+            "1,197,447,120.87",
+            "1,176,127,164.72"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 11,
+          "label": "应收保费",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 12,
+          "label": "应收分保账款",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 13,
+          "label": "应收分保合同准备金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 14,
+          "label": "其他应收款",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（9）",
+            "120,851,859.23",
+            "125,650,067.32"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 15,
+          "label": "其中：应收利息",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 16,
+          "label": "应收股利",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "555,538.85",
+            "6,588,276.76"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 17,
+          "label": "买入返售金融资产",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 18,
+          "label": "存货",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（10）",
+            "10,823, 125,184.53",
+            "10,744, 674,420.37"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 19,
+          "label": "其中：数据资源",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 20,
+          "label": "合同资产",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 21,
+          "label": "持有待售资产",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（11）",
+            "16,459,866.67",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 22,
+          "label": "一年内到期的非流动资产",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（12）",
+            "13,695,294,508.72",
+            "8,907,290,807.83"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 23,
+          "label": "其他流动资产",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（13）",
+            "17,842, 488,384.95",
+            "17,125, 476, 116.43"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 24,
+          "label": "流动资产合计",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "66, 369, 720,588.56",
+            "66,619,381,426.38"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 25,
+          "label": "非流动资产：",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 26,
+          "label": "发放贷款和垫款",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 27,
+          "label": "债权投资",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 28,
+          "label": "其他债权投资",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 29,
+          "label": "长期应收款",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（16）",
+            "247,144.37",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 30,
+          "label": "长期股权投资",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（17）",
+            "4,143,694,494.41",
+            "3,992,032,262.04"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 31,
+          "label": "其他权益工具投资",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（18）",
+            "2,749,765,754.14",
+            "2,094,514,752.71"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 32,
+          "label": "其他非流动金融资产",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（19）",
+            "2,146, 722, 768.88",
+            "2,149,945,988.42"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 33,
+          "label": "投资性房地产",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（20）",
+            "705,839,007.56",
+            "653,523,151.54"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 34,
+          "label": "固定资产",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（21）",
+            "34, 386,310, 115.64",
+            "34, 618, 503,875.86"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 35,
+          "label": "在建工程",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（22）",
+            "1,357,261,259.27",
+            "2,955,164,840.95"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 36,
+          "label": "生产性生物资产",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（23）",
+            "1,734,048, 408.33",
+            "1,746,436,710.30"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 37,
+          "label": "油气资产",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 38,
+          "label": "使用权资产",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（25）",
+            "855,286,262.02",
+            "419,092,353.95"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 39,
+          "label": "无形资产",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（26）",
+            "4,755,418,231.46",
+            "4,780,055,314.79"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 40,
+          "label": "其中：数据资源",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 41,
+          "label": "开发支出",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 42,
+          "label": "其中：数据资源",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 43,
+          "label": "商誉",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（27）",
+            "2,181,530,707.86",
+            "2,336,555,144.44"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 44,
+          "label": "长期待摊费用",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（28）",
+            "16,024,145.86",
+            "19,104,719.21"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 45,
+          "label": "递延所得税资产",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（29）",
+            "1,949,326,817.30",
+            "2,074,344,858.28"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 46,
+          "label": "其他非流动资产",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（30）",
+            "28, 747, 320,926.68",
+            "29,259,348,529.10"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 47,
+          "label": "非流动资产合计",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "85, 728,796, 043.78",
+            "87,098,622,501.59"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 48,
+          "label": "资产总计",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "152,098,516,632.34",
+            "153,718,003,927.97"
+          ],
+          "line_numeric_tokens": null
+        }
+      ],
+      "verdict": "ok"
+    }
+  }
+}

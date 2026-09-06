@@ -1,0 +1,603 @@
+{
+  "schema_version": "c44-regression-matrix-v1",
+  "packages": [
+    {
+      "package": "/Users/eric/Documents/Codex/探索skill-1/000651_格力电器_2025年度报告_V03C42_研究包",
+      "source_pdf": "000651_格力电器_2025年度报告.pdf",
+      "company": "格力电器",
+      "pipeline_version": "0.3.0-c4.2",
+      "pages": 219,
+      "overall_state": "partial",
+      "auto_borderless_status": "not_requested",
+      "table_fragments": 220,
+      "logical_main_statements": 6,
+      "logical_equity_statements": 2,
+      "visual_candidate_statements": 0,
+      "main_facts": 530,
+      "equity_facts": 99,
+      "facts": 629,
+      "candidates": 0,
+      "open_reviews": 223,
+      "title_inventory": {
+        "exact": [
+          "公司利润表",
+          "公司现金流量表",
+          "公司资产负债表",
+          "合并利润表",
+          "合并现金流量表",
+          "合并资产负债表"
+        ],
+        "normalized_variants": [
+          "公司资产负债表（续）",
+          "合并资产负债表（续）"
+        ]
+      },
+      "unlinked_main_titles": [],
+      "capability_state": "facts_emitted",
+      "issue_classes": [],
+      "safety": {
+        "schema_failed": 0,
+        "duplicate_observation_ids": 0,
+        "ineligible_items_in_facts": 0,
+        "unusable_row_labels_in_facts": 0,
+        "missing_required_evidence_slots": 0,
+        "dangling_required_evidence_refs": 0,
+        "equity_group_failures": 0
+      },
+      "safety_ok": true
+    },
+    {
+      "package": "/Users/eric/Documents/Codex/探索skill-1/000651_格力电器_2026年半年度报告_V03C42_研究包",
+      "source_pdf": "000651_格力电器_2026年半年度报告.pdf",
+      "company": "格力电器",
+      "pipeline_version": "0.3.0-c4.2",
+      "pages": 190,
+      "overall_state": "partial",
+      "auto_borderless_status": "not_requested",
+      "table_fragments": 179,
+      "logical_main_statements": 6,
+      "logical_equity_statements": 2,
+      "visual_candidate_statements": 0,
+      "main_facts": 384,
+      "equity_facts": 0,
+      "facts": 384,
+      "candidates": 137,
+      "open_reviews": 184,
+      "title_inventory": {
+        "exact": [],
+        "normalized_variants": [
+          "1.合并资产负债表",
+          "2.母公司资产负债表",
+          "3.合并利润表",
+          "4.母公司利润表",
+          "5.合并现金流量表",
+          "6.母公司现金流量表"
+        ]
+      },
+      "unlinked_main_titles": [],
+      "capability_state": "facts_emitted",
+      "issue_classes": [
+        "equity_structure_without_facts",
+        "incomplete_period_context"
+      ],
+      "safety": {
+        "schema_failed": 0,
+        "duplicate_observation_ids": 0,
+        "ineligible_items_in_facts": 0,
+        "unusable_row_labels_in_facts": 0,
+        "missing_required_evidence_slots": 0,
+        "dangling_required_evidence_refs": 0,
+        "equity_group_failures": 0
+      },
+      "safety_ok": true
+    },
+    {
+      "package": "/Users/eric/Documents/Codex/探索skill-1/600036_招商银行_2025年度报告_V03C42_研究包",
+      "source_pdf": "600036_招商银行_2025年度报告.pdf",
+      "company": "招商银行",
+      "pipeline_version": "0.3.0-c4.2",
+      "pages": 350,
+      "overall_state": "partial",
+      "auto_borderless_status": "not_requested",
+      "table_fragments": 36,
+      "logical_main_statements": 6,
+      "logical_equity_statements": 0,
+      "visual_candidate_statements": 0,
+      "main_facts": 565,
+      "equity_facts": 0,
+      "facts": 565,
+      "candidates": 0,
+      "open_reviews": 43,
+      "title_inventory": {
+        "exact": [
+          "公司利润表",
+          "公司现金流量表",
+          "公司资产负债表",
+          "合并利润表",
+          "合并现金流量表",
+          "合并资产负债表"
+        ],
+        "normalized_variants": []
+      },
+      "unlinked_main_titles": [],
+      "capability_state": "facts_emitted",
+      "issue_classes": [],
+      "safety": {
+        "schema_failed": 0,
+        "duplicate_observation_ids": 0,
+        "ineligible_items_in_facts": 0,
+        "unusable_row_labels_in_facts": 0,
+        "missing_required_evidence_slots": 0,
+        "dangling_required_evidence_refs": 0,
+        "equity_group_failures": 0
+      },
+      "safety_ok": true
+    },
+    {
+      "package": "/Users/eric/Documents/Codex/探索skill-1/600519_贵州茅台_2026年半年度报告_V03C42_研究包",
+      "source_pdf": "600519_贵州茅台_2026年半年度报告.pdf",
+      "company": "贵州茅台",
+      "pipeline_version": "0.3.0-c4.2",
+      "pages": 110,
+      "overall_state": "partial",
+      "auto_borderless_status": "not_requested",
+      "table_fragments": 225,
+      "logical_main_statements": 6,
+      "logical_equity_statements": 2,
+      "visual_candidate_statements": 0,
+      "main_facts": 409,
+      "equity_facts": 60,
+      "facts": 469,
+      "candidates": 0,
+      "open_reviews": 208,
+      "title_inventory": {
+        "exact": [
+          "合并利润表",
+          "合并现金流量表",
+          "合并资产负债表",
+          "母公司利润表",
+          "母公司现金流量表",
+          "母公司资产负债表"
+        ],
+        "normalized_variants": []
+      },
+      "unlinked_main_titles": [],
+      "capability_state": "facts_emitted",
+      "issue_classes": [],
+      "safety": {
+        "schema_failed": 0,
+        "duplicate_observation_ids": 0,
+        "ineligible_items_in_facts": 0,
+        "unusable_row_labels_in_facts": 0,
+        "missing_required_evidence_slots": 0,
+        "dangling_required_evidence_refs": 0,
+        "equity_group_failures": 0
+      },
+      "safety_ok": true
+    },
+    {
+      "package": "/Users/eric/Documents/Codex/探索skill-1/600941_中国移动_2023年度报告_V03C42_研究包",
+      "source_pdf": "600941_中国移动_2023年度报告.pdf",
+      "company": "中国移动",
+      "pipeline_version": "0.3.0-c4.2",
+      "pages": 220,
+      "overall_state": "partial",
+      "auto_borderless_status": "not_requested",
+      "table_fragments": 46,
+      "logical_main_statements": 3,
+      "logical_equity_statements": 1,
+      "visual_candidate_statements": 0,
+      "main_facts": 61,
+      "equity_facts": 0,
+      "facts": 61,
+      "candidates": 78,
+      "open_reviews": 137,
+      "title_inventory": {
+        "exact": [
+          "合并利润表",
+          "合并现金流量表",
+          "合并资产负债表"
+        ],
+        "normalized_variants": [
+          "合并利润表（续）",
+          "合并资产负债表（续）"
+        ]
+      },
+      "unlinked_main_titles": [],
+      "capability_state": "facts_emitted",
+      "issue_classes": [
+        "equity_structure_without_facts",
+        "incomplete_period_context"
+      ],
+      "safety": {
+        "schema_failed": 0,
+        "duplicate_observation_ids": 0,
+        "ineligible_items_in_facts": 0,
+        "unusable_row_labels_in_facts": 0,
+        "missing_required_evidence_slots": 0,
+        "dangling_required_evidence_refs": 0,
+        "equity_group_failures": 0
+      },
+      "safety_ok": true
+    },
+    {
+      "package": "/Users/eric/Documents/Codex/探索skill-1/600941_中国移动_2025年度报告_V03C42_研究包",
+      "source_pdf": "600941_中国移动_2025年度报告.pdf",
+      "company": "中国移动",
+      "pipeline_version": "0.3.0-c4.2",
+      "pages": 214,
+      "overall_state": "partial",
+      "auto_borderless_status": "not_requested",
+      "table_fragments": 45,
+      "logical_main_statements": 3,
+      "logical_equity_statements": 1,
+      "visual_candidate_statements": 0,
+      "main_facts": 145,
+      "equity_facts": 0,
+      "facts": 145,
+      "candidates": 0,
+      "open_reviews": 125,
+      "title_inventory": {
+        "exact": [
+          "合并利润表",
+          "合并现金流量表",
+          "合并资产负债表"
+        ],
+        "normalized_variants": [
+          "合并利润表（续）",
+          "合并资产负债表（续）"
+        ]
+      },
+      "unlinked_main_titles": [],
+      "capability_state": "facts_emitted",
+      "issue_classes": [
+        "equity_structure_without_facts",
+        "incomplete_period_context"
+      ],
+      "safety": {
+        "schema_failed": 0,
+        "duplicate_observation_ids": 0,
+        "ineligible_items_in_facts": 0,
+        "unusable_row_labels_in_facts": 0,
+        "missing_required_evidence_slots": 0,
+        "dangling_required_evidence_refs": 0,
+        "equity_group_failures": 0
+      },
+      "safety_ok": true
+    },
+    {
+      "package": "/Users/eric/Documents/Codex/探索skill-1/601318_中国平安_2025年度报告_V03C42_研究包",
+      "source_pdf": "601318_中国平安_2025年度报告.pdf",
+      "company": "中国平安",
+      "pipeline_version": "0.3.0-c4.2",
+      "pages": 370,
+      "overall_state": "partial",
+      "auto_borderless_status": "not_requested",
+      "table_fragments": 11,
+      "logical_main_statements": 6,
+      "logical_equity_statements": 0,
+      "visual_candidate_statements": 0,
+      "main_facts": 502,
+      "equity_facts": 0,
+      "facts": 502,
+      "candidates": 0,
+      "open_reviews": 271,
+      "title_inventory": {
+        "exact": [
+          "公司利润表",
+          "公司现金流量表",
+          "公司资产负债表",
+          "合并利润表",
+          "合并现金流量表",
+          "合并资产负债表"
+        ],
+        "normalized_variants": []
+      },
+      "unlinked_main_titles": [],
+      "capability_state": "facts_emitted",
+      "issue_classes": [],
+      "safety": {
+        "schema_failed": 0,
+        "duplicate_observation_ids": 0,
+        "ineligible_items_in_facts": 0,
+        "unusable_row_labels_in_facts": 0,
+        "missing_required_evidence_slots": 0,
+        "dangling_required_evidence_refs": 0,
+        "equity_group_failures": 0
+      },
+      "safety_ok": true
+    },
+    {
+      "package": "/Users/eric/Documents/Codex/探索skill-1/601318_中国平安_2026年半年度报告_V03C42_研究包",
+      "source_pdf": "601318_中国平安_2026年半年度报告.pdf",
+      "company": "中国平安",
+      "pipeline_version": "0.3.0-c4.2",
+      "pages": 176,
+      "overall_state": "partial",
+      "auto_borderless_status": "not_requested",
+      "table_fragments": 12,
+      "logical_main_statements": 6,
+      "logical_equity_statements": 0,
+      "visual_candidate_statements": 0,
+      "main_facts": 493,
+      "equity_facts": 0,
+      "facts": 493,
+      "candidates": 0,
+      "open_reviews": 125,
+      "title_inventory": {
+        "exact": [],
+        "normalized_variants": [
+          "中期公司利润表",
+          "中期公司现金流量表",
+          "中期公司资产负债表",
+          "中期合并利润表",
+          "中期合并现金流量表",
+          "中期合并资产负债表"
+        ]
+      },
+      "unlinked_main_titles": [],
+      "capability_state": "facts_emitted",
+      "issue_classes": [],
+      "safety": {
+        "schema_failed": 0,
+        "duplicate_observation_ids": 0,
+        "ineligible_items_in_facts": 0,
+        "unusable_row_labels_in_facts": 0,
+        "missing_required_evidence_slots": 0,
+        "dangling_required_evidence_refs": 0,
+        "equity_group_failures": 0
+      },
+      "safety_ok": true
+    },
+    {
+      "package": "/Users/eric/Documents/Codex/探索skill-1/601600_中国铝业_2026年半年度报告_V03C42_研究包",
+      "source_pdf": "601600_中国铝业_2026年半年度报告.pdf",
+      "company": "中国铝业",
+      "pipeline_version": "0.3.0-c4.2",
+      "pages": 206,
+      "overall_state": "partial",
+      "auto_borderless_status": "not_requested",
+      "table_fragments": 263,
+      "logical_main_statements": 6,
+      "logical_equity_statements": 2,
+      "visual_candidate_statements": 0,
+      "main_facts": 487,
+      "equity_facts": 0,
+      "facts": 487,
+      "candidates": 0,
+      "open_reviews": 261,
+      "title_inventory": {
+        "exact": [
+          "合并利润表",
+          "合并现金流量表",
+          "合并资产负债表",
+          "母公司利润表",
+          "母公司现金流量表",
+          "母公司资产负债表"
+        ],
+        "normalized_variants": []
+      },
+      "unlinked_main_titles": [],
+      "capability_state": "facts_emitted",
+      "issue_classes": [
+        "equity_structure_without_facts"
+      ],
+      "safety": {
+        "schema_failed": 0,
+        "duplicate_observation_ids": 0,
+        "ineligible_items_in_facts": 0,
+        "unusable_row_labels_in_facts": 0,
+        "missing_required_evidence_slots": 0,
+        "dangling_required_evidence_refs": 0,
+        "equity_group_failures": 0
+      },
+      "safety_ok": true
+    },
+    {
+      "package": "/Users/eric/Documents/Codex/探索skill-1/601816_京沪高铁_2025年度报告_V03C42_研究包",
+      "source_pdf": "601816_京沪高铁_2025年度报告.pdf",
+      "company": "京沪高铁",
+      "pipeline_version": "0.3.0-c4.2",
+      "pages": 195,
+      "overall_state": "partial",
+      "auto_borderless_status": "not_requested",
+      "table_fragments": 220,
+      "logical_main_statements": 6,
+      "logical_equity_statements": 2,
+      "visual_candidate_statements": 0,
+      "main_facts": 338,
+      "equity_facts": 0,
+      "facts": 338,
+      "candidates": 0,
+      "open_reviews": 204,
+      "title_inventory": {
+        "exact": [
+          "合并利润表",
+          "合并现金流量表",
+          "合并资产负债表",
+          "母公司利润表",
+          "母公司现金流量表",
+          "母公司资产负债表"
+        ],
+        "normalized_variants": []
+      },
+      "unlinked_main_titles": [],
+      "capability_state": "facts_emitted",
+      "issue_classes": [
+        "equity_structure_without_facts"
+      ],
+      "safety": {
+        "schema_failed": 0,
+        "duplicate_observation_ids": 0,
+        "ineligible_items_in_facts": 0,
+        "unusable_row_labels_in_facts": 0,
+        "missing_required_evidence_slots": 0,
+        "dangling_required_evidence_refs": 0,
+        "equity_group_failures": 0
+      },
+      "safety_ok": true
+    },
+    {
+      "package": "/Users/eric/Documents/Codex/探索skill-1/601628_中国人寿_2025年度报告_V03C44FINAL_研究包",
+      "source_pdf": "601628_中国人寿_2025年度报告.pdf",
+      "company": "中国人寿",
+      "pipeline_version": "0.3.0-c4.4",
+      "pages": 228,
+      "overall_state": "partial",
+      "auto_borderless_status": "not_requested",
+      "table_fragments": 54,
+      "logical_main_statements": 6,
+      "logical_equity_statements": 1,
+      "visual_candidate_statements": 0,
+      "main_facts": 0,
+      "equity_facts": 0,
+      "facts": 0,
+      "candidates": 0,
+      "open_reviews": 90,
+      "title_inventory": {
+        "exact": [],
+        "normalized_variants": [
+          "年度公司利润表",
+          "年度公司利润表（续）",
+          "年度公司现金流量表",
+          "年度公司现金流量表（续）",
+          "年度合并利润表",
+          "年度合并利润表（续）",
+          "年度合并现金流量表",
+          "年度合并现金流量表（续）",
+          "年月日公司资产负债表",
+          "年月日公司资产负债表（续）",
+          "年月日合并资产负债表",
+          "年月日合并资产负债表（续）"
+        ]
+      },
+      "unlinked_main_titles": [],
+      "capability_state": "structure_only",
+      "issue_classes": [
+        "equity_structure_without_facts",
+        "incomplete_period_context",
+        "main_structure_without_facts"
+      ],
+      "safety": {
+        "schema_failed": 0,
+        "duplicate_observation_ids": 0,
+        "ineligible_items_in_facts": 0,
+        "unusable_row_labels_in_facts": 0,
+        "missing_required_evidence_slots": 0,
+        "dangling_required_evidence_refs": 0,
+        "equity_group_failures": 0
+      },
+      "safety_ok": true
+    },
+    {
+      "package": "/Users/eric/Documents/Codex/探索skill-1/601601_中国太保_2025年度报告_V03C44_研究包",
+      "source_pdf": "601601_中国太保_2025年度报告.pdf",
+      "company": "中国太保",
+      "pipeline_version": "0.3.0-c4.4",
+      "pages": 310,
+      "overall_state": "partial",
+      "auto_borderless_status": "not_requested",
+      "table_fragments": 15,
+      "logical_main_statements": 6,
+      "logical_equity_statements": 0,
+      "visual_candidate_statements": 0,
+      "main_facts": 328,
+      "equity_facts": 0,
+      "facts": 328,
+      "candidates": 82,
+      "open_reviews": 133,
+      "title_inventory": {
+        "exact": [
+          "公司利润表",
+          "公司现金流量表",
+          "公司资产负债表",
+          "合并利润表",
+          "合并现金流量表",
+          "合并资产负债表"
+        ],
+        "normalized_variants": [
+          "合并利润表（续）",
+          "合并资产负债表（续）"
+        ]
+      },
+      "unlinked_main_titles": [],
+      "capability_state": "facts_emitted",
+      "issue_classes": [
+        "incomplete_period_context"
+      ],
+      "safety": {
+        "schema_failed": 0,
+        "duplicate_observation_ids": 0,
+        "ineligible_items_in_facts": 0,
+        "unusable_row_labels_in_facts": 0,
+        "missing_required_evidence_slots": 0,
+        "dangling_required_evidence_refs": 0,
+        "equity_group_failures": 0
+      },
+      "safety_ok": true
+    },
+    {
+      "package": "/Users/eric/Documents/Codex/探索skill-1/601319_中国人保_2025年度报告_V03C44FINAL_研究包",
+      "source_pdf": "601319_中国人保_2025年度报告.pdf",
+      "company": "中国人保",
+      "pipeline_version": "0.3.0-c4.4",
+      "pages": 278,
+      "overall_state": "partial",
+      "auto_borderless_status": "not_requested",
+      "table_fragments": 46,
+      "logical_main_statements": 0,
+      "logical_equity_statements": 0,
+      "visual_candidate_statements": 6,
+      "main_facts": 0,
+      "equity_facts": 0,
+      "facts": 0,
+      "candidates": 0,
+      "open_reviews": 94,
+      "title_inventory": {
+        "exact": [
+          "公司利润表",
+          "公司现金流量表",
+          "公司资产负债表",
+          "合并利润表",
+          "合并现金流量表",
+          "合并资产负债表"
+        ],
+        "normalized_variants": [
+          "合并利润表（续）",
+          "合并现金流量表（续）",
+          "合并资产负债表（续）"
+        ]
+      },
+      "unlinked_main_titles": [
+        "公司利润表",
+        "公司现金流量表",
+        "公司资产负债表",
+        "合并利润表",
+        "合并现金流量表",
+        "合并资产负债表"
+      ],
+      "capability_state": "visual_review_only",
+      "issue_classes": [
+        "main_titles_present_but_no_logical_tables"
+      ],
+      "safety": {
+        "schema_failed": 0,
+        "duplicate_observation_ids": 0,
+        "ineligible_items_in_facts": 0,
+        "unusable_row_labels_in_facts": 0,
+        "missing_required_evidence_slots": 0,
+        "dangling_required_evidence_refs": 0,
+        "equity_group_failures": 0
+      },
+      "safety_ok": true
+    }
+  ],
+  "summary": {
+    "packages": 13,
+    "safety_passed": 13,
+    "facts_emitted": 11,
+    "structure_only": 1,
+    "visual_review_only": 1,
+    "no_supported_logical_table": 0
+  }
+}

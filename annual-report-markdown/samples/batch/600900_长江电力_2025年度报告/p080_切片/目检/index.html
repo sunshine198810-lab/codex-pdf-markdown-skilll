@@ -1,0 +1,339 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<title>目检 · 表格结构候选</title>
+<style>
+body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;margin:24px;color:#222}
+h1{font-size:20px}h2{font-size:17px;border-bottom:2px solid #ccc;padding-bottom:4px;margin-top:28px}
+h3{font-size:14px;margin:14px 0 4px}h4{font-size:13px;margin:10px 0 4px}
+.warn{background:#fff8e1;border-left:4px solid #f0ad4e;padding:8px 12px;margin:10px 0}
+.cols{display:flex;gap:16px;flex-wrap:wrap}.cols>div{flex:1 1 46%;min-width:340px}
+table{border-collapse:collapse;margin:6px 0;width:100%}
+td,th{border:1px solid #bbb;padding:4px 7px;font-size:12.5px;vertical-align:top}
+td.blank{background:#f4f4f4}
+td.grp{font-weight:700;background:#eef4fb}
+td.hd{font-weight:600;background:#f7f9fb}
+ol.lines{font-size:13px;line-height:1.6;color:#333}
+.meta{color:#777;font-size:12px}.cap{color:#0b5cad;font-weight:600}
+img.page{max-width:100%;border:1px solid #ccc}
+.tbl-title{font-size:15px;font-weight:700;margin:16px 0 2px;padding:6px 10px;
+border-left:4px solid #0b5cad;background:#eef4fb;border-radius:0 4px 4px 0}
+.tbl-title .ok{color:#177245}.tbl-title .cand{color:#b06d00}
+.tbl-title .todo{color:#999;font-weight:400}
+.ttag{font-size:11px;font-weight:400;color:#888;margin-left:8px}
+</style></head><body>
+<h1>目检 · 表格结构候选</h1>
+<p class='meta'>源 PDF：/Users/eric/Documents/copilot设计skilll/600900_长江电力_2025年度报告.pdf</p>
+<div class='warn'><b>状态：partial</b> —— 表格为<b>结构候选</b>（extracted、未人工核对、eligible_for_calculation=false）。每表<b>归属标题</b>优先取 目检/table_titles.json 的人工核对值（✓），否则回落 MinerU 表题候选（⚠）或‘待人工命名’。请对照左侧原页图目检；增改标题可编辑 table_titles.json 后重新生成。</div>
+<h2>物理页 80</h2>
+<div class='cols'>
+<div>
+<img class='page' src='images/p0080.png' alt='原页 80' loading='lazy'>
+</div>
+<div>
+<h3>阅读顺序候选（词级分行，未合并段落）</h3>
+<ol class='lines'>
+<li>中国长江电力股份有限公司2025年年度报告</li>
+<li>二、财务报表</li>
+<li>合并资产负债表</li>
+<li>2025年12月31日</li>
+<li>编制单位：中国长江电力股份有限公司</li>
+<li>单位：元 币种：人民币</li>
+<li>项目 附注 2025年12月31日 2024年12月31日</li>
+<li>流动资产：</li>
+<li>货币资金 七、1 4,585,856,068.06 6,572,724,404.32</li>
+<li>结算备付金</li>
+<li>拆出资金</li>
+<li>交易性金融资产</li>
+<li>衍生金融资产</li>
+<li>应收票据</li>
+<li>应收账款 七、5 7,251,847,539.23 9,326,624,055.45</li>
+<li>应收款项融资</li>
+<li>预付款项 七、8 193,198,601.50 87,429,651.53</li>
+<li>应收保费</li>
+<li>应收分保账款</li>
+<li>应收分保合同准备金</li>
+<li>其他应收款 七、9 344,774,687.24 323,000,402.26</li>
+<li>其中：应收利息</li>
+<li>应收股利 143,077,397.37 155,409,691.30</li>
+<li>买入返售金融资产</li>
+<li>存货 七、10 836,598,890.26 641,979,948.58</li>
+<li>其中：数据资源</li>
+<li>合同资产</li>
+<li>持有待售资产</li>
+<li>一年内到期的非流动资产</li>
+<li>其他流动资产 七、13 576,004,883.36 255,680,295.50</li>
+<li>流动资产合计 13,788,280,669.65 17,207,438,757.64</li>
+<li>非流动资产：</li>
+<li>发放贷款和垫款</li>
+<li>债权投资 七、14 1,139,012,015.88 1,016,091,728.01</li>
+<li>其他债权投资</li>
+<li>长期应收款</li>
+<li>长期股权投资 七、17 74,936,308,441.59 73,319,357,743.59</li>
+<li>其他权益工具投资 七、18 4,524,103,815.98 3,914,542,906.75</li>
+<li>其他非流动金融资产 七、19 3,288,159,400.78 1,881,358,777.49</li>
+<li>投资性房地产 七、20 106,220,376.66 106,387,511.00</li>
+<li>固定资产 七、21 416,574,010,969.38 430,425,982,346.78</li>
+<li>在建工程 七、22 15,905,615,342.72 9,553,619,488.46</li>
+<li>生产性生物资产</li>
+<li>油气资产</li>
+<li>使用权资产 七、25 679,149,247.01 754,491,789.92</li>
+<li>无形资产 七、26 25,025,360,456.32 25,458,642,148.54</li>
+<li>其中：数据资源</li>
+<li>开发支出 141,121,499.27 219,232,717.65</li>
+<li>80/259</li>
+</ol>
+</div>
+</div>
+<div class='tbl-title'><span class='todo'>table-0001 · （待人工命名）</span><span class='ttag'>[待人工命名]</span></div>
+<p class='meta'>42 行 × 4 列 · 162 单元格</p>
+<p class='meta' style='color:#177245'>数值核对 ✓：39/39 数据行一致（对照原页文字层）</p>
+<p class='meta'>首行提示：项目 / 附注</p>
+<table>
+<tr>
+<td>项目</td>
+<td>附注</td>
+<td>2025年12月31日</td>
+<td>2024年12月31日</td>
+</tr>
+<tr>
+<td colspan="4">流动资产：</td>
+</tr>
+<tr>
+<td>货币资金</td>
+<td>七、1</td>
+<td>4, 585, 856, 068.06</td>
+<td>6, 572, 724, 404.32</td>
+</tr>
+<tr>
+<td>结算备付金</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>拆出资金</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>交易性金融资产</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>衍生金融资产</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>应收票据</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>应收账款</td>
+<td>七、5</td>
+<td>7,251,847,539.23</td>
+<td>9,326,624,055.45</td>
+</tr>
+<tr>
+<td>应收款项融资</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>预付款项</td>
+<td>七、8</td>
+<td>193,198,601.50</td>
+<td>87,429,651.53</td>
+</tr>
+<tr>
+<td>应收保费</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>应收分保账款</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>应收分保合同准备金</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>其他应收款</td>
+<td>七、9</td>
+<td>344,774,687.24</td>
+<td>323,000, 402.26</td>
+</tr>
+<tr>
+<td>其中：应收利息</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>应收股利</td>
+<td></td>
+<td>143,077,397.37</td>
+<td>155,409,691.30</td>
+</tr>
+<tr>
+<td>买入返售金融资产</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>存货</td>
+<td>七、10</td>
+<td>836,598, 890.26</td>
+<td>641,979,948.58</td>
+</tr>
+<tr>
+<td>其中：数据资源</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>合同资产</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>持有待售资产</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>一年内到期的非流动资产</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>其他流动资产</td>
+<td>七、13</td>
+<td>576,004,883.36</td>
+<td>255,680,295.50</td>
+</tr>
+<tr>
+<td>流动资产合计</td>
+<td></td>
+<td>13, 788, 280, 669.65</td>
+<td>17,207,438,757.64</td>
+</tr>
+<tr>
+<td colspan="4">非流动资产：</td>
+</tr>
+<tr>
+<td>发放贷款和垫款</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>债权投资</td>
+<td>七、14</td>
+<td>1, 139,012,015.88</td>
+<td>1,016,091,728.01</td>
+</tr>
+<tr>
+<td>其他债权投资</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>长期应收款</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>长期股权投资</td>
+<td>七、17</td>
+<td>74, 936, 308, 441.59</td>
+<td>73,319,357,743.59</td>
+</tr>
+<tr>
+<td>其他权益工具投资</td>
+<td>七、18</td>
+<td>4,524, 103,815.98</td>
+<td>3,914,542,906.75</td>
+</tr>
+<tr>
+<td>其他非流动金融资产</td>
+<td>七、19</td>
+<td>3,288, 159, 400.78</td>
+<td>1,881,358,777.49</td>
+</tr>
+<tr>
+<td>投资性房地产</td>
+<td>七、20</td>
+<td>106,220,376.66</td>
+<td>106,387,511.00</td>
+</tr>
+<tr>
+<td>固定资产</td>
+<td>七、21</td>
+<td>416,574,010,969.38</td>
+<td>430,425, 982,346.78</td>
+</tr>
+<tr>
+<td>在建工程</td>
+<td>七、22</td>
+<td>15,905, 615, 342.72</td>
+<td>9,553, 619,488.46</td>
+</tr>
+<tr>
+<td>生产性生物资产</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>油气资产</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>使用权资产</td>
+<td>七、25</td>
+<td>679,149,247.01</td>
+<td>754,491,789.92</td>
+</tr>
+<tr>
+<td>无形资产</td>
+<td>七、26</td>
+<td>25,025,360,456.32</td>
+<td>25,458,642,148.54</td>
+</tr>
+<tr>
+<td>其中：数据资源</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>开发支出</td>
+<td></td>
+<td>141,121,499.27</td>
+<td>219,232,717.65</td>
+</tr>
+</table>
+<p class='meta'>证据：ev-table-0001 · 物理页 80 · bbox_norm ev-table-0001 · json 表格/table-0001.json · html 表格/table-0001.html</p>
+</body></html>

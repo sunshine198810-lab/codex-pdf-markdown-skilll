@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://annual-report-kit/schemas/review-queue.schema.json",
+  "title": "ReviewQueueItem",
+  "description": "复核队列条目（§13.4）。按实际影响排序；单区域有界升级，不无限重跑。",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "review_id": { "type": "string" },
+    "priority": { "type": "integer", "description": "关键主表及单位/期间冲突优先 → 高复用附注 → 正文重要限定 → 其他版面问题" },
+    "object_ref": { "type": "string" },
+    "reason": { "type": "string" },
+    "evidence_clip": { "type": ["string", "null"] },
+    "candidates": { "type": "array", "items": { "type": "object" } },
+    "methods_tried": { "type": "array", "items": { "type": "string" }, "description": "有界升级：主方法一次→必要时替代一次→留待复核" },
+    "next_step": { "type": ["string", "null"] },
+    "status": { "type": "string", "enum": ["open", "resolved", "wont_fix", "deferred"] },
+    "created_at": { "type": ["string", "null"] }
+  },
+  "required": ["review_id", "priority", "object_ref", "reason"]
+}

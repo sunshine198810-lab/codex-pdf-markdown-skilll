@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://annual-report-kit/schemas/signoff.schema.json",
+  "title": "SignOffRecord",
+  "description": "人工签核记录（§12 证据 / §13.4 复核队列）。矢量化或其他待复核对象在完成第二独立通道交叉验证后，由人工决定是否开放计算资格；记录与候选分离保存，重跑不得抹掉人工决定。",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "sign_off_id": { "type": "string", "description": "如 so-20260906T... 全局唯一" },
+    "object_ref": { "type": "string", "description": "复核对象引用，如 复核/vector-outline-index.json#vector-statement-01" },
+    "object_kind": { "type": "string", "enum": ["vector_fragment", "other"] },
+    "reviewer": { "type": ["string", "null"] },
+    "decision": { "type": "string", "enum": ["pending", "accepted", "rejected", "deferred"] },
+    "recorded_at": { "type": ["string", "null"], "description": "ISO 时间戳" },
+    "note": { "type": ["string", "null"] },
+    "eligible_for_calculation": {
+      "type": "boolean",
+      "description": "仅 decision=accepted 且本字段为 true 才对下游开放计算资格"
+    },
+    "replace_sign_off_id": { "type": ["string", "null"], "description": "被替换的旧签核记录 ID" },
+    "run_id": { "type": ["string", "null"] }
+  },
+  "required": ["sign_off_id", "object_ref", "object_kind", "decision"]
+}

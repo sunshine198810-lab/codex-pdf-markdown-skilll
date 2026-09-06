@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://annual-report-kit/schemas/object.schema.json",
+  "title": "DocumentObject",
+  "description": "统一文档结构中的对象（§7.3）：块/标题/列表/脚注、表格片段、图、未解析区。figure 亦复用本 schema。",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "object_id": { "type": "string", "description": "对象 ID，供关系引用" },
+    "object_type": {
+      "type": "string",
+      "enum": ["text_block", "heading", "list", "footnote", "table_fragment", "cell", "figure", "unresolved_region", "page_header", "page_footer", "other"]
+    },
+    "belongs_to": { "type": ["string", "null"], "description": "所属文档/结构 ID" },
+    "page_region": {
+      "type": "object",
+      "properties": {
+        "physical_page": { "type": "integer", "minimum": 1 },
+        "bbox": { "type": "array", "items": { "type": "number" }, "description": "[x0,y0,x1,y1] 工作坐标" },
+        "region_id": { "type": ["string", "null"] }
+      }
+    },
+    "original_text": { "type": ["string", "null"], "description": "原始文字/对象引用；OCR 原始值也可能错，最终证据是 PDF 可见页面" },
+    "method": { "type": ["string", "null"], "description": "解析方法" },
+    "engine": { "type": ["string", "null"], "description": "引擎名" },
+    "engine_version": { "type": ["string", "null"] },
+    "confidence": { "type": ["number", "null"], "description": "引擎原始置信分，不等于真实正确概率" },
+    "candidate_status": {
+      "type": "string",
+      "enum": ["extracted", "needs_review", "accepted_by_rules", "parse_failed", "pending"]
+    },
+    "manually_reviewed": { "type": "boolean" },
+    "relations": {
+      "type": "object",
+      "description": "对象关系用 JSON ID 引用（§7.3）",
+      "properties": {
+        "reading_before": { "type": ["string", "null"] },
+        "continues": { "type": ["string", "null"] },
+        "header_for": { "type": ["string", "null"] },
+        "footnote_of": { "type": ["string", "null"] },
+        "translated_counterpart": { "type": ["string", "null"] },
+        "derived_from": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "destination": {
+      "type": "string",
+      "description": "对象去向账目：每个源对象必须有去向",
+      "enum": ["into_prose", "into_table", "into_figure", "into_marginalia", "duplicate_retained", "unresolved"]
+    },
+    "quality_flags": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": "string" }
+  },
+  "required": ["object_id", "object_type", "destination"]
+}

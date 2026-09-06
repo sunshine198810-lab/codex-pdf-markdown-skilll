@@ -1,0 +1,51 @@
+{
+  "source_pdf": "/Users/eric/Documents/copilot设计skilll/600887_伊利股份_2025年度报告.pdf",
+  "schema_version": "2026-09-05.1",
+  "method": "pdfplumber_text_layer + x_order prefix check (vs display grid)",
+  "tables_total": 1,
+  "tables_ok": 1,
+  "tables": {
+    "table-0001": {
+      "physical_page": 79,
+      "title_item": {
+        "logical_table_id": "table-0001",
+        "physical_page": 79,
+        "rows": 3,
+        "cols": 2,
+        "cells": 5,
+        "json": "表格/table-0001.json",
+        "html": "表格/table-0001.html",
+        "evidence": "ev-table-0001",
+        "candidate_status": "extracted"
+      },
+      "rows_total": 2,
+      "rows_ok": 2,
+      "mismatch_labels": [],
+      "row_results": [
+        {
+          "row": 1,
+          "label": "关键审计事项",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "审计中的应对"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 2,
+          "label": "请参阅财务报表附注“重要会计政策及会 计估计”中的“收入”和“合并财务报表 项目注释”中的“营业收入、营业成本”注 释的内容所述。 2025年度，伊利集团的营业收入1,156.36 亿元，营业收入是伊利集团的关键指标之 一，且为合并利润表重要组成项目，对总 体财务报表影响重大，因此我们将营业收 入确认识别为关键审计事项。",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "（1）了解和评价公司管理层对与营业收入确认 相关的内部控制设计和运行的有效性，并实施控 制测试； （2）复核营业收入确认的会计政策及具体方法 是否符合会计准则的规定、行业的特点，以及是 否正确且一贯地运用； （3）对营业收入执行分析性复核程序，包括区分 业务板块分析本期与上期收入、成本、毛利率的"
+          ],
+          "line_numeric_tokens": null
+        }
+      ],
+      "verdict": "ok"
+    }
+  }
+}

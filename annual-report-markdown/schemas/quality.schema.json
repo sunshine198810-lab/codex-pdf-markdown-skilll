@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://annual-report-kit/schemas/quality.schema.json",
+  "title": "QualityReport",
+  "description": "质量报告（§13）。解析完成与内容可信分别报告；五层检查、对象状态与使用资格、覆盖率分层。",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": { "type": "string" },
+    "report_generated_at": { "type": ["string", "null"] },
+    "coverage": {
+      "type": "object",
+      "description": "三个维度分开报告：内容留存/结构恢复/可计算",
+      "properties": {
+        "content_retention": { "type": ["number", "null"], "description": "0..1，正文/表/图/附注有记录、证据或明确未解析状态" },
+        "structure_recovery": { "type": ["number", "null"], "description": "0..1，段落/表格/跨页/章节边界可靠恢复" },
+        "computable": { "type": ["number", "null"], "description": "0..1，可计算财务值覆盖" },
+        "review_rate": { "type": ["number", "null"], "description": "0..1，待复核对象/应处理对象" },
+        "page_processing_rate": { "type": ["number", "null"], "description": "0..1，仅表示未失败物理页占比，不代表可见内容留存" },
+        "detected_object_accounting_rate": { "type": ["number", "null"], "description": "0..1，仅表示已检出对象具有处理去向，不代表检测召回" },
+        "content_retention_reason": { "type": "string" },
+        "by_language_industry_scan": { "type": ["object", "null"], "description": "不同语言/行业/扫描类型单独汇报，不用高分冲淡复杂表格错误；null=尚未分层测" }
+      }
+    },
+    "five_layers": {
+      "type": "object",
+      "description": "运行与文件/内容覆盖/结构/文字与语义/财务一致性",
+      "properties": {
+        "run_and_files": { "type": "object", "additionalProperties": true },
+        "content_coverage": { "type": ["object", "null"], "additionalProperties": true, "description": "null=该层尚未测（P0/引擎未接线）" },
+        "structure": { "type": ["object", "null"], "additionalProperties": true, "description": "null=该层尚未测（P0/引擎未接线）" },
+        "text_semantics": { "type": ["object", "null"], "additionalProperties": true, "description": "null=该层尚未测（P0/引擎未接线）" },
+        "financial_consistency": { "type": ["object", "null"], "additionalProperties": true, "description": "null=该层尚未测（P0/引擎未接线）" }
+      }
+    },
+    "object_status_summary": {
+      "type": "object",
+      "description": "已提取/待复核/按规则验收通过/解析失败 计数",
+      "additionalProperties": true
+    },
+    "usage_eligibility_summary": {
+      "type": "object",
+      "description": "readable/traceable/citable/computable 计数",
+      "properties": {
+        "readable": { "type": "integer" },
+        "traceable": { "type": "integer" },
+        "citable": { "type": "integer" },
+        "computable": { "type": "integer" }
+      }
+    },
+    "review_burden": {
+      "type": "object",
+      "description": "按页面、表格、图表和优先级报告开放复核项；无人工分母时 rate 必须为 null",
+      "additionalProperties": true
+    },
+    "validation_results": {
+      "type": "array",
+      "description": "通过/未通过/不适用/条件不足，含实际输入与差额",
+      "items": {
+        "type": "object",
+        "properties": {
+          "check": { "type": "string" },
+          "result": { "type": "string", "enum": ["passed", "failed", "not_applicable", "insufficient"] },
+          "inputs": { "type": "object" },
+          "difference": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "sample_and_uncertainty": {
+      "type": "object",
+      "description": "样本数、拒绝/接受比例、分层错误、聚集性说明；数据不足写“观察到的结果”",
+      "additionalProperties": true
+    },
+    "open_issues_count": { "type": "integer" },
+    "overall_state": {
+      "type": "string",
+      "description": "存在未解决重要主表时，整份报告不能标为财务结构化完整",
+      "enum": ["complete", "partial", "failed", "p0_skeleton_not_parsed", "unknown"]
+    }
+  }
+}

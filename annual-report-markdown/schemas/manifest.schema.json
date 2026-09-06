@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://annual-report-kit/schemas/manifest.schema.json",
+  "title": "ResearchPackageManifest",
+  "description": "研究包清单 索引/manifest.json（§15）。00-阅读入口.md 据此与 quality/review_queue 呈现整体状态。",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": { "type": "string" },
+    "package_root": { "type": "string" },
+    "source_pdf": {
+      "type": "object",
+      "properties": {
+        "path": { "type": "string" },
+        "sha256": { "type": "string" },
+        "copied_into_package": { "type": "boolean", "description": "可搬移离线包时才复制 PDF；不作为默认重复备份行为" }
+      }
+    },
+    "identity": { "$ref": "identity.schema.json", "description": "报告身份块" },
+    "run": { "type": "object", "description": "解析版本信息，详见 run.schema.json" },
+    "generated_at": { "type": "string" },
+    "artifacts": {
+      "type": "object",
+      "description": "产物清单与计数",
+      "properties": {
+        "prose_files": { "type": "array", "items": { "type": "string" } },
+        "tables": { "type": "integer" },
+        "structured_tables": { "type": "integer" },
+        "computable_table_cells": { "type": "integer" },
+        "figures": { "type": "integer" },
+        "figure_labeled": { "type": "integer" },
+        "facts": { "type": "integer" },
+        "candidates": { "type": "integer" }
+      }
+    },
+    "overall_state": {
+      "type": "string",
+      "description": "整体状态；存在未解决重要主表时不能标为财务结构化完整",
+      "enum": ["complete", "partial", "failed", "p0_skeleton_not_parsed", "unknown"]
+    },
+    "open_issues": { "type": "array", "items": { "type": "string" }, "description": "未解决问题及影响，须在 review_queue 可定位" },
+    "quality_ref": { "type": "string" },
+    "review_entry_ref": { "type": "string" },
+    "entry_00_readme": { "type": "string", "description": "00-阅读入口.md 路径" }
+  },
+  "required": ["schema_version", "package_root", "source_pdf", "generated_at", "overall_state"]
+}

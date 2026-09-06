@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://annual-report-kit/schemas/run.schema.json",
+  "title": "RunRecord",
+  "description": "运行记录 _internal/run.json（§17 运行要求）。哈希在运行开始与结束核对；换引擎/模型/配置须换缓存键与版本目录。",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": { "type": "string" },
+    "run_id": { "type": "string" },
+    "mode": { "type": "string", "enum": ["standard_parse", "core_financial", "local_review", "p0_scaffold", "tableslice_v02_core", "assemble_slices"] },
+    "source_pdf": {
+      "type": "object",
+      "properties": {
+        "path": { "type": "string" },
+        "sha256_start": { "type": "string" },
+        "sha256_end": { "type": ["string", "null"], "description": "运行结束核对；报告变化时中止混用不同版本" },
+        "size_bytes": { "type": "integer" }
+      }
+    },
+    "identity": { "$ref": "identity.schema.json", "description": "报告身份块（§6.1）" },
+    "program": {
+      "type": "object",
+      "properties": {
+        "skill_version": { "type": "string" },
+        "pipeline_version": { "type": "string" },
+        "command_line": { "type": "string" }
+      }
+    },
+    "engines": {
+      "type": "object",
+      "description": "引擎与模型版本；缓存键含引擎/模型版本与配置",
+      "properties": {
+        "renderer": { "type": ["string", "null"] },
+        "ocr": { "type": ["string", "null"] },
+        "layout": { "type": ["string", "null"] },
+        "table": { "type": ["string", "null"] }
+      }
+    },
+    "config": {
+      "type": "object",
+      "description": "配置快照（远程开关默认关闭等）",
+      "additionalProperties": true
+    },
+    "timing": {
+      "type": "object",
+      "properties": {
+        "started_at": { "type": ["string", "null"] },
+        "finished_at": { "type": ["string", "null"] },
+        "elapsed_seconds": { "type": ["number", "null"] },
+        "peak_memory_mb": { "type": ["number", "null"] },
+        "pages_processed": { "type": ["integer", "null"] },
+        "model_calls": { "type": ["integer", "null"] }
+      }
+    },
+    "failures": {
+      "type": "array",
+      "description": "失败原因；输入损坏保留失败记录，不把未成功解析改写成未披露",
+      "items": { "type": "string" }
+    },
+    "page_status": {
+      "type": "array",
+      "description": "每页有明确完成/失败状态",
+      "items": {
+        "type": "object",
+        "properties": {
+          "physical_page": { "type": "integer", "minimum": 1 },
+          "status": { "type": "string", "enum": ["processed", "failed", "unresolved", "pending"] }
+        }
+      }
+    },
+    "output_dir": { "type": "string" },
+    "overall_state": {
+      "type": "string",
+      "enum": ["complete", "partial", "failed", "p0_skeleton_not_parsed", "unknown"]
+    }
+  },
+  "required": ["schema_version", "run_id", "mode", "source_pdf", "overall_state"]
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": "2026-09-05.1",
+  "report_generated_at": "2026-09-05T22:48:21+08:00",
+  "coverage": {
+    "content_retention": {
+      "tables_captured": 2,
+      "note": "仅指定页表格块"
+    },
+    "structure_recovery": {
+      "tables_structured": 2,
+      "note": "结构候选，未人工核对"
+    },
+    "computable": null,
+    "review_rate": {
+      "reviewed": 0,
+      "candidates": 2
+    }
+  },
+  "five_layers": {
+    "run_and_files": {
+      "ok": true
+    },
+    "content_coverage": {
+      "warnings": [
+        "MinerU content_list 表数=2；切片保留=2"
+      ]
+    },
+    "structure": {
+      "candidate_tables": 2,
+      "verified": 0
+    },
+    "text_semantics": {
+      "table_value_check": {
+        "tables_ok": 1,
+        "tables_total": 2,
+        "data_rows_ok": 35,
+        "data_rows_total": 37
+      }
+    },
+    "financial_consistency": null
+  },
+  "object_status_summary": {
+    "extracted": 2,
+    "accepted_by_rules": 0
+  },
+  "usage_eligibility_summary": {
+    "computable": 0,
+    "citable": 0,
+    "traceable": 2
+  },
+  "validation_results": [],
+  "open_issues_count": 3,
+  "overall_state": "partial",
+  "note": "V0.2 核心切片：仅表格结构候选 + 证据回查；未做人工核对/语义/财务校验；数值核对（文字层+x坐标）：表 1/2 一致、数据行 35/37（详见 索引/table_verify.md）"
+}

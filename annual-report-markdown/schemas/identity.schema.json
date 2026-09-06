@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://annual-report-kit/schemas/identity.schema.json",
+  "title": "ReportIdentity",
+  "description": "报告身份登记块（来源登记与文档体检，§6.1）。文件名只是线索，身份须由封面/重要提示/报表日期/编制基础核对。",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "document_id": { "type": "string", "description": "本文件的稳定标识" },
+    "file_identity": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "filename": { "type": "string" },
+        "original_path": { "type": "string" },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "page_count": { "type": ["integer", "null"], "minimum": 0, "description": "null=未探测（无引擎/不可读），见 intake._try_page_count" },
+        "file_size_bytes": { "type": "integer", "minimum": 0 },
+        "source_url": { "type": ["string", "null"] }
+      }
+    },
+    "issuer_identity": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "issuer_id": { "type": ["string", "null"] },
+        "company_name_as_reported": { "type": "string" },
+        "alias_names": { "type": "array", "items": { "type": "string" } },
+        "securities": {
+          "type": "array",
+          "description": "一个发行人多柜台：A/H/多地代码并列，不误建为公司也不合并为同一文件",
+          "items": {
+            "type": "object",
+            "properties": {
+              "exchange": { "type": "string" },
+              "code": { "type": "string" },
+              "market": { "type": "string", "enum": ["A", "H", "other"] }
+            }
+          }
+        }
+      }
+    },
+    "report_identity": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "report_type": { "type": "string", "description": "年度/半年度/中期/季度等" },
+        "period": {
+          "type": "object",
+          "properties": {
+            "kind": { "type": "string", "enum": ["instant", "duration"] },
+            "start": { "type": ["string", "null"] },
+            "end": { "type": ["string", "null"] }
+          }
+        },
+        "fiscal_year_label": { "type": "string" },
+        "publication_date": { "type": ["string", "null"] },
+        "language": { "type": ["string", "null"] }
+      }
+    },
+    "version_identity": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "kind": { "type": "string", "enum": ["original", "corrected", "supplement", "unknown"] },
+        "counterpart_of": { "type": "string", "description": "与另一文件的关系（如中英对应版本）" },
+        "is_bilingual_pair": { "type": "boolean" }
+      }
+    },
+    "accounting": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "basis": { "type": ["string", "null"], "description": "CAS/HKFRS/IFRS/US GAAP 等" },
+        "presentation_currency": { "type": ["string", "null"] },
+        "audit_status": { "type": ["string", "null"], "description": "绑定适用章节/报表，不给整本年报一概赋值" }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": true,
+      "description": "每个身份字段的来源块与状态；冲突时保留候选",
+      "properties": {
+        "candidates": { "type": "array", "items": { "type": "object" } },
+        "resolved_from": { "type": "string", "enum": ["filename", "content", "candidate_conflict", "unresolved"] }
+      }
+    }
+  },
+  "required": ["document_id", "file_identity"]
+}

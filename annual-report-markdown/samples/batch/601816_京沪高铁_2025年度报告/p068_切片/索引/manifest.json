@@ -1,0 +1,42 @@
+{
+  "schema_version": "2026-09-05.1",
+  "package_root": "samples/batch/601816_京沪高铁_2025年度报告/p068_切片",
+  "source_pdf": {
+    "path": "/Users/eric/Documents/copilot设计skilll/601816_京沪高铁_2025年度报告.pdf",
+    "sha256": "233ce15b196d4949376c03a0a9f2d07bd92dc042572cb2c752971188a01f3bac"
+  },
+  "identity": {
+    "document_id": "601816_京沪高铁",
+    "issuer_identity": {
+      "company_name_as_reported": "京沪高铁",
+      "securities": [
+        {
+          "code": "601816"
+        }
+      ]
+    },
+    "report_identity": {
+      "report_type": "2025年度报告"
+    },
+    "verification": {
+      "resolved_from": "filename"
+    }
+  },
+  "run": {
+    "run_id": "20260905T225015",
+    "pipeline_version": "0.2.0-p0"
+  },
+  "generated_at": "2026-09-05T22:50:15+08:00",
+  "artifacts": {
+    "tables": 2,
+    "structured_tables": 2,
+    "computable_table_cells": 0,
+    "reading_order_pages": 1,
+    "evidence": 2
+  },
+  "overall_state": "partial",
+  "open_issues": [
+    "结构候选未人工核对；语义与财务校验未做（V0.2 后段）"
+  ],
+  "entry_00_readme": "00-阅读入口.md"
+}

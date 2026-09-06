@@ -1,0 +1,310 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<title>目检 · 表格结构候选</title>
+<style>
+body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;margin:24px;color:#222}
+h1{font-size:20px}h2{font-size:17px;border-bottom:2px solid #ccc;padding-bottom:4px;margin-top:28px}
+h3{font-size:14px;margin:14px 0 4px}h4{font-size:13px;margin:10px 0 4px}
+.warn{background:#fff8e1;border-left:4px solid #f0ad4e;padding:8px 12px;margin:10px 0}
+.cols{display:flex;gap:16px;flex-wrap:wrap}.cols>div{flex:1 1 46%;min-width:340px}
+table{border-collapse:collapse;margin:6px 0;width:100%}
+td,th{border:1px solid #bbb;padding:4px 7px;font-size:12.5px;vertical-align:top}
+td.blank{background:#f4f4f4}
+td.grp{font-weight:700;background:#eef4fb}
+td.hd{font-weight:600;background:#f7f9fb}
+ol.lines{font-size:13px;line-height:1.6;color:#333}
+.meta{color:#777;font-size:12px}.cap{color:#0b5cad;font-weight:600}
+img.page{max-width:100%;border:1px solid #ccc}
+.tbl-title{font-size:15px;font-weight:700;margin:16px 0 2px;padding:6px 10px;
+border-left:4px solid #0b5cad;background:#eef4fb;border-radius:0 4px 4px 0}
+.tbl-title .ok{color:#177245}.tbl-title .cand{color:#b06d00}
+.tbl-title .todo{color:#999;font-weight:400}
+.ttag{font-size:11px;font-weight:400;color:#888;margin-left:8px}
+</style></head><body>
+<h1>目检 · 表格结构候选</h1>
+<p class='meta'>源 PDF：/Users/eric/Documents/copilot设计skilll/600519_贵州茅台_2026年半年度报告.pdf</p>
+<div class='warn'><b>状态：partial</b> —— 表格为<b>结构候选</b>（extracted、未人工核对、eligible_for_calculation=false）。每表<b>归属标题</b>优先取 目检/table_titles.json 的人工核对值（✓），否则回落 MinerU 表题候选（⚠）或‘待人工命名’。请对照左侧原页图目检；增改标题可编辑 table_titles.json 后重新生成。</div>
+<h2>物理页 30</h2>
+<div class='cols'>
+<div>
+<img class='page' src='images/p0030.png' alt='原页 30' loading='lazy'>
+</div>
+<div>
+<h3>阅读顺序候选（词级分行，未合并段落）</h3>
+<ol class='lines'>
+<li>贵州茅台酒股份有限公司2026年半年度报告</li>
+<li>专项储备</li>
+<li>盈余公积 49,251,429,608.71 50,543,176,610.94</li>
+<li>未分配利润 107,646,565,355.82 127,322,996,467.02</li>
+<li>所有者权益（或股东权</li>
+<li>158,148,992,327.71 178,999,246,453.61</li>
+<li>益）合计</li>
+<li>负债和所有者权益</li>
+<li>168,620,407,364.98 195,350,142,529.19</li>
+<li>（或股东权益）总计</li>
+<li>公司负责人：陈华 主管会计工作负责人：余思明 会计机构负责人：蔡聪应</li>
+<li>合并利润表</li>
+<li>2026年1—6月</li>
+<li>单位：元 币种：人民币</li>
+<li>项目 附注 2026年半年度 2025年半年度</li>
+<li>一、营业总收入 92,278,072,083.21 91,093,762,553.97</li>
+<li>其中：营业收入 43 90,703,260,964.48 89,389,354,416.84</li>
+<li>利息收入 44 1,574,811,118.73 1,704,408,137.13</li>
+<li>已赚保费</li>
+<li>手续费及佣金收入</li>
+<li>二、营业总成本 30,946,044,878.08 28,353,948,643.16</li>
+<li>其中：营业成本 43 9,473,762,565.88 7,777,491,083.93</li>
+<li>利息支出 44 76,587,662.57 91,606,314.10</li>
+<li>手续费及佣金支出 44 183,088.17 42,669.36</li>
+<li>退保金</li>
+<li>赔付支出净额</li>
+<li>提取保险责任准备金净额</li>
+<li>保单红利支出</li>
+<li>分保费用</li>
+<li>税金及附加 45 14,682,159,453.47 13,942,384,581.48</li>
+<li>销售费用 46 3,206,308,341.53 3,260,462,949.46</li>
+<li>管理费用 47 3,635,355,263.82 3,694,704,172.74</li>
+<li>研发费用 48 114,926,219.60 73,901,545.96</li>
+<li>财务费用 49 -243,237,716.96 -486,644,673.87</li>
+<li>其中：利息费用 21,034,591.16 4,369,620.54</li>
+<li>利息收入 266,574,096.14 493,572,693.81</li>
+<li>加：其他收益 50 23,554,465.99 22,518,010.95</li>
+<li>投资收益（损失以“-”号填</li>
+<li>51 1,013,870.58 59,165.27</li>
+<li>列）</li>
+<li>其中：对联营企业和合营企业</li>
+<li>16,912.87</li>
+<li>的投资收益</li>
+<li>以摊余成本计量的金融</li>
+<li>资产终止确认收益（损失以“-”号</li>
+<li>填列）</li>
+<li>汇兑收益（损失以“-”号填</li>
+<li>列）</li>
+<li>净敞口套期收益（损失以</li>
+<li>“-”号填列）</li>
+<li>公允价值变动收益（损失以</li>
+<li>52 22,082,651.62 1,758,003.31</li>
+<li>“-”号填列）</li>
+<li>30/110</li>
+</ol>
+</div>
+</div>
+<div class='tbl-title'><span class='todo'>table-0001 · （待人工命名）</span><span class='ttag'>[待人工命名]</span></div>
+<p class='meta'>5 行 × 4 列 · 20 单元格</p>
+<p class='meta' style='color:#177245'>数值核对 ✓：4/4 数据行一致（对照原页文字层）</p>
+<p class='meta'>首行提示：专项储备</p>
+<table>
+<tr>
+<td>专项储备</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>盈余公积</td>
+<td></td>
+<td>49,251,429,608.71</td>
+<td>50,543,176,610.94</td>
+</tr>
+<tr>
+<td>未分配利润</td>
+<td></td>
+<td>107,646,565, 355.82</td>
+<td>127,322,996,467.02</td>
+</tr>
+<tr>
+<td>所有者权益（或股东权益）合计</td>
+<td></td>
+<td>158,148,992,327.71</td>
+<td>178,999,246,453.61</td>
+</tr>
+<tr>
+<td>负债和所有者权益（或股东权益）总计</td>
+<td></td>
+<td>168,620,407,364.98</td>
+<td>195,350,142,529.19</td>
+</tr>
+</table>
+<p class='meta'>表注候选：公司负责人：陈华 主管会计工作负责人：余思明 会计机构负责人：蔡聪应</p>
+<p class='meta'>证据：ev-table-0001 · 物理页 30 · bbox_norm ev-table-0001 · json 表格/table-0001.json · html 表格/table-0001.html</p>
+<div class='tbl-title'><span class='todo'>table-0002 · （待人工命名）</span><span class='ttag'>[待人工命名]</span></div>
+<p class='meta'>29 行 × 4 列 · 116 单元格</p>
+<p class='meta' style='color:#177245'>数值核对 ✓：28/28 数据行一致（对照原页文字层）</p>
+<p class='meta'>首行提示：项目 / 附注</p>
+<table>
+<tr>
+<td>项目</td>
+<td>附注</td>
+<td>2026年半年度</td>
+<td>2025年半年度</td>
+</tr>
+<tr>
+<td>一、营业总收入</td>
+<td></td>
+<td>92,278,072,083.21</td>
+<td>91, 093,762,553.97</td>
+</tr>
+<tr>
+<td>其中：营业收入</td>
+<td>43</td>
+<td>90,703,260,964.48</td>
+<td>89, 389, 354, 416.84</td>
+</tr>
+<tr>
+<td>利息收入</td>
+<td>44</td>
+<td>1,574,811,118.73</td>
+<td>1,704,408, 137.13</td>
+</tr>
+<tr>
+<td>已赚保费</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>手续费及佣金收入</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>二、营业总成本</td>
+<td></td>
+<td>30, 946, 044,878.08</td>
+<td>28, 353, 948, 643.16</td>
+</tr>
+<tr>
+<td>其中：营业成本</td>
+<td>43</td>
+<td>9,473,762,565.88</td>
+<td>7,777,491,083.93</td>
+</tr>
+<tr>
+<td>利息支出</td>
+<td>44</td>
+<td>76,587,662.57</td>
+<td>91,606,314.10</td>
+</tr>
+<tr>
+<td>手续费及佣金支出</td>
+<td>44</td>
+<td>183,088.17</td>
+<td>42,669.36</td>
+</tr>
+<tr>
+<td>退保金</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>赔付支出净额</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>提取保险责任准备金净额</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>保单红利支出</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>分保费用</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>税金及附加</td>
+<td>45</td>
+<td>14,682, 159, 453.47</td>
+<td>13, 942, 384, 581.48</td>
+</tr>
+<tr>
+<td>销售费用</td>
+<td>46</td>
+<td>3,206,308,341.53</td>
+<td>3,260,462,949.46</td>
+</tr>
+<tr>
+<td>管理费用</td>
+<td>47</td>
+<td>3,635,355,263.82</td>
+<td>3,694,704,172.74</td>
+</tr>
+<tr>
+<td>研发费用</td>
+<td>48</td>
+<td>114,926,219.60</td>
+<td>73,901,545.96</td>
+</tr>
+<tr>
+<td>财务费用</td>
+<td>49</td>
+<td>-243,237,716.96</td>
+<td>-486,644,673.87</td>
+</tr>
+<tr>
+<td>其中：利息费用</td>
+<td></td>
+<td>21,034,591.16</td>
+<td>4,369,620.54</td>
+</tr>
+<tr>
+<td>利息收入</td>
+<td></td>
+<td>266,574,096.14</td>
+<td>493,572,693.81</td>
+</tr>
+<tr>
+<td>加：其他收益</td>
+<td>50</td>
+<td>23,554,465.99</td>
+<td>22,518,010.95</td>
+</tr>
+<tr>
+<td>投资收益（损失以“-”号填列）</td>
+<td>51</td>
+<td>1,013,870.58</td>
+<td>59,165.27</td>
+</tr>
+<tr>
+<td>其中：对联营企业和合营企业的投资收益</td>
+<td></td>
+<td>16,912.87</td>
+<td></td>
+</tr>
+<tr>
+<td>以摊余成本计量的金融资产终止确认收益（损失以“-”号填列）</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>汇兑收益（损失以“-”号填列）</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>净敞口套期收益（损失以“_”号填列）</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>公允价值变动收益（损失以“_”号填列)</td>
+<td>52</td>
+<td>22,082,651.62</td>
+<td>1,758,003.31</td>
+</tr>
+</table>
+<p class='meta'>证据：ev-table-0002 · 物理页 30 · bbox_norm ev-table-0002 · json 表格/table-0002.json · html 表格/table-0002.html</p>
+</body></html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<title>目检 · 表格结构候选</title>
+<style>
+body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;margin:24px;color:#222}
+h1{font-size:20px}h2{font-size:17px;border-bottom:2px solid #ccc;padding-bottom:4px;margin-top:28px}
+h3{font-size:14px;margin:14px 0 4px}h4{font-size:13px;margin:10px 0 4px}
+.warn{background:#fff8e1;border-left:4px solid #f0ad4e;padding:8px 12px;margin:10px 0}
+.cols{display:flex;gap:16px;flex-wrap:wrap}.cols>div{flex:1 1 46%;min-width:340px}
+table{border-collapse:collapse;margin:6px 0;width:100%}
+td,th{border:1px solid #bbb;padding:4px 7px;font-size:12.5px;vertical-align:top}
+td.blank{background:#f4f4f4}
+td.grp{font-weight:700;background:#eef4fb}
+td.hd{font-weight:600;background:#f7f9fb}
+ol.lines{font-size:13px;line-height:1.6;color:#333}
+.meta{color:#777;font-size:12px}.cap{color:#0b5cad;font-weight:600}
+img.page{max-width:100%;border:1px solid #ccc}
+.tbl-title{font-size:15px;font-weight:700;margin:16px 0 2px;padding:6px 10px;
+border-left:4px solid #0b5cad;background:#eef4fb;border-radius:0 4px 4px 0}
+.tbl-title .ok{color:#177245}.tbl-title .cand{color:#b06d00}
+.tbl-title .todo{color:#999;font-weight:400}
+.ttag{font-size:11px;font-weight:400;color:#888;margin-left:8px}
+</style></head><body>
+<h1>目检 · 表格结构候选</h1>
+<p class='meta'>源 PDF：/Users/eric/Documents/copilot设计skilll/600519_贵州茅台_2026年半年度报告.pdf</p>
+<div class='warn'><b>状态：partial</b> —— 表格为<b>结构候选</b>（extracted、未人工核对、eligible_for_calculation=false）。每表<b>归属标题</b>优先取 目检/table_titles.json 的人工核对值（✓），否则回落 MinerU 表题候选（⚠）或‘待人工命名’。请对照左侧原页图目检；增改标题可编辑 table_titles.json 后重新生成。</div>
+<h2>物理页 25</h2>
+<div class='cols'>
+<div>
+<img class='page' src='images/p0025.png' alt='原页 25' loading='lazy'>
+</div>
+<div>
+<h3>阅读顺序候选（词级分行，未合并段落）</h3>
+<ol class='lines'>
+<li>贵州茅台酒股份有限公司2026年半年度报告</li>
+<li>(三) 战略投资者或一般法人因配售新股成为前十名股东</li>
+<li>□适用 √不适用</li>
+<li>三、董事和高级管理人员情况</li>
+<li>(一) 现任及报告期内离任董事和高级管理人员持股变动情况</li>
+<li>□适用 √不适用</li>
+<li>其它情况说明</li>
+<li>□适用 √不适用</li>
+<li>(二) 董事、高级管理人员报告期内被授予的股权激励情况</li>
+<li>□适用 √不适用</li>
+<li>(三) 其他说明</li>
+<li>□适用 √不适用</li>
+<li>四、控股股东或实际控制人变更情况</li>
+<li>□适用 √不适用</li>
+<li>五、优先股相关情况</li>
+<li>□适用 √不适用</li>
+<li>第七节 债券相关情况</li>
+<li>一、公司债券（含企业债券）和非金融企业债务融资工具</li>
+<li>□适用 √不适用</li>
+<li>二、可转换公司债券情况</li>
+<li>□适用 √不适用</li>
+<li>第八节 财务报告</li>
+<li>一、审计报告</li>
+<li>□适用 √不适用</li>
+<li>二、财务报表</li>
+<li>合并资产负债表</li>
+<li>2026 年6月30 日</li>
+<li>编制单位： 贵州茅台酒股份有限公司</li>
+<li>单位：元 币种：人民币</li>
+<li>项目 附注 2026年6月30日 2025年12月31日</li>
+<li>流动资产：</li>
+<li>货币资金 1 53,518,798,979.08 51,690,610,946.50</li>
+<li>25/110</li>
+</ol>
+</div>
+</div>
+<div class='tbl-title'><span class='todo'>table-0001 · （待人工命名）</span><span class='ttag'>[待人工命名]</span></div>
+<p class='meta'>3 行 × 4 列 · 12 单元格</p>
+<p class='meta' style='color:#177245'>数值核对 ✓：2/2 数据行一致（对照原页文字层）</p>
+<p class='meta'>首行提示：项目 / 附注</p>
+<table>
+<tr>
+<td>项目</td>
+<td>附注</td>
+<td>2026年6月30日</td>
+<td>2025年12月31日</td>
+</tr>
+<tr>
+<td>流动资产：</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>货币资金</td>
+<td>1</td>
+<td>53,518,798,979.08</td>
+<td>51,690,610,946.50</td>
+</tr>
+</table>
+<p class='meta'>证据：ev-table-0001 · 物理页 25 · bbox_norm ev-table-0001 · json 表格/table-0001.json · html 表格/table-0001.html</p>
+</body></html>

@@ -1,0 +1,42 @@
+{
+  "schema_version": "2026-09-05.1",
+  "package_root": "samples/cmcc_p126",
+  "source_pdf": {
+    "path": "/Users/eric/Documents/copilot设计skilll/600941_中国移动_2025年度报告.pdf",
+    "sha256": "8bde14d742b4869c344cc525ed892ec928d2eadf57757945c7e5a0e5bc3c7684"
+  },
+  "identity": {
+    "document_id": "600941_中国移动",
+    "issuer_identity": {
+      "company_name_as_reported": "中国移动",
+      "securities": [
+        {
+          "code": "600941"
+        }
+      ]
+    },
+    "report_identity": {
+      "report_type": "2025年度报告"
+    },
+    "verification": {
+      "resolved_from": "filename"
+    }
+  },
+  "run": {
+    "run_id": "20260905T223146",
+    "pipeline_version": "0.2.0-p0"
+  },
+  "generated_at": "2026-09-05T22:31:46+08:00",
+  "artifacts": {
+    "tables": 1,
+    "structured_tables": 1,
+    "computable_table_cells": 0,
+    "reading_order_pages": 1,
+    "evidence": 1
+  },
+  "overall_state": "partial",
+  "open_issues": [
+    "结构候选未人工核对；语义与财务校验未做（V0.2 后段）"
+  ],
+  "entry_00_readme": "00-阅读入口.md"
+}

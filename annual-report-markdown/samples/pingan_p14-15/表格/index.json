@@ -1,0 +1,82 @@
+{
+  "tables": [
+    {
+      "logical_table_id": "table-0001",
+      "physical_page": 14,
+      "rows": 5,
+      "cols": 5,
+      "cells": 25,
+      "json": "表格/table-0001.json",
+      "html": "表格/table-0001.html",
+      "evidence": "ev-table-0001",
+      "candidate_status": "extracted"
+    },
+    {
+      "logical_table_id": "table-0002",
+      "physical_page": 14,
+      "rows": 5,
+      "cols": 5,
+      "cells": 25,
+      "json": "表格/table-0002.json",
+      "html": "表格/table-0002.html",
+      "evidence": "ev-table-0002",
+      "candidate_status": "extracted"
+    },
+    {
+      "logical_table_id": "table-0003",
+      "physical_page": 14,
+      "rows": 2,
+      "cols": 5,
+      "cells": 10,
+      "json": "表格/table-0003.json",
+      "html": "表格/table-0003.html",
+      "evidence": "ev-table-0003",
+      "candidate_status": "extracted"
+    },
+    {
+      "logical_table_id": "table-0004",
+      "physical_page": 14,
+      "rows": 7,
+      "cols": 5,
+      "cells": 35,
+      "json": "表格/table-0004.json",
+      "html": "表格/table-0004.html",
+      "evidence": "ev-table-0004",
+      "candidate_status": "extracted"
+    },
+    {
+      "logical_table_id": "table-0005",
+      "physical_page": 14,
+      "rows": 5,
+      "cols": 5,
+      "cells": 25,
+      "json": "表格/table-0005.json",
+      "html": "表格/table-0005.html",
+      "evidence": "ev-table-0005",
+      "candidate_status": "extracted"
+    },
+    {
+      "logical_table_id": "table-0006",
+      "physical_page": 14,
+      "rows": 7,
+      "cols": 4,
+      "cells": 28,
+      "json": "表格/table-0006.json",
+      "html": "表格/table-0006.html",
+      "evidence": "ev-table-0006",
+      "candidate_status": "extracted"
+    },
+    {
+      "logical_table_id": "table-0007",
+      "physical_page": 15,
+      "rows": 37,
+      "cols": 4,
+      "cells": 148,
+      "json": "表格/table-0007.json",
+      "html": "表格/table-0007.html",
+      "evidence": "ev-table-0007",
+      "candidate_status": "extracted"
+    }
+  ],
+  "state": "candidate_only"
+}

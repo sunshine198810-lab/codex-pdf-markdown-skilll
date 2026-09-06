@@ -1,0 +1,6 @@
+interface:
+  display_name: "年报解析与研究包"
+  short_description: "将年报 PDF 解析为有原文证据、可回查、保留表格结构的研究资料包"
+  default_prompt: "请用 annual-report-markdown 将这份上市公司年报 PDF 解析为研究资料包。"
+policy:
+  allow_implicit_invocation: true

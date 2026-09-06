@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://annual-report-kit/schemas/table.schema.json",
+  "title": "TableFragment",
+  "description": "某页上的物理表格片段（§9.4）。原始片段不因跨页拼接而消失。",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "table_fragment_id": { "type": "string" },
+    "belongs_to_logical_table": { "type": ["string", "null"], "description": "跨页逻辑表 ID" },
+    "physical_page": { "type": "integer", "minimum": 1 },
+    "caption": { "type": ["string", "null"], "description": "表名/外标题" },
+    "units_declaration": { "type": ["string", "null"] },
+    "has_repeated_header": { "type": "boolean", "description": "续页重复表头可从阅读版隐藏，源片段保留" },
+    "header_rows": { "type": "integer", "minimum": 0 },
+    "row_count": { "type": "integer", "minimum": 0 },
+    "column_count": { "type": "integer", "minimum": 0 },
+    "grid": {
+      "type": "object",
+      "description": "结构模型候选网格；与文字识别对不上时记录冲突，不为装进格子截断文字",
+      "additionalProperties": true,
+      "properties": {
+        "rows": {
+          "description": "候选网格行数（integer）；旧中间形态也可保存逐行数组",
+          "anyOf": [
+            { "type": "integer", "minimum": 0 },
+            { "type": "array" }
+          ]
+        },
+        "rowspan_colspan": { "type": "array", "description": "合并单元格 [row,col,rowspan,colspan,...]" }
+      }
+    },
+    "cells": {
+      "type": "array",
+      "description": "单元格列表",
+      "items": {
+        "type": "object",
+        "properties": {
+          "cell_id": { "type": "string" },
+          "row": { "type": "integer", "minimum": 0 },
+          "col": { "type": "integer", "minimum": 0 },
+          "rowspan": { "type": "integer", "minimum": 1 },
+          "colspan": { "type": "integer", "minimum": 1 },
+          "raw_value": { "type": ["string", "null"] },
+          "kind": { "type": "string", "enum": ["data", "row_header", "column_header", "blank", "dash", "stub", "note_marker", "other"] },
+          "evidence_refs": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "candidate_status": {
+      "type": "string",
+      "enum": ["extracted", "needs_review", "accepted_by_rules", "parse_failed", "pending"]
+    }
+  },
+  "required": ["table_fragment_id", "physical_page"]
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://annual-report-kit/schemas/page.schema.json",
+  "title": "PageRecord",
+  "description": "物理页与区域体检记录（§6.2、§7.1）。physical_page 从 1 开始与原 PDF 一一对应。",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "physical_page": { "type": "integer", "minimum": 1 },
+    "printed_page_label": { "type": ["string", "null"], "description": "罗马数字/附录号/空值" },
+    "geometry": {
+      "type": "object",
+      "description": "PDF 侧信息：MediaBox/CropBox/rotation/PDF 坐标",
+      "additionalProperties": true
+    },
+    "transform": {
+      "type": "object",
+      "description": "工作坐标=旋转裁切后可见页、左上角原点、point；保存原→工作、工作→像素变换与 DPI",
+      "properties": {
+        "origin": { "type": "string", "enum": ["top_left"] },
+        "unit": { "type": "string", "enum": ["point"] },
+        "rotation_deg": { "type": "number" },
+        "to_pixels": { "type": "object", "description": "{dpi, scale_x, scale_y} 等" },
+        "from_engine_bbox": { "type": ["string", "null"], "description": "如 MinerU 0-1000 归一化换算说明" }
+      }
+    },
+    "region_inspection": {
+      "type": "array",
+      "description": "以区域为单位的体检判断",
+      "items": {
+        "type": "object",
+        "properties": {
+          "region_id": { "type": "string" },
+          "kind": {
+            "type": "string",
+            "enum": ["native_text", "image_text_ocr", "garbled_uncertain", "image_table", "blank_decorative", "unclassified"]
+          },
+          "bbox": { "type": "array", "items": { "type": "number" }, "description": "[x0,y0,x1,y1] 工作坐标" },
+          "text_char_count": { "type": "integer" },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "contains_two_printed_pages": { "type": "boolean", "description": "一个物理页含两个印刷页时保存两个子区域，不伪造两个物理页" },
+    "status": { "type": "string", "enum": ["processed", "failed", "unresolved", "pending"] },
+    "evidence": { "type": "array", "items": { "type": "string" }, "description": "证据对象 ID" }
+  },
+  "required": ["physical_page", "status"]
+}

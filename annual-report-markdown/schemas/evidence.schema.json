@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://annual-report-kit/schemas/evidence.schema.json",
+  "title": "Evidence",
+  "description": "证据条目（§12）。能回答：原值在哪、行名列头在哪、单位/期间/主体从哪来、哪些脚注、哪个引擎与处理。",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "evidence_id": { "type": "string", "description": "如 ev-cell032" },
+    "source_kind": { "type": "string", "enum": ["table_cell", "text_span", "figure_label", "image_region", "other"] },
+    "granularity": {
+      "type": "string",
+      "description": "page/region/table/cell/span；只有表级框就报告 table，不编造单元格坐标",
+      "enum": ["page", "region", "table", "cell", "span"]
+    },
+    "locate": {
+      "type": "object",
+      "description": "定位回查原 PDF",
+      "properties": {
+        "physical_page": { "type": "integer", "minimum": 1 },
+        "printed_page_label": { "type": ["string", "null"] },
+        "bbox": { "type": ["array", "null"], "items": { "type": "number" } },
+        "object_id": { "type": ["string", "null"] },
+        "pdf_reference": { "type": ["string", "null"], "description": "能反算回原 PDF 的引用" }
+      }
+    },
+    "context": {
+      "type": "object",
+      "description": "行名列头/完整语句/系列坐标轴等上下文证据",
+      "properties": {
+        "row_label": { "type": ["string", "null"] },
+        "column_headers": { "type": ["array", "null"], "items": { "type": "string" } },
+        "full_sentence": { "type": ["string", "null"] },
+        "figure_series_axes": { "type": ["string", "null"] },
+        "unit_currency_source": { "type": ["string", "null"] },
+        "period_source": { "type": ["string", "null"] },
+        "entity_source": { "type": ["string", "null"] }
+      }
+    },
+    "footnote_refs": { "type": "array", "items": { "type": "string" }, "description": "影响理解的脚注（不含税/经重述/持续经营等）" },
+    "engine": { "type": ["string", "null"] },
+    "engine_version": { "type": ["string", "null"] },
+    "processing": {
+      "type": "array",
+      "description": "记录处理：正文合并/表拼接/重复表头隐藏/单位换算/人工修正；输入对象、操作、输出、规则版本",
+      "items": {
+        "type": "object",
+        "properties": {
+          "operation": { "type": "string" },
+          "input_ids": { "type": "array", "items": { "type": "string" } },
+          "output_id": { "type": ["string", "null"] },
+          "rule_version": { "type": ["string", "null"] },
+          "manual": { "type": "boolean" }
+        }
+      }
+    },
+    "candidate_reason": { "type": ["string", "null"], "description": "因何选择该候选" },
+    "confidence": { "type": ["number", "null"] }
+  },
+  "required": ["evidence_id", "source_kind", "granularity", "locate"]
+}

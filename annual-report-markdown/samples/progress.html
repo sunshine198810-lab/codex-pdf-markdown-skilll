@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<title>年报解析 V0.2 · 切片进度总览</title>
+<style>
+body{font-family:-apple-system,'PingFang SC',sans-serif;margin:24px;color:#222}
+h1{font-size:20px}.cards{display:flex;gap:16px;margin:12px 0 20px;flex-wrap:wrap}
+.card{border:1px solid #ddd;border-radius:8px;padding:10px 16px;min-width:120px}
+.card b{font-size:22px;display:block}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{border:1px solid #ccc;padding:5px 8px;text-align:left;vertical-align:top}
+th{background:#f2f6fa}.ok{color:#177245;font-weight:600}.bad{color:#b00020;font-weight:600}
+td.num{text-align:right}.mut{color:#b00020;font-size:12px}
+a{color:#0b5cad;text-decoration:none}
+</style></head><body>
+<h1>年报解析 V0.2 · 切片进度总览</h1>
+<div class='cards'>
+<div class='card'><b>17</b>切片</div>
+<div class='card'><b>17</b>含目检页</div>
+<div class='card'><b>28/29</b>表数值一致</div>
+<div class='card'><b>470/471</b>数据行一致</div>
+</div>
+<p style='color:#777;font-size:12px'>注：数值一致 = 显示网格与源 PDF 同页 pdfplumber 精确文字层核对一致（verify_tables 文字层+x坐标法）；不代表语义/期间/单位归属正确，亦未人工终核。</p>
+<table><tr><th>报告文件</th><th>物理页</th><th>表核对</th><th>数据行</th><th>不一致表</th><th>目检页</th><th>切片目录</th></tr>
+<tr><td>600519_贵州茅台_2026年半年度报告.pdf</td><td>25</td><td class='num'><span class='ok'>1/1</span></td><td class='num'><span class='ok'>2/2</span></td><td></td><td><a href='batch/600519_贵州茅台_2026年半年度报告/p025_切片/目检/index.html'>打开</a></td><td class='mut'>batch/600519_贵州茅台_2026年半年度报告/p025_切片</td></tr>
+<tr><td>600519_贵州茅台_2026年半年度报告.pdf</td><td>30</td><td class='num'><span class='ok'>2/2</span></td><td class='num'><span class='ok'>32/32</span></td><td></td><td><a href='batch/600519_贵州茅台_2026年半年度报告/p030_切片/目检/index.html'>打开</a></td><td class='mut'>batch/600519_贵州茅台_2026年半年度报告/p030_切片</td></tr>
+<tr><td>600519_贵州茅台_2026年半年度报告.pdf</td><td>33</td><td class='num'><span class='ok'>2/2</span></td><td class='num'><span class='ok'>31/31</span></td><td></td><td><a href='batch/600519_贵州茅台_2026年半年度报告/p033_切片/目检/index.html'>打开</a></td><td class='mut'>batch/600519_贵州茅台_2026年半年度报告/p033_切片</td></tr>
+<tr><td>600887_伊利股份_2025年度报告.pdf</td><td>79</td><td class='num'><span class='ok'>1/1</span></td><td class='num'><span class='ok'>2/2</span></td><td></td><td><a href='batch/600887_伊利股份_2025年度报告/p079_切片/目检/index.html'>打开</a></td><td class='mut'>batch/600887_伊利股份_2025年度报告/p079_切片</td></tr>
+<tr><td>600887_伊利股份_2025年度报告.pdf</td><td>82</td><td class='num'><span class='ok'>1/1</span></td><td class='num'><span class='ok'>48/48</span></td><td></td><td><a href='batch/600887_伊利股份_2025年度报告/p082_切片/目检/index.html'>打开</a></td><td class='mut'>batch/600887_伊利股份_2025年度报告/p082_切片</td></tr>
+<tr><td>600887_伊利股份_2025年度报告.pdf</td><td>89</td><td class='num'><span class='ok'>1/1</span></td><td class='num'><span class='ok'>26/26</span></td><td></td><td><a href='batch/600887_伊利股份_2025年度报告/p089_切片/目检/index.html'>打开</a></td><td class='mut'>batch/600887_伊利股份_2025年度报告/p089_切片</td></tr>
+<tr><td>600900_长江电力_2025年度报告.pdf</td><td>80</td><td class='num'><span class='ok'>1/1</span></td><td class='num'><span class='ok'>39/39</span></td><td></td><td><a href='batch/600900_长江电力_2025年度报告/p080_切片/目检/index.html'>打开</a></td><td class='mut'>batch/600900_长江电力_2025年度报告/p080_切片</td></tr>
+<tr><td>600900_长江电力_2025年度报告.pdf</td><td>84</td><td class='num'><span class='ok'>2/2</span></td><td class='num'><span class='ok'>37/37</span></td><td></td><td><a href='batch/600900_长江电力_2025年度报告/p084_切片/目检/index.html'>打开</a></td><td class='mut'>batch/600900_长江电力_2025年度报告/p084_切片</td></tr>
+<tr><td>600900_长江电力_2025年度报告.pdf</td><td>87</td><td class='num'><span class='bad'>1/2</span></td><td class='num'><span class='bad'>30/31</span></td><td><span class='mut'>table-0001((二)终止经营净利润(净亏损以“一”号填列）)</span></td><td><a href='batch/600900_长江电力_2025年度报告/p087_切片/目检/index.html'>打开</a></td><td class='mut'>batch/600900_长江电力_2025年度报告/p087_切片</td></tr>
+<tr><td>600941_中国移动_2025年度报告.pdf</td><td>126</td><td class='num'><span class='ok'>1/1</span></td><td class='num'><span class='ok'>16/16</span></td><td></td><td><a href='cmcc_p126/目检/index.html'>打开</a></td><td class='mut'>cmcc_p126</td></tr>
+<tr><td>601318_中国平安_2025年度报告.pdf</td><td>14, 15</td><td class='num'><span class='ok'>7/7</span></td><td class='num'><span class='ok'>51/51</span></td><td></td><td><a href='pingan_p14-15/目检/index.html'>打开</a></td><td class='mut'>pingan_p14-15</td></tr>
+<tr><td>601600_中国铝业_2026年半年度报告.pdf</td><td>56</td><td class='num'><span class='ok'>1/1</span></td><td class='num'><span class='ok'>29/29</span></td><td></td><td><a href='batch/601600_中国铝业_2026年半年度报告/p056_切片/目检/index.html'>打开</a></td><td class='mut'>batch/601600_中国铝业_2026年半年度报告/p056_切片</td></tr>
+<tr><td>601600_中国铝业_2026年半年度报告.pdf</td><td>60</td><td class='num'><span class='ok'>1/1</span></td><td class='num'><span class='ok'>28/28</span></td><td></td><td><a href='batch/601600_中国铝业_2026年半年度报告/p060_切片/目检/index.html'>打开</a></td><td class='mut'>batch/601600_中国铝业_2026年半年度报告/p060_切片</td></tr>
+<tr><td>601600_中国铝业_2026年半年度报告.pdf</td><td>63</td><td class='num'><span class='ok'>1/1</span></td><td class='num'><span class='ok'>24/24</span></td><td></td><td><a href='batch/601600_中国铝业_2026年半年度报告/p063_切片/目检/index.html'>打开</a></td><td class='mut'>batch/601600_中国铝业_2026年半年度报告/p063_切片</td></tr>
+<tr><td>601816_京沪高铁_2025年度报告.pdf</td><td>62</td><td class='num'><span class='ok'>1/1</span></td><td class='num'><span class='ok'>25/25</span></td><td></td><td><a href='batch/601816_京沪高铁_2025年度报告/p062_切片/目检/index.html'>打开</a></td><td class='mut'>batch/601816_京沪高铁_2025年度报告/p062_切片</td></tr>
+<tr><td>601816_京沪高铁_2025年度报告.pdf</td><td>68</td><td class='num'><span class='ok'>2/2</span></td><td class='num'><span class='ok'>26/26</span></td><td></td><td><a href='batch/601816_京沪高铁_2025年度报告/p068_切片/目检/index.html'>打开</a></td><td class='mut'>batch/601816_京沪高铁_2025年度报告/p068_切片</td></tr>
+<tr><td>601816_京沪高铁_2025年度报告.pdf</td><td>72</td><td class='num'><span class='ok'>2/2</span></td><td class='num'><span class='ok'>24/24</span></td><td></td><td><a href='batch/601816_京沪高铁_2025年度报告/p072_切片/目检/index.html'>打开</a></td><td class='mut'>batch/601816_京沪高铁_2025年度报告/p072_切片</td></tr>
+</table></body></html>

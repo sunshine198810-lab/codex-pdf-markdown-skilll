@@ -1,0 +1,40 @@
+{
+  "schema_version": "2026-09-05.1",
+  "run_id": "20260905T224546",
+  "mode": "tableslice_v02_core",
+  "source_pdf": {
+    "path": "/Users/eric/Documents/copilot设计skilll/600519_贵州茅台_2026年半年度报告.pdf",
+    "sha256_start": "0e10aa26be46b1cf3cd03f06e834c7fb98d5dd0d661b96f8fddd4af7e846a4f6",
+    "sha256_end": null
+  },
+  "program": {
+    "skill_version": "annual-report-markdown",
+    "pipeline_version": "0.2.0-p0",
+    "command_line": "run_tableslice.py"
+  },
+  "engines": {
+    "renderer": "pdfplumber",
+    "ocr": null,
+    "layout": null,
+    "table": "mineru-pipeline"
+  },
+  "config": {},
+  "timing": {
+    "started_at": "2026-09-05T22:45:46+08:00",
+    "finished_at": "2026-09-05T22:45:46+08:00",
+    "elapsed_seconds": null,
+    "pages_processed": 1,
+    "model_calls": 0
+  },
+  "failures": [
+    "MinerU content_list 表数=1；切片保留=1"
+  ],
+  "page_status": [
+    {
+      "physical_page": 25,
+      "status": "processed"
+    }
+  ],
+  "output_dir": "samples/batch/600519_贵州茅台_2026年半年度报告/p025_切片",
+  "overall_state": "partial"
+}

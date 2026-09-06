@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://annual-report-kit/schemas/logical-table.schema.json",
+  "title": "LogicalTable",
+  "description": "跨页逻辑表（§9.4）。区分物理片段与逻辑表；不允许仅凭同标题拼接不同期间/主体/口径的子表。",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "logical_table_id": { "type": "string" },
+    "caption": { "type": ["string", "null"] },
+    "fragments": { "type": "array", "items": { "type": "string" }, "description": "物理表片段 ID 列表" },
+    "join_evidence": {
+      "type": "array",
+      "description": "拼接依据：页相邻、续表提示、列几何、表头路径、期间、币种、主体、注释编号、行项延续、表尾特征",
+      "items": { "type": "string" }
+    },
+    "subgroups": {
+      "type": "array",
+      "description": "同一逻辑表允许不同期间子组，但须明确建模子组边界",
+      "items": {
+        "type": "object",
+        "properties": {
+          "subgroup_id": { "type": "string" },
+          "fragment_ids": { "type": "array", "items": { "type": "string" } },
+          "period": { "type": ["string", "null"] },
+          "entity_scope": { "type": ["string", "null"] },
+          "basis": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "forbidden_join_notes": { "type": "array", "items": { "type": "string" }, "description": "记录被拒绝拼接的情况（换年度/换主体/母公司表/另一期间完整表等）" },
+    "candidate_status": {
+      "type": "string",
+      "enum": ["extracted", "needs_review", "accepted_by_rules", "parse_failed", "pending"]
+    },
+    "html_path": { "type": ["string", "null"] },
+    "json_path": { "type": ["string", "null"] }
+  },
+  "required": ["logical_table_id", "fragments"]
+}

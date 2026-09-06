@@ -1,0 +1,338 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<title>目检 · 表格结构候选</title>
+<style>
+body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;margin:24px;color:#222}
+h1{font-size:20px}h2{font-size:17px;border-bottom:2px solid #ccc;padding-bottom:4px;margin-top:28px}
+h3{font-size:14px;margin:14px 0 4px}h4{font-size:13px;margin:10px 0 4px}
+.warn{background:#fff8e1;border-left:4px solid #f0ad4e;padding:8px 12px;margin:10px 0}
+.cols{display:flex;gap:16px;flex-wrap:wrap}.cols>div{flex:1 1 46%;min-width:340px}
+table{border-collapse:collapse;margin:6px 0;width:100%}
+td,th{border:1px solid #bbb;padding:4px 7px;font-size:12.5px;vertical-align:top}
+td.blank{background:#f4f4f4}
+td.grp{font-weight:700;background:#eef4fb}
+td.hd{font-weight:600;background:#f7f9fb}
+ol.lines{font-size:13px;line-height:1.6;color:#333}
+.meta{color:#777;font-size:12px}.cap{color:#0b5cad;font-weight:600}
+img.page{max-width:100%;border:1px solid #ccc}
+.tbl-title{font-size:15px;font-weight:700;margin:16px 0 2px;padding:6px 10px;
+border-left:4px solid #0b5cad;background:#eef4fb;border-radius:0 4px 4px 0}
+.tbl-title .ok{color:#177245}.tbl-title .cand{color:#b06d00}
+.tbl-title .todo{color:#999;font-weight:400}
+.ttag{font-size:11px;font-weight:400;color:#888;margin-left:8px}
+</style></head><body>
+<h1>目检 · 表格结构候选</h1>
+<p class='meta'>源 PDF：/Users/eric/Documents/copilot设计skilll/600900_长江电力_2025年度报告.pdf</p>
+<div class='warn'><b>状态：partial</b> —— 表格为<b>结构候选</b>（extracted、未人工核对、eligible_for_calculation=false）。每表<b>归属标题</b>优先取 目检/table_titles.json 的人工核对值（✓），否则回落 MinerU 表题候选（⚠）或‘待人工命名’。请对照左侧原页图目检；增改标题可编辑 table_titles.json 后重新生成。</div>
+<h2>物理页 84</h2>
+<div class='cols'>
+<div>
+<img class='page' src='images/p0084.png' alt='原页 84' loading='lazy'>
+</div>
+<div>
+<h3>阅读顺序候选（词级分行，未合并段落）</h3>
+<ol class='lines'>
+<li>中国长江电力股份有限公司2025年年度报告</li>
+<li>负债合计 149,398,556,960.76 149,188,869,625.21</li>
+<li>所有者权益（或股东权益）：</li>
+<li>股本 24,468,217,716.00 24,468,217,716.00</li>
+<li>其他权益工具</li>
+<li>其中：优先股</li>
+<li>永续债</li>
+<li>资本公积 73,804,530,699.39 74,174,169,744.67</li>
+<li>减：库存股</li>
+<li>其他综合收益 3,027,730,094.12 2,705,969,949.45</li>
+<li>专项储备 26,135,681.57</li>
+<li>盈余公积 22,934,762,401.97 22,934,762,401.97</li>
+<li>未分配利润 53,110,599,094.67 44,288,234,747.06</li>
+<li>股东权益合计 177,345,840,006.15 168,597,490,240.72</li>
+<li>负债和股东权益总计 326,744,396,966.91 317,786,359,865.93</li>
+<li>公司负责人：刘伟平 主管会计工作负责人：张传红 会计机构负责人：张娜</li>
+<li>合并利润表</li>
+<li>2025年1—12月</li>
+<li>编制单位：中国长江电力股份有限公司</li>
+<li>单位：元 币种：人民币</li>
+<li>项目 附注 2025年度 2024年度</li>
+<li>一、营业总收入 86,241,940,222.20 84,491,870,566.52</li>
+<li>其中：营业收入 七、61 86,241,940,222.20 84,491,870,566.52</li>
+<li>利息收入</li>
+<li>已赚保费</li>
+<li>手续费及佣金收入</li>
+<li>二、营业总成本 48,766,372,374.15 50,268,818,794.54</li>
+<li>其中：营业成本 七、61 33,057,840,034.77 34,528,346,186.67</li>
+<li>利息支出</li>
+<li>手续费及佣金支出</li>
+<li>退保金</li>
+<li>赔付支出净额</li>
+<li>提取保险责任准备金净额</li>
+<li>保单红利支出</li>
+<li>分保费用</li>
+<li>税金及附加 七、62 3,318,838,177.83 1,968,013,144.28</li>
+<li>销售费用 七、63 234,079,316.40 188,142,529.94</li>
+<li>管理费用 七、64 1,617,349,026.38 1,562,254,125.03</li>
+<li>研发费用 七、65 1,166,892,834.72 890,719,278.34</li>
+<li>财务费用 七、66 9,371,372,984.05 11,131,343,530.28</li>
+<li>其中：利息费用 9,508,718,717.67 11,327,295,992.21</li>
+<li>利息收入 148,748,619.61 204,614,382.09</li>
+<li>加：其他收益 七、67 19,576,677.60 6,617,497.40</li>
+<li>投资收益（损失以“－”号填列） 七、68 4,958,543,639.59 5,257,616,386.94</li>
+<li>其中：对联营企业和合营企业的</li>
+<li>4,616,346,514.82 4,806,161,995.16</li>
+<li>投资收益</li>
+<li>以摊余成本计量的金融资</li>
+<li>84/259</li>
+</ol>
+</div>
+</div>
+<div class='tbl-title'><span class='todo'>table-0001 · （待人工命名）</span><span class='ttag'>[待人工命名]</span></div>
+<p class='meta'>14 行 × 4 列 · 53 单元格</p>
+<p class='meta' style='color:#177245'>数值核对 ✓：12/12 数据行一致（对照原页文字层）</p>
+<p class='meta'>首行提示：负债合计</p>
+<table>
+<tr>
+<td>负债合计</td>
+<td></td>
+<td>149,398,556,960.76</td>
+<td>149,188,869,625.21</td>
+</tr>
+<tr>
+<td colspan="4">所有者权益（或股东权益）：</td>
+</tr>
+<tr>
+<td>股本</td>
+<td></td>
+<td>24,468,217,716.00</td>
+<td>24,468,217,716.00</td>
+</tr>
+<tr>
+<td>其他权益工具</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>其中：优先股</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>永续债</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>资本公积</td>
+<td></td>
+<td>73,804,530, 699.39</td>
+<td>74, 174, 169, 744.67</td>
+</tr>
+<tr>
+<td>减：库存股</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>其他综合收益</td>
+<td></td>
+<td>3,027,730,094.12</td>
+<td>2,705,969,949.45</td>
+</tr>
+<tr>
+<td>专项储备</td>
+<td></td>
+<td></td>
+<td>26,135,681.57</td>
+</tr>
+<tr>
+<td>盈余公积</td>
+<td></td>
+<td>22,934,762,401.97</td>
+<td>22,934,762,401.97</td>
+</tr>
+<tr>
+<td>未分配利润</td>
+<td></td>
+<td>53,110,599,094.67</td>
+<td>44,288,234, 747.06</td>
+</tr>
+<tr>
+<td>股东权益合计</td>
+<td></td>
+<td>177,345,840,006.15</td>
+<td>168,597,490,240.72</td>
+</tr>
+<tr>
+<td>负债和股东权益总计</td>
+<td></td>
+<td>326,744,396,966.91</td>
+<td>317,786,359,865.93</td>
+</tr>
+</table>
+<p class='meta'>表注候选：公司负责人：刘伟平 主管会计工作负责人：张传红 会计机构负责人：张娜</p>
+<p class='meta'>证据：ev-table-0001 · 物理页 84 · bbox_norm ev-table-0001 · json 表格/table-0001.json · html 表格/table-0001.html</p>
+<div class='tbl-title'><span class='todo'>table-0002 · （待人工命名）</span><span class='ttag'>[待人工命名]</span></div>
+<p class='meta'>26 行 × 4 列 · 104 单元格</p>
+<p class='meta' style='color:#177245'>数值核对 ✓：25/25 数据行一致（对照原页文字层）</p>
+<p class='meta'>首行提示：项目 / 附注</p>
+<table>
+<tr>
+<td>项目</td>
+<td>附注</td>
+<td>2025年度</td>
+<td>2024年度</td>
+</tr>
+<tr>
+<td>一、营业总收入</td>
+<td></td>
+<td>86,241,940,222.20</td>
+<td>84,491,870,566.52</td>
+</tr>
+<tr>
+<td>其中：营业收入</td>
+<td>七、61</td>
+<td>86,241,940,222.20</td>
+<td>84,491,870,566.52</td>
+</tr>
+<tr>
+<td>利息收入</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>已赚保费</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>手续费及佣金收入</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>二、营业总成本</td>
+<td></td>
+<td>48, 766, 372, 374.15</td>
+<td>50,268,818,794.54</td>
+</tr>
+<tr>
+<td>其中：营业成本</td>
+<td>七、61</td>
+<td>33, 057,840,034.77</td>
+<td>34, 528, 346, 186.67</td>
+</tr>
+<tr>
+<td>利息支出</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>手续费及佣金支出</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>退保金</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>赔付支出净额</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>提取保险责任准备金净额</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>保单红利支出</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>分保费用</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>税金及附加</td>
+<td>七、62</td>
+<td>3,318,838, 177.83</td>
+<td>1,968,013,144.28</td>
+</tr>
+<tr>
+<td>销售费用</td>
+<td>七、63</td>
+<td>234,079,316.40</td>
+<td>188,142,529.94</td>
+</tr>
+<tr>
+<td>管理费用</td>
+<td>七、64</td>
+<td>1,617,349,026.38</td>
+<td>1,562,254, 125.03</td>
+</tr>
+<tr>
+<td>研发费用</td>
+<td>七、65</td>
+<td>1, 166, 892, 834.72</td>
+<td>890,719,278.34</td>
+</tr>
+<tr>
+<td>财务费用</td>
+<td>七、66</td>
+<td>9,371,372,984.05</td>
+<td>11,131,343,530.28</td>
+</tr>
+<tr>
+<td>其中：利息费用</td>
+<td></td>
+<td>9,508,718,717.67</td>
+<td>11,327,295,992.21</td>
+</tr>
+<tr>
+<td>利息收入</td>
+<td></td>
+<td>148,748,619.61</td>
+<td>204,614,382.09</td>
+</tr>
+<tr>
+<td>加：其他收益</td>
+<td>七、67</td>
+<td>19,576,677.60</td>
+<td>6,617,497.40</td>
+</tr>
+<tr>
+<td>投资收益（损失以“一”号填列）</td>
+<td>七、68</td>
+<td>4,958, 543, 639.59</td>
+<td>5,257,616,386.94</td>
+</tr>
+<tr>
+<td>其中：对联营企业和合营企业的投资收益</td>
+<td></td>
+<td>4,616,346,514.82</td>
+<td>4,806,161,995.16</td>
+</tr>
+<tr>
+<td>以摊余成本计量的金融资</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<p class='meta'>证据：ev-table-0002 · 物理页 84 · bbox_norm ev-table-0002 · json 表格/table-0002.json · html 表格/table-0002.html</p>
+</body></html>

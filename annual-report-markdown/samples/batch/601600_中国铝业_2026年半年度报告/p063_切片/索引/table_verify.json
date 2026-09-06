@@ -1,0 +1,356 @@
+{
+  "source_pdf": "/Users/eric/Documents/copilot设计skilll/601600_中国铝业_2026年半年度报告.pdf",
+  "schema_version": "2026-09-05.1",
+  "method": "pdfplumber_text_layer + x_order prefix check (vs display grid)",
+  "tables_total": 1,
+  "tables_ok": 1,
+  "tables": {
+    "table-0001": {
+      "physical_page": 63,
+      "title_item": {
+        "logical_table_id": "table-0001",
+        "physical_page": 63,
+        "rows": 28,
+        "cols": 4,
+        "cells": 103,
+        "json": "表格/table-0001.json",
+        "html": "表格/table-0001.html",
+        "evidence": "ev-table-0001",
+        "candidate_status": "extracted"
+      },
+      "rows_total": 24,
+      "rows_ok": 24,
+      "mismatch_labels": [],
+      "row_results": [
+        {
+          "row": 1,
+          "label": "一、经营活动产生的现金流量：",
+          "kind": "group"
+        },
+        {
+          "row": 2,
+          "label": "销售商品、提供劳务收到的现金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "119,361,832",
+            "99,040,406"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 3,
+          "label": "收到的税费返还",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "75,561",
+            "36,061"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 4,
+          "label": "收到其他与经营活动有关的现金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七、(61)(1)",
+            "364,535",
+            "518,071"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 5,
+          "label": "经营活动现金流入小计",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "119,801,928",
+            "99,594,538"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 6,
+          "label": "购买商品、接受劳务支付的现金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "73,353,201",
+            "71,012,402"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 7,
+          "label": "支付给职工及为职工支付的现金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "6,326,518",
+            "5,760,609"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 8,
+          "label": "支付的各项税费",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "12,378,563",
+            "7,270,378"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 9,
+          "label": "支付其他与经营活动有关的现金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七、(61)(1)",
+            "1,481,085",
+            "1,286,404"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 10,
+          "label": "经营活动现金流出小计",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "93,539,367",
+            "85,329,793"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 11,
+          "label": "经营活动产生的现金流量净额",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七、(62)(1)",
+            "26,262,561",
+            "14,264,745"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 12,
+          "label": "二、投资活动产生的现金流量：",
+          "kind": "group"
+        },
+        {
+          "row": 13,
+          "label": "收回投资收到的现金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七、(61)(2)",
+            "9,000,156",
+            "3,000,000"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 14,
+          "label": "取得投资收益收到的现金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "304,216",
+            "513,152"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 15,
+          "label": "处置固定资产、无形资产和其他长期资产收回的现金净额",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "43,801",
+            "27,220"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 16,
+          "label": "处置子公司及其他营业单位收到的现金净额",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七、(62)(3)",
+            "-30,874",
+            "108,347"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 17,
+          "label": "收到其他与投资活动有关的现金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七、(61)(2)",
+            "513,711",
+            "326,167"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 18,
+          "label": "投资活动现金流入小计",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "9,831,010",
+            "3,974,886"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 19,
+          "label": "购建固定资产、无形资产和其他长期资产支付的现金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "3,545,777",
+            "4,695,712"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 20,
+          "label": "投资支付的现金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七、(61)(2)",
+            "10,784,573",
+            "4,069,073"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 21,
+          "label": "支付其他与投资活动有关的现金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七、(61)(2)",
+            "97,546",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 22,
+          "label": "投资活动现金流出小计",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "14,427,896",
+            "8,764,785"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 23,
+          "label": "投资活动产生的现金流量净额",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "-4,596,886",
+            "-4,789,899"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 24,
+          "label": "三、筹资活动产生的现金流量：",
+          "kind": "group"
+        },
+        {
+          "row": 25,
+          "label": "取得借款收到的现金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "6,195,852",
+            "4,897,086"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 26,
+          "label": "发行债券收到的现金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "998,750",
+            "3,998,700"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 27,
+          "label": "筹资活动现金流入小计",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "7,194,602",
+            "8,895,786"
+          ],
+          "line_numeric_tokens": null
+        }
+      ],
+      "verdict": "ok"
+    }
+  }
+}

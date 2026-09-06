@@ -1,0 +1,372 @@
+{
+  "source_pdf": "/Users/eric/Documents/copilot设计skilll/600887_伊利股份_2025年度报告.pdf",
+  "schema_version": "2026-09-05.1",
+  "method": "pdfplumber_text_layer + x_order prefix check (vs display grid)",
+  "tables_total": 1,
+  "tables_ok": 1,
+  "tables": {
+    "table-0001": {
+      "physical_page": 89,
+      "title_item": {
+        "logical_table_id": "table-0001",
+        "physical_page": 89,
+        "rows": 28,
+        "cols": 4,
+        "cells": 109,
+        "json": "表格/table-0001.json",
+        "html": "表格/table-0001.html",
+        "evidence": "ev-table-0001",
+        "candidate_status": "extracted"
+      },
+      "rows_total": 26,
+      "rows_ok": 26,
+      "mismatch_labels": [],
+      "row_results": [
+        {
+          "row": 1,
+          "label": "一、经营活动产生的现金流量：",
+          "kind": "group"
+        },
+        {
+          "row": 2,
+          "label": "销售商品、提供劳务收到的现金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "125, 775,963,273.89",
+            "130,651,821,490.28"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 3,
+          "label": "客户存款和同业存放款项净增加额",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 4,
+          "label": "向中央银行借款净增加额",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 5,
+          "label": "向其他金融机构拆入资金净增加额",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 6,
+          "label": "收到原保险合同保费取得的现金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 7,
+          "label": "收到再保业务现金净额",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 8,
+          "label": "保户储金及投资款净增加额",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 9,
+          "label": "收取利息、手续费及佣金的现金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "157,981,587.29",
+            "190,191,136.76"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 10,
+          "label": "拆入资金净增加额",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 11,
+          "label": "回购业务资金净增加额",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 12,
+          "label": "代理买卖证券收到的现金净额",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 13,
+          "label": "收到的税费返还",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "366,658,273.63",
+            "713,708,429.99"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 14,
+          "label": "收到其他与经营活动有关的现金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（79）1",
+            "2,535,812,234.33",
+            "3,721,498,035.75"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 15,
+          "label": "经营活动现金流入小计",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "128,836,415,369.14",
+            "135,277,219,092.78"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 16,
+          "label": "购买商品、接受劳务支付的现金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "91, 266, 053, 698.35",
+            "91,253,748,837.99"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 17,
+          "label": "客户贷款及垫款净增加额",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 18,
+          "label": "存放中央银行和同业款项净增加额",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 19,
+          "label": "支付原保险合同赔付款项的现金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 20,
+          "label": "拆出资金净增加额",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 21,
+          "label": "支付利息、手续费及佣金的现金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 22,
+          "label": "支付保单红利的现金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 23,
+          "label": "支付给职工及为职工支付的现金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "14, 188, 070,607.76",
+            "13,861,607,129.49"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 24,
+          "label": "支付的各项税费",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "6,854,150,915.76",
+            "6,729,507,740.55"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 25,
+          "label": "支付其他与经营活动有关的现金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七（79）1",
+            "2,184,219,656.95",
+            "1,692,614,991.37"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 26,
+          "label": "经营活动现金流出小计",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "114,492,494,878.82",
+            "113,537,478,699.40"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 27,
+          "label": "经营活动产生的现金流量净额",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "14, 343,920, 490.32",
+            "21,739,740,393.38"
+          ],
+          "line_numeric_tokens": null
+        }
+      ],
+      "verdict": "ok"
+    }
+  }
+}

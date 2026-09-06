@@ -1,0 +1,16 @@
+{
+  "tables": [
+    {
+      "logical_table_id": "table-0001",
+      "physical_page": 25,
+      "rows": 3,
+      "cols": 4,
+      "cells": 12,
+      "json": "表格/table-0001.json",
+      "html": "表格/table-0001.html",
+      "evidence": "ev-table-0001",
+      "candidate_status": "extracted"
+    }
+  ],
+  "state": "candidate_only"
+}

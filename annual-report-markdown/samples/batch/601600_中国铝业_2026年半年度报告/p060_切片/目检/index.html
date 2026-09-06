@@ -1,0 +1,266 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<title>目检 · 表格结构候选</title>
+<style>
+body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;margin:24px;color:#222}
+h1{font-size:20px}h2{font-size:17px;border-bottom:2px solid #ccc;padding-bottom:4px;margin-top:28px}
+h3{font-size:14px;margin:14px 0 4px}h4{font-size:13px;margin:10px 0 4px}
+.warn{background:#fff8e1;border-left:4px solid #f0ad4e;padding:8px 12px;margin:10px 0}
+.cols{display:flex;gap:16px;flex-wrap:wrap}.cols>div{flex:1 1 46%;min-width:340px}
+table{border-collapse:collapse;margin:6px 0;width:100%}
+td,th{border:1px solid #bbb;padding:4px 7px;font-size:12.5px;vertical-align:top}
+td.blank{background:#f4f4f4}
+td.grp{font-weight:700;background:#eef4fb}
+td.hd{font-weight:600;background:#f7f9fb}
+ol.lines{font-size:13px;line-height:1.6;color:#333}
+.meta{color:#777;font-size:12px}.cap{color:#0b5cad;font-weight:600}
+img.page{max-width:100%;border:1px solid #ccc}
+.tbl-title{font-size:15px;font-weight:700;margin:16px 0 2px;padding:6px 10px;
+border-left:4px solid #0b5cad;background:#eef4fb;border-radius:0 4px 4px 0}
+.tbl-title .ok{color:#177245}.tbl-title .cand{color:#b06d00}
+.tbl-title .todo{color:#999;font-weight:400}
+.ttag{font-size:11px;font-weight:400;color:#888;margin-left:8px}
+</style></head><body>
+<h1>目检 · 表格结构候选</h1>
+<p class='meta'>源 PDF：/Users/eric/Documents/copilot设计skilll/601600_中国铝业_2026年半年度报告.pdf</p>
+<div class='warn'><b>状态：partial</b> —— 表格为<b>结构候选</b>（extracted、未人工核对、eligible_for_calculation=false）。每表<b>归属标题</b>优先取 目检/table_titles.json 的人工核对值（✓），否则回落 MinerU 表题候选（⚠）或‘待人工命名’。请对照左侧原页图目检；增改标题可编辑 table_titles.json 后重新生成。</div>
+<h2>物理页 60</h2>
+<div class='cols'>
+<div>
+<img class='page' src='images/p0060.png' alt='原页 60' loading='lazy'>
+</div>
+<div>
+<h3>阅读顺序候选（词级分行，未合并段落）</h3>
+<ol class='lines'>
+<li>中国铝业股份有限公司2026年半年度报告</li>
+<li>合并利润表</li>
+<li>2026年1—6月</li>
+<li>单位：千元 币种：人民币</li>
+<li>2025年半年度</li>
+<li>项目 附注 2026年半年度</li>
+<li>（经重述）</li>
+<li>一、营业总收入 七、(46) 125,413,186 116,408,652</li>
+<li>其中：营业收入 125,413,186 116,408,652</li>
+<li>二、营业总成本 99,345,118 103,914,969</li>
+<li>其中：营业成本 七、(46) 91,626,249 96,896,571</li>
+<li>税金及附加 七、(47) 2,040,905 1,855,214</li>
+<li>销售费用 七、(48) 231,786 188,814</li>
+<li>管理费用 七、(49) 2,559,803 2,414,739</li>
+<li>研发费用 七、(50) 1,854,359 1,370,589</li>
+<li>财务费用 七、(51) 1,032,016 1,189,042</li>
+<li>其中：利息费用 七、(51) 1,053,672 1,276,491</li>
+<li>利息收入 七、(51) 167,304 154,717</li>
+<li>加：其他收益 七、(52) 246,317 552,883</li>
+<li>投资收益（损失以“-”号填列） 七、(53) 87,604 793,522</li>
+<li>其中：对联营企业和合营企业的投资收益 七、(53) 128,399 601,535</li>
+<li>公允价值变动收益（损失以“-”号填列） 七、(54) 16,853 -96,697</li>
+<li>信用减值损失（损失以“-”号填列） 七、(55) 75,306 -41,801</li>
+<li>资产减值损失（损失以“-”号填列） 七、(56) -241,894 -481,504</li>
+<li>资产处置收益（损失以“-”号填列） 七、(57) 39,883 38,880</li>
+<li>三、营业利润（亏损以“-”号填列） 26,292,137 13,258,966</li>
+<li>加：营业外收入 七、(58) 64,285 144,764</li>
+<li>减：营业外支出 七、(59) 126,309 157,005</li>
+<li>四、利润总额（亏损总额以“-”号填列） 26,230,113 13,246,725</li>
+<li>减：所得税费用 七、(60) 4,733,925 2,151,813</li>
+<li>五、净利润（净亏损以“-”号填列） 21,496,188 11,094,912</li>
+<li>其中：同一控制下企业合并中被合并方合并前利</li>
+<li>- -3,174</li>
+<li>润(净亏损以“-”号填列)</li>
+<li>（一）按经营持续性分类</li>
+<li>1.持续经营净利润（净亏损以“-”号填列） 21,496,188 11,094,912</li>
+<li>（二）按所有权归属分类</li>
+<li>1.归属于母公司股东的净利润（净亏损以</li>
+<li>11,871,383 7,070,216</li>
+<li>“-”号填列）</li>
+<li>2.少数股东损益（净亏损以“-”号填列） 9,624,805 4,024,696</li>
+<li>60/206</li>
+</ol>
+</div>
+</div>
+<div class='tbl-title'><span class='todo'>table-0001 · （待人工命名）</span><span class='ttag'>[待人工命名]</span></div>
+<p class='meta'>31 行 × 4 列 · 118 单元格</p>
+<p class='meta' style='color:#177245'>数值核对 ✓：28/28 数据行一致（对照原页文字层）</p>
+<p class='meta'>首行提示：项目 / 附注</p>
+<table>
+<tr>
+<td>项目</td>
+<td>附注</td>
+<td>2026年半年度</td>
+<td>2025年半年度(经重述)</td>
+</tr>
+<tr>
+<td>一、营业总收入</td>
+<td>七、(46)</td>
+<td>125,413, 186</td>
+<td>116,408,652</td>
+</tr>
+<tr>
+<td>其中：营业收入</td>
+<td></td>
+<td>125,413,186</td>
+<td>116,408,652</td>
+</tr>
+<tr>
+<td>二、营业总成本</td>
+<td></td>
+<td>99,345,118</td>
+<td>103,914,969</td>
+</tr>
+<tr>
+<td>其中：营业成本</td>
+<td>七、(46)</td>
+<td>91,626,249</td>
+<td>96,896,571</td>
+</tr>
+<tr>
+<td>税金及附加</td>
+<td>七、(47)</td>
+<td>2,040,905</td>
+<td>1,855,214</td>
+</tr>
+<tr>
+<td>销售费用</td>
+<td>七、(48)</td>
+<td>231,786</td>
+<td>188,814</td>
+</tr>
+<tr>
+<td>管理费用</td>
+<td>七、(49)</td>
+<td>2,559,803</td>
+<td>2,414,739</td>
+</tr>
+<tr>
+<td>研发费用</td>
+<td>七、(50)</td>
+<td>1,854,359</td>
+<td>1,370,589</td>
+</tr>
+<tr>
+<td>财务费用</td>
+<td>七、(51)</td>
+<td>1,032,016</td>
+<td>1,189,042</td>
+</tr>
+<tr>
+<td>其中：利息费用</td>
+<td>七、(51)</td>
+<td>1,053,672</td>
+<td>1,276,491</td>
+</tr>
+<tr>
+<td>利息收入</td>
+<td>七、(51)</td>
+<td>167,304</td>
+<td>154,717</td>
+</tr>
+<tr>
+<td>加：其他收益</td>
+<td>七、(52)</td>
+<td>246,317</td>
+<td>552,883</td>
+</tr>
+<tr>
+<td>投资收益（损失以“-”号填列）</td>
+<td>七、(53)</td>
+<td>87,604</td>
+<td>793,522</td>
+</tr>
+<tr>
+<td>其中：对联营企业和合营企业的投资收益</td>
+<td>七、(53)</td>
+<td>128,399</td>
+<td>601,535</td>
+</tr>
+<tr>
+<td>公允价值变动收益（损失以“-”号填列）</td>
+<td>七、(54)</td>
+<td>16,853</td>
+<td>-96,697</td>
+</tr>
+<tr>
+<td>信用减值损失（损失以“-”号填列）</td>
+<td>七、(55)</td>
+<td>75,306</td>
+<td>-41,801</td>
+</tr>
+<tr>
+<td>资产减值损失（损失以“-”号填列）</td>
+<td>七、(56)</td>
+<td>-241,894</td>
+<td>-481,504</td>
+</tr>
+<tr>
+<td>资产处置收益（损失以“-”号填列）</td>
+<td>七、(57)</td>
+<td>39,883</td>
+<td>38,880</td>
+</tr>
+<tr>
+<td>三、营业利润（亏损以“-”号填列）</td>
+<td></td>
+<td>26,292,137</td>
+<td>13,258,966</td>
+</tr>
+<tr>
+<td>加：营业外收入</td>
+<td>七、(58)</td>
+<td>64,285</td>
+<td>144,764</td>
+</tr>
+<tr>
+<td>减：营业外支出</td>
+<td>七、(59)</td>
+<td>126,309</td>
+<td>157,005</td>
+</tr>
+<tr>
+<td>四、利润总额（亏损总额以“-”号填列）</td>
+<td></td>
+<td>26,230,113</td>
+<td>13,246,725</td>
+</tr>
+<tr>
+<td>减：所得税费用</td>
+<td>七、(60)</td>
+<td>4,733,925</td>
+<td>2,151,813</td>
+</tr>
+<tr>
+<td>五、净利润（净亏损以“-”号填列）</td>
+<td></td>
+<td>21,496,188</td>
+<td>11,094,912</td>
+</tr>
+<tr>
+<td>其中：同一控制下企业合并中被合并方合并前利润(净亏损以“-”号填列)</td>
+<td></td>
+<td></td>
+<td>-3,174</td>
+</tr>
+<tr>
+<td colspan="4">（一）按经营持续性分类</td>
+</tr>
+<tr>
+<td>1. 持续经营净利润（净亏损以“-”号填列）</td>
+<td></td>
+<td>21,496,188</td>
+<td>11,094,912</td>
+</tr>
+<tr>
+<td colspan="4">（二）按所有权归属分类</td>
+</tr>
+<tr>
+<td>1. 归属于母公司股东的净利润（净亏损以“_”号填列)</td>
+<td></td>
+<td>11,871,383</td>
+<td>7,070,216</td>
+</tr>
+<tr>
+<td>2. 少数股东损益（净亏损以“-”号填列）</td>
+<td></td>
+<td>9,624,805</td>
+<td>4,024,696</td>
+</tr>
+</table>
+<p class='meta'>证据：ev-table-0001 · 物理页 60 · bbox_norm ev-table-0001 · json 表格/table-0001.json · html 表格/table-0001.html</p>
+</body></html>

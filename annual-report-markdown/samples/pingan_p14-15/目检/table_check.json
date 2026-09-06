@@ -1,0 +1,47 @@
+{
+  "schema_version": "2026-09-05.1",
+  "tables": {
+    "table-0001": {
+      "verdict": "ok",
+      "rows_ok": 4,
+      "rows_total": 4,
+      "mismatch_labels": []
+    },
+    "table-0002": {
+      "verdict": "ok",
+      "rows_ok": 4,
+      "rows_total": 4,
+      "mismatch_labels": []
+    },
+    "table-0003": {
+      "verdict": "ok",
+      "rows_ok": 1,
+      "rows_total": 1,
+      "mismatch_labels": []
+    },
+    "table-0004": {
+      "verdict": "ok",
+      "rows_ok": 6,
+      "rows_total": 6,
+      "mismatch_labels": []
+    },
+    "table-0005": {
+      "verdict": "ok",
+      "rows_ok": 4,
+      "rows_total": 4,
+      "mismatch_labels": []
+    },
+    "table-0006": {
+      "verdict": "ok",
+      "rows_ok": 6,
+      "rows_total": 6,
+      "mismatch_labels": []
+    },
+    "table-0007": {
+      "verdict": "ok",
+      "rows_ok": 26,
+      "rows_total": 26,
+      "mismatch_labels": []
+    }
+  }
+}

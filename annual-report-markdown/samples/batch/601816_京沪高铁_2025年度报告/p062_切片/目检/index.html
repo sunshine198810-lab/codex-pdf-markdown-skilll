@@ -1,0 +1,240 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<title>目检 · 表格结构候选</title>
+<style>
+body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;margin:24px;color:#222}
+h1{font-size:20px}h2{font-size:17px;border-bottom:2px solid #ccc;padding-bottom:4px;margin-top:28px}
+h3{font-size:14px;margin:14px 0 4px}h4{font-size:13px;margin:10px 0 4px}
+.warn{background:#fff8e1;border-left:4px solid #f0ad4e;padding:8px 12px;margin:10px 0}
+.cols{display:flex;gap:16px;flex-wrap:wrap}.cols>div{flex:1 1 46%;min-width:340px}
+table{border-collapse:collapse;margin:6px 0;width:100%}
+td,th{border:1px solid #bbb;padding:4px 7px;font-size:12.5px;vertical-align:top}
+td.blank{background:#f4f4f4}
+td.grp{font-weight:700;background:#eef4fb}
+td.hd{font-weight:600;background:#f7f9fb}
+ol.lines{font-size:13px;line-height:1.6;color:#333}
+.meta{color:#777;font-size:12px}.cap{color:#0b5cad;font-weight:600}
+img.page{max-width:100%;border:1px solid #ccc}
+.tbl-title{font-size:15px;font-weight:700;margin:16px 0 2px;padding:6px 10px;
+border-left:4px solid #0b5cad;background:#eef4fb;border-radius:0 4px 4px 0}
+.tbl-title .ok{color:#177245}.tbl-title .cand{color:#b06d00}
+.tbl-title .todo{color:#999;font-weight:400}
+.ttag{font-size:11px;font-weight:400;color:#888;margin-left:8px}
+</style></head><body>
+<h1>目检 · 表格结构候选</h1>
+<p class='meta'>源 PDF：/Users/eric/Documents/copilot设计skilll/601816_京沪高铁_2025年度报告.pdf</p>
+<div class='warn'><b>状态：partial</b> —— 表格为<b>结构候选</b>（extracted、未人工核对、eligible_for_calculation=false）。每表<b>归属标题</b>优先取 目检/table_titles.json 的人工核对值（✓），否则回落 MinerU 表题候选（⚠）或‘待人工命名’。请对照左侧原页图目检；增改标题可编辑 table_titles.json 后重新生成。</div>
+<h2>物理页 62</h2>
+<div class='cols'>
+<div>
+<img class='page' src='images/p0062.png' alt='原页 62' loading='lazy'>
+</div>
+<div>
+<h3>阅读顺序候选（词级分行，未合并段落）</h3>
+<ol class='lines'>
+<li>二、财务报表</li>
+<li>合并资产负债表</li>
+<li>2025年12月31日</li>
+<li>编制单位：京沪高速铁路股份有限公司</li>
+<li>单位：元 币种：人民币</li>
+<li>项目 附注 2025年12月31日 2024年12月31日</li>
+<li>流动资产：</li>
+<li>货币资金 七、1 15,578,618,242.33 10,191,011,532.70</li>
+<li>结算备付金</li>
+<li>拆出资金</li>
+<li>交易性金融资产</li>
+<li>衍生金融资产</li>
+<li>应收票据</li>
+<li>应收账款 七、5 1,125,160,640.39 1,189,033,608.82</li>
+<li>应收款项融资</li>
+<li>预付款项 七、8 611,953.78 983,418.06</li>
+<li>应收保费</li>
+<li>应收分保账款</li>
+<li>应收分保合同准备金</li>
+<li>其他应收款 七、9 533,263,971.09 448,672,445.18</li>
+<li>其中：应收利息</li>
+<li>应收股利</li>
+<li>买入返售金融资产</li>
+<li>存货</li>
+<li>其中：数据资源</li>
+<li>合同资产</li>
+<li>持有待售资产</li>
+<li>一年内到期的非流动资产</li>
+<li>其他流动资产 七、13 82,857,137.80 178,791,798.11</li>
+<li>流动资产合计 17,320,511,945.39 12,008,492,802.87</li>
+<li>非流动资产：</li>
+<li>发放贷款和垫款</li>
+<li>债权投资</li>
+<li>62/195</li>
+</ol>
+</div>
+</div>
+<div class='tbl-title'><span class='todo'>table-0001 · （待人工命名）</span><span class='ttag'>[待人工命名]</span></div>
+<p class='meta'>28 行 × 4 列 · 106 单元格</p>
+<p class='meta' style='color:#177245'>数值核对 ✓：25/25 数据行一致（对照原页文字层）</p>
+<p class='meta'>首行提示：项目 / 附注</p>
+<table>
+<tr>
+<td>项目</td>
+<td>附注</td>
+<td>2025年12月31日</td>
+<td>2024年12月31日</td>
+</tr>
+<tr>
+<td colspan="4">流动资产：</td>
+</tr>
+<tr>
+<td>货币资金</td>
+<td>七、1</td>
+<td>15,578,618,242.33</td>
+<td>10,191,011,532.70</td>
+</tr>
+<tr>
+<td>结算备付金</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>拆出资金</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>交易性金融资产</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>衍生金融资产</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>应收票据</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>应收账款</td>
+<td>七、5</td>
+<td>1,125,160,640.39</td>
+<td>1,189,033,608.82</td>
+</tr>
+<tr>
+<td>应收款项融资</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>预付款项</td>
+<td>七、8</td>
+<td>611,953.78</td>
+<td>983,418.06</td>
+</tr>
+<tr>
+<td>应收保费</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>应收分保账款</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>应收分保合同准备金</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>其他应收款</td>
+<td>七、9</td>
+<td>533,263,971.09</td>
+<td>448,672,445.18</td>
+</tr>
+<tr>
+<td>其中：应收利息</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>应收股利</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>买入返售金融资产</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>存货</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>其中：数据资源</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>合同资产</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>持有待售资产</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>一年内到期的非流动资产</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>其他流动资产</td>
+<td>七、13</td>
+<td>82,857,137.80</td>
+<td>178,791,798.11</td>
+</tr>
+<tr>
+<td>流动资产合计</td>
+<td></td>
+<td>17,320,511,945.39</td>
+<td>12,008,492,802.87</td>
+</tr>
+<tr>
+<td colspan="4">非流动资产：</td>
+</tr>
+<tr>
+<td>发放贷款和垫款</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>债权投资</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+<p class='meta'>证据：ev-table-0001 · 物理页 62 · bbox_norm ev-table-0001 · json 表格/table-0001.json · html 表格/table-0001.html</p>
+</body></html>

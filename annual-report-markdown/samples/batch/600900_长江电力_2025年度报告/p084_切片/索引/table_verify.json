@@ -1,0 +1,535 @@
+{
+  "source_pdf": "/Users/eric/Documents/copilot设计skilll/600900_长江电力_2025年度报告.pdf",
+  "schema_version": "2026-09-05.1",
+  "method": "pdfplumber_text_layer + x_order prefix check (vs display grid)",
+  "tables_total": 2,
+  "tables_ok": 2,
+  "tables": {
+    "table-0001": {
+      "physical_page": 84,
+      "title_item": {
+        "logical_table_id": "table-0001",
+        "physical_page": 84,
+        "rows": 14,
+        "cols": 4,
+        "cells": 53,
+        "json": "表格/table-0001.json",
+        "html": "表格/table-0001.html",
+        "evidence": "ev-table-0001",
+        "candidate_status": "extracted"
+      },
+      "rows_total": 12,
+      "rows_ok": 12,
+      "mismatch_labels": [],
+      "row_results": [
+        {
+          "row": 1,
+          "label": "所有者权益（或股东权益）：",
+          "kind": "group"
+        },
+        {
+          "row": 2,
+          "label": "股本",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "24,468,217,716.00",
+            "24,468,217,716.00"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 3,
+          "label": "其他权益工具",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 4,
+          "label": "其中：优先股",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 5,
+          "label": "永续债",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 6,
+          "label": "资本公积",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "73,804,530, 699.39",
+            "74, 174, 169, 744.67"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 7,
+          "label": "减：库存股",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 8,
+          "label": "其他综合收益",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "3,027,730,094.12",
+            "2,705,969,949.45"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 9,
+          "label": "专项储备",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            "26,135,681.57"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 10,
+          "label": "盈余公积",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "22,934,762,401.97",
+            "22,934,762,401.97"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 11,
+          "label": "未分配利润",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "53,110,599,094.67",
+            "44,288,234, 747.06"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 12,
+          "label": "股东权益合计",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "177,345,840,006.15",
+            "168,597,490,240.72"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 13,
+          "label": "负债和股东权益总计",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "326,744,396,966.91",
+            "317,786,359,865.93"
+          ],
+          "line_numeric_tokens": null
+        }
+      ],
+      "verdict": "ok"
+    },
+    "table-0002": {
+      "physical_page": 84,
+      "title_item": {
+        "logical_table_id": "table-0002",
+        "physical_page": 84,
+        "rows": 26,
+        "cols": 4,
+        "cells": 104,
+        "json": "表格/table-0002.json",
+        "html": "表格/table-0002.html",
+        "evidence": "ev-table-0002",
+        "candidate_status": "extracted"
+      },
+      "rows_total": 25,
+      "rows_ok": 25,
+      "mismatch_labels": [],
+      "row_results": [
+        {
+          "row": 1,
+          "label": "一、营业总收入",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "86,241,940,222.20",
+            "84,491,870,566.52"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 2,
+          "label": "其中：营业收入",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七、61",
+            "86,241,940,222.20",
+            "84,491,870,566.52"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 3,
+          "label": "利息收入",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 4,
+          "label": "已赚保费",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 5,
+          "label": "手续费及佣金收入",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 6,
+          "label": "二、营业总成本",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "48, 766, 372, 374.15",
+            "50,268,818,794.54"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 7,
+          "label": "其中：营业成本",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七、61",
+            "33, 057,840,034.77",
+            "34, 528, 346, 186.67"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 8,
+          "label": "利息支出",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 9,
+          "label": "手续费及佣金支出",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 10,
+          "label": "退保金",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 11,
+          "label": "赔付支出净额",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 12,
+          "label": "提取保险责任准备金净额",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 13,
+          "label": "保单红利支出",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 14,
+          "label": "分保费用",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 15,
+          "label": "税金及附加",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七、62",
+            "3,318,838, 177.83",
+            "1,968,013,144.28"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 16,
+          "label": "销售费用",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七、63",
+            "234,079,316.40",
+            "188,142,529.94"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 17,
+          "label": "管理费用",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七、64",
+            "1,617,349,026.38",
+            "1,562,254, 125.03"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 18,
+          "label": "研发费用",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七、65",
+            "1, 166, 892, 834.72",
+            "890,719,278.34"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 19,
+          "label": "财务费用",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七、66",
+            "9,371,372,984.05",
+            "11,131,343,530.28"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 20,
+          "label": "其中：利息费用",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "9,508,718,717.67",
+            "11,327,295,992.21"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 21,
+          "label": "利息收入",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "148,748,619.61",
+            "204,614,382.09"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 22,
+          "label": "加：其他收益",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七、67",
+            "19,576,677.60",
+            "6,617,497.40"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 23,
+          "label": "投资收益（损失以“一”号填列）",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "七、68",
+            "4,958, 543, 639.59",
+            "5,257,616,386.94"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 24,
+          "label": "其中：对联营企业和合营企业的投资收益",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "4,616,346,514.82",
+            "4,806,161,995.16"
+          ],
+          "line_numeric_tokens": null
+        },
+        {
+          "row": 25,
+          "label": "以摊余成本计量的金融资",
+          "kind": "data",
+          "ok": true,
+          "issue": null,
+          "values_in_grid": [
+            "",
+            "",
+            ""
+          ],
+          "line_numeric_tokens": null
+        }
+      ],
+      "verdict": "ok"
+    }
+  }
+}

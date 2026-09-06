@@ -1,0 +1,27 @@
+{
+  "tables": [
+    {
+      "logical_table_id": "table-0001",
+      "physical_page": 30,
+      "rows": 5,
+      "cols": 4,
+      "cells": 20,
+      "json": "表格/table-0001.json",
+      "html": "表格/table-0001.html",
+      "evidence": "ev-table-0001",
+      "candidate_status": "extracted"
+    },
+    {
+      "logical_table_id": "table-0002",
+      "physical_page": 30,
+      "rows": 29,
+      "cols": 4,
+      "cells": 116,
+      "json": "表格/table-0002.json",
+      "html": "表格/table-0002.html",
+      "evidence": "ev-table-0002",
+      "candidate_status": "extracted"
+    }
+  ],
+  "state": "candidate_only"
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": "2026-09-05.1",
+  "run_id": "20260905T213749",
+  "mode": "tableslice_v02_core",
+  "source_pdf": {
+    "path": "/Users/eric/Documents/copilot设计skilll/601318_中国平安_2025年度报告.pdf",
+    "sha256_start": "860c455bbad9be59d3d1bf64bf683733feb79157212532df44b91d49a0b03c2a",
+    "sha256_end": null
+  },
+  "program": {
+    "skill_version": "annual-report-markdown",
+    "pipeline_version": "0.2.0-p0",
+    "command_line": "run_tableslice.py"
+  },
+  "engines": {
+    "renderer": "pdfplumber",
+    "ocr": null,
+    "layout": null,
+    "table": "mineru-pipeline"
+  },
+  "config": {},
+  "timing": {
+    "started_at": "2026-09-05T21:37:49+08:00",
+    "finished_at": "2026-09-05T21:37:49+08:00",
+    "elapsed_seconds": null,
+    "pages_processed": 2,
+    "model_calls": 0
+  },
+  "failures": [
+    "MinerU content_list 表数=7；切片保留=7"
+  ],
+  "page_status": [
+    {
+      "physical_page": 14,
+      "status": "processed"
+    },
+    {
+      "physical_page": 14,
+      "status": "processed"
+    },
+    {
+      "physical_page": 14,
+      "status": "processed"
+    },
+    {
+      "physical_page": 14,
+      "status": "processed"
+    },
+    {
+      "physical_page": 14,
+      "status": "processed"
+    },
+    {
+      "physical_page": 14,
+      "status": "processed"
+    },
+    {
+      "physical_page": 15,
+      "status": "processed"
+    }
+  ],
+  "output_dir": "samples/pingan_p14-15",
+  "overall_state": "partial"
+}

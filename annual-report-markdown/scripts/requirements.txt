@@ -1,0 +1,23 @@
+# 骨架依赖说明。
+#
+# 已接线（Schema 校验，2026-09-05 Step1）：
+# - jsonschema：研究包产物严格过 schema（run/manifest/quality/document_map/
+#   review_queue）。未安装时校验跳过但如实报告 checked=False，不伪装通过。
+# - scripts/pipeline/* 其余功能仅用标准库即可运行（intake/scaffold/selfcheck/checkschema）。
+jsonschema
+
+# M1 标准解析硬依赖：原生文字、几何、表格候选与页面证据裁图
+pdfplumber
+pypdf
+pypdfium2
+
+# 可选（供 inspect 探测页数、切片核对、目检渲染等）——接线阶段再评估版本与许可：
+# pypdf
+# pdfplumber
+# pypdfium2
+#
+# 候选引擎（选型/接线阶段，另行评估版本、模型与许可）：
+# docling
+# paddleocr / ppstructure
+# mineru
+# pymupdf   （AGPL 或商业许可，须先确认适用方式）
