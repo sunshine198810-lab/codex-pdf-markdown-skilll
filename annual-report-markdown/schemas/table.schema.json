@@ -49,7 +49,7 @@
     },
     "candidate_status": {
       "type": "string",
-      "enum": ["extracted", "needs_review", "accepted_by_rules", "parse_failed", "pending"]
+      "enum": ["extracted", "needs_review", "accepted_by_rules", "parse_failed", "pending", "candidate_generated", "classified_text_table"]
     }
   },
   "required": ["table_fragment_id", "physical_page"]

@@ -27,7 +27,7 @@
     "confidence": { "type": ["number", "null"], "description": "引擎原始置信分，不等于真实正确概率" },
     "candidate_status": {
       "type": "string",
-      "enum": ["extracted", "needs_review", "accepted_by_rules", "parse_failed", "pending"]
+      "enum": ["extracted", "needs_review", "accepted_by_rules", "parse_failed", "pending", "candidate_generated", "classified_text_table"]
     },
     "manually_reviewed": { "type": "boolean" },
     "relations": {

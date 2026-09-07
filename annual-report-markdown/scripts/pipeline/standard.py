@@ -15,7 +15,7 @@ import shutil
 import tempfile
 import time
 
-from . import borderless, equity, evidence_chain, exports, financials, intake, layout, sections, tables, validation, vector_evidence
+from . import borderless, equity, evidence_chain, exports, financials, general_tables, intake, layout, movement, sections, tables, validation, vector_evidence
 from .version import PIPELINE_VERSION, SCHEMA_VERSION, SKILL_NAME
 
 
@@ -511,6 +511,45 @@ def parse_native_text_package(pdf_path, output_dir, *, mineru_content=None, mine
     result_for_entry = dict(financial_result)
     result_for_entry["logical_tables"] = all_logical_tables
 
+    # 主表/权益表已消费片段（六类法定主表 + 权益变动表）
+    claimed_main = {
+        frag
+        for logical in all_logical_tables
+        for frag in (logical.get("fragments") or [])
+    }
+    # D2a 资产变动表族（账面原值/折旧(摊销)/减值/账面价值 × 类别列 × 阶段行）：
+    # 仅期初+增−减=期末 且证据/上下文齐全的单元格进入 facts；其余退回候选。
+    movement_result = movement.build_movement_facts(
+        root, pages, table_items, evidence, review, identity, pdfplumber_version,
+        claimed_fragments=claimed_main,
+    )
+    movement_processed = set(movement_result["processed_fragments"])
+    # D2b 行向减值/跌价准备变动表（存货跌价、坏账、各类减值等）：期初+Σ增−Σ减=期末。
+    provision_result = movement.build_provision_movement_facts(
+        root, pages, table_items, evidence, review, identity, pdfplumber_version,
+        claimed_fragments=claimed_main | movement_processed,
+    )
+    movement_result["facts"].extend(provision_result["facts"])
+    movement_result["candidates"].extend(provision_result["candidates"])
+    movement_result["processed_fragments"] = sorted(
+        movement_processed | set(provision_result["processed_fragments"])
+    )
+    movement_result["provision_tables"] = provision_result["provision_tables"]
+    financial_result["facts"].extend(movement_result["facts"])
+    financial_result["candidates"].extend(movement_result["candidates"])
+    movement_processed = set(movement_result["processed_fragments"])
+
+    # D1 非主表广度：只处理未被主表/权益表/变动表族消费的片段，
+    # 生成的是不可计算候选（eligible=false），不触碰任何 facts。
+    claimed_fragments = claimed_main | movement_processed
+    general_result = general_tables.build_general_candidates(
+        root, pages, table_items, evidence, review, identity, pdfplumber_version,
+        claimed_fragments=claimed_fragments, headings=headings,
+    )
+    financial_result["candidates"].extend(general_result["candidates"])
+    general_candidate_ids = set(general_result["candidate_fragments"])
+    general_text_ids = set(general_result["text_fragments"])
+
     # 同步物理表、对象账目、证据账目与页记录，避免同一对象出现互相矛盾的状态。
     accepted_fragments = set(financial_result["accepted_fragments"])
     accepted_equity_structure = set(equity_result["accepted_structure_fragments"])
@@ -527,6 +566,14 @@ def parse_native_text_package(pdf_path, output_dir, *, mineru_content=None, mine
                 obj["notes"] = "C3 权益变动表结构已验收；仅 facts 中通过逐列勾稽的期初/增减/期末关键单元格可引用计算"
             else:
                 obj["notes"] = "C3 权益变动表结构已验收；本片段没有通过完整证据与逐列勾稽门的可计算单元格"
+        elif obj.get("object_type") == "table_fragment" and region_id in general_candidate_ids:
+            obj["candidate_status"] = "candidate_generated"
+            obj["quality_flags"] = ["not_semantically_validated", "not_computable"]
+            obj["notes"] = "D1 非主表数值候选已生成（eligible=false）；族标签与单位/期间/主体待核验"
+        elif obj.get("object_type") == "table_fragment" and region_id in general_text_ids:
+            obj["candidate_status"] = "classified_text_table"
+            obj["quality_flags"] = ["non_financial_text_table"]
+            obj["notes"] = "D1 纯文本表分类留存，无数值候选"
     evidence_by_page = {}
     for ev in evidence:
         page_no = ev.get("locate", {}).get("physical_page")
@@ -604,6 +651,8 @@ def parse_native_text_package(pdf_path, output_dir, *, mineru_content=None, mine
     }
     open_issues = [
         "六类法定主表可在完整证据门下进入 facts；权益变动表仅期初、增减、期末且通过逐列勾稽的关键单元格可计算，其余仍不可计算",
+        "D1 已将非主表按族分类并生成不可计算候选（candidates.jsonl）；族标签与单位/期间/主体待人工或后续深度语义核验，不进入 facts",
+        "D2 资产变动表族（账面原值/折旧(摊销)/减值/账面价值变动）仅放行通过期初+增−减=期末且证据/上下文齐全的单元格；其余版式与明细行仍为候选",
         "扫描、复杂多栏、超出已回归样式的行坍缩宽表、重述列和未回归的保险业版式尚未进入支持矩阵；港股繁英按当前范围暂缓",
         "仅登记 PDF 嵌入图片；矢量图表识别与图表标签理解未完成",
     ]
@@ -655,6 +704,16 @@ def parse_native_text_package(pdf_path, output_dir, *, mineru_content=None, mine
             "computable_table_cells": len(financial_result["facts"]),
             "figures": len(figure_items), "figure_labeled": 0,
             "facts": len(financial_result["facts"]), "candidates": len(financial_result["candidates"]),
+            "general_table_fragments": general_result["fragments_classified"],
+            "general_families": general_result["families"],
+            "general_candidate_tables": general_result["candidate_tables"],
+            "general_text_tables": general_result["text_tables"],
+            "general_candidates": len(general_result["candidates"]),
+            "movement_tables": len(movement_result["movement_tables"]),
+            "movement_processed_fragments": len(movement_result["processed_fragments"]),
+            "movement_facts": len(movement_result["facts"]),
+            "movement_candidates": len(movement_result["candidates"]),
+            "provision_tables": len(movement_result.get("provision_tables", [])),
         },
         "overall_state": overall, "open_issues": open_issues,
         "quality_ref": "索引/quality.json", "review_entry_ref": "索引/review_queue.jsonl",
@@ -731,6 +790,20 @@ def parse_native_text_package(pdf_path, output_dir, *, mineru_content=None, mine
                           },
                           "equity_key_fact_fragments": len(equity_fact_fragments),
                           "equity_key_fact_cells": len(equity_result["facts"]),
+                          "general_tables": {
+                              "classified_fragments": general_result["fragments_classified"],
+                              "families": general_result["families"],
+                              "candidate_tables": general_result["candidate_tables"],
+                              "text_tables": general_result["text_tables"],
+                              "candidates_emitted": len(general_result["candidates"]),
+                          },
+                          "movement_tables": {
+                              "processed_fragments": len(movement_result["processed_fragments"]),
+                              "facts_emitted": len(movement_result["facts"]),
+                              "candidates_emitted": len(movement_result["candidates"]),
+                              "provision_tables": len(movement_result.get("provision_tables", [])),
+                              "method": "d2-movement-v1 + d2-provision-v1 (期初+Σ增−Σ减=期末/账面价值交叉门 + 证据/上下文门)",
+                          },
                           "note": "六类法定主表已做语义验收；权益变动表仅通过完整证据门与逐列期初+增减=期末校验的关键单元格可计算"},
             "text_semantics": {"status": "m2_main_statements", "facts": len(financial_result["facts"]),
                                "candidates": len(financial_result["candidates"]),
@@ -774,6 +847,6 @@ def parse_native_text_package(pdf_path, output_dir, *, mineru_content=None, mine
 
 capabilities = {
     "engine_wired": True,
-    "implemented": ["完整物理页登记", "逐页 Markdown", "对象与证据账目", "表格候选 JSON/HTML", "六类主表事实", "权益变动表多级表头结构与关键单元格事实", "矢量轮廓数字复核候选", "嵌入图片留存", "章节地图", "质量报告与复核队列"],
-    "pending": ["扫描/复杂多栏", "矢量轮廓数字独立交叉识别与签核", "权益变动表明细行语义", "非主表财务语义", "繁英及行业专用主表", "矢量图表理解"],
+    "implemented": ["完整物理页登记", "逐页 Markdown", "对象与证据账目", "表格候选 JSON/HTML", "六类主表事实", "权益变动表多级表头结构与关键单元格事实", "矢量轮廓数字复核候选", "嵌入图片留存", "章节地图", "质量报告与复核队列", "非主表分族与数值候选（D1，不可计算）"],
+    "pending": ["扫描/复杂多栏", "矢量轮廓数字独立交叉识别与签核", "权益变动表明细行语义", "非主表深度语义（族内勾稽门/列级单位期间）", "繁英及行业专用主表", "矢量图表理解"],
 }

@@ -1,6 +1,6 @@
 # annual-report-markdown —— 年报解析与研究包（workspace 开发副本）
 
-按《年报解析Skill-重新设计方案-2026-09-05.md》实现的 **V0.3-C4.6 可运行版本**。
+按《年报解析Skill-重新设计方案-2026-09-05.md》实现的 **V0.3-D2 可运行版本**。
 
 > 本目录是设计副本，供审阅迭代。安装到实际技能目录时整体复制到
 > `.codex/skills/annual-report-markdown/`（name 沿用 `annual-report-markdown`，显示名“年报解析与研究包”）。
@@ -36,7 +36,7 @@ annual-report-v02/
 └── tests/                    # stdlib unittest 冒烟测试
 ```
 
-## 现状（V0.3-C4.6 有框线主表过切分重建）
+## 现状（V0.3-D2 资产变动表族 + D1 非主表广度）
 
 - 已建立：入口流程、模块边界、对象模型、JSON Schema、验收基线、骨架 CLI；
   P0 几何实测完成（3 报告）、MinerU pipeline 对照完成、主引擎分工已定（见 `references/engines-probe.md`）。
@@ -60,6 +60,10 @@ annual-report-v02/
 - C4.3 新增：保险跨发行人审计（中国人寿、中国太保、中国人保）、受限年度表题前缀与行标签安全门。13 报告、10 发行人安全门 13/13，总 facts 4,292；中国太保 219 facts，中国人寿和中国人保均保守不放行 facts。详见 `references/v03-c43-insurance-generalization-2026-09-06.md`。
 - C4.4 新增：矢量轮廓数字检测、源页裁图与 OCR 候选隔离；受限日期壳表题；宽 colspan HTML 允许进入严格原生四列重建。中国人保形成六张视觉复核主表候选且 0 facts，中国人寿补齐六主表仍 0 facts，中国太保补齐六主表并增至 328 facts。十三报告安全门 13/13，总 facts 4,401。详见 `references/v03-c44-vector-numeric-evidence-2026-09-06.md`。
 - C4.5 新增：伊利股份（482+33 facts）、长江电力（462）、海螺水泥（166）三个新发行人；修复企业会计准则遵循声明识别（漏“财政部颁布的”→整份 `accounting_basis_evidence_missing`）并扩展记账本位币识别；新增多通道逐格一致性（`pipeline/evidence_chain.py`）与人工签核（`run_signoff.py`）。C4.5 新包安全门 3/3，累计 16 报告/13 发行人。详见 `references/v03-c45-new-issuers-2026-09-06.md`。
+- C4.6 新增：有框线主表过切分（>4 列）→ 原生词 3 列重建（`financials._native_rebuild_oversegmented`）。中国广核 0→116 facts；无回退抽查茅台/伊利/北新与基线一致。详见 `references/v03-c46-oversegment-rebuild-2026-09-06.md`。
+- D1 新增（2026-09-07，非主表广度）：`pipeline/general_tables.py` 只处理未被六类法定主表/权益表消费的片段，按族分类（附注/经营/治理/纯文本/未分类），对含数值表生成观察候选——一律 `eligible_for_calculation=false`，单位/币种尽力从同页单位行继承，期间/主体/准则留空不猜。茅台端到端：204 非主表全分类（附注 160/经营 8/治理 1/未分类 18/文本 17），187 数值表→2497 候选，facts 469 不变，Schema 576/576；91 测试全绿。详见 `references/v03-d1-general-tables-2026-09-07.md`。
+- D2 新增（2026-09-07，资产变动表族 + 减值准备表族）：`pipeline/movement.py` 两个 builder——经典行向变动表（账面原值/折旧(摊销)/减值/账面价值 × 类别列 × 阶段行，`build_movement_facts`）与行向减值/跌价准备表（`build_provision_movement_facts`，需题注含减值/跌价/坏账准备），放行要求=期初+Σ增−Σ减=期末 + 账面价值交叉门 + 证据/上下文齐全；冲突列保留候选标 `reconciliation_failed`。伊利 2025 年报端到端：变动表 136 + 减值准备表 25 = D2 族 161 facts（主表 515 不变，合计 676），Schema 916/916；97 测试全绿。详见 `references/v03-d2-movement-facts-2026-09-07.md`。
+- D2 版式泛化（2026-09-07）：`movement._fold_label_col` 把非 col0 标签列折叠到 col0（数值列原样保留）——广核资产表（标签在 col1）0→8 facts；北新/长电/伊利无回退。
 
 ## 设计要点（与方案对应）
 
@@ -77,7 +81,7 @@ python3 scripts/run_parse.py selfcheck                    # 自检：Schema 与�
 python3 scripts/run_parse.py inspect  <report.pdf>        # 来源登记/体检（不接线引擎）
 python3 scripts/run_parse.py scaffold <report.pdf>        # 建立空研究包骨架（版本目录+manifest+入口模板）
 python3 scripts/run_parse.py checkschema <研究包目录>      # 研究包关键产物过 schema（jsonschema）
-python3 scripts/run_parse.py run <report.pdf> [--output DIR] --auto-borderless # V0.3-C4.6 推荐
+python3 scripts/run_parse.py run <report.pdf> [--output DIR] --auto-borderless # V0.3-D2 推荐
 python3 scripts/audit_regression_matrix.py <研究包>... --json <矩阵.json> --markdown <矩阵.md>
 python3 scripts/run_parse.py run <report.pdf> [--output DIR] \
   --mineru-content <content_list.json> --mineru-start <0起始页> # B1 手动回放
@@ -118,5 +122,7 @@ P0 探针结论（2026-09-05，茅台样本）：几何证据层可行——坐�
 
 ## 阶段计划
 
-P0/M1/M2 → V0.3-B1 → V0.3-B2 → V0.3-B2.1 → V0.3-C1 → V0.3-C2 → V0.3-C3 → V0.3-C3.1 → V0.3-C3.2 → V0.3-C3.3 → V0.3-C4.1 → V0.3-C4.2 → V0.3-C4.3 → V0.3-C4.4 → V0.3-C4.5 → V0.3-C4.6 → V0.3-C4.7（下一轮：美的合并&公司组合口径）→ 权益明细/第二独立识别通道 → V1.0。
+P0/M1/M2 → V0.3-B1 → V0.3-B2 → V0.3-B2.1 → V0.3-C1 → V0.3-C2 → V0.3-C3 → V0.3-C3.1 → V0.3-C3.2 → V0.3-C3.3 → V0.3-C4.1 → V0.3-C4.2 → V0.3-C4.3 → V0.3-C4.4 → V0.3-C4.5 → V0.3-C4.6 → **V0.3-D1（非主表广度，已完成）** → **V0.3-D2（资产/减值变动表族 facts，已完成）** → **V0.3-D3（扫描预研+MinerU OCR 首跑：紫金 113–128 全跑通、16 表体恢复含数值、单通道不升 facts；表题 OCR 缺口待处理；PP-StructureV3 待立项作第二独立通道）** → 权益明细/第二独立识别通道 → V1.0。
+
+> 2026-09-07 方向：港股繁英需求低 → Docling 从路线移除；扫描覆盖=高优先级；"把其他表纳入"= 先广度后深度（D1 广度→D2 深度已落地）。C4.7（美的合并&公司组合口径）与 D2c（跨页续段）在各自边界工作下顺延。
 各阶段进入条件见 `SKILL.md` 末尾与 `references/acceptance.md`。
